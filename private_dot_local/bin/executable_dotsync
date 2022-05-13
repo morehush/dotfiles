@@ -1,0 +1,6 @@
+#!/bin/sh
+
+syncfile=$HOME/syncfile
+remote_loc=$HOME/Sync/dotfiles/
+
+rsync -turPh --delete --files-from=$syncfile $HOME $remote_loc | ts

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+localdir1=/home/morehush/Sync/scripts/tkhtpc/
+remotedir1=morehush@omv:/home/morehush/tkhtpc
+localdir2=/home/morehush/Sync/scripts/adguardhome/
+remotedir2=tk@omv:/home/morehush/adguardhome
+
+
+rsync -turPh $localdir1 $remotedir1
+rsync -turPh $localdir2 $remotedir2
+
+

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+auth="-o credentials=$HOME/creds,uid=1000"
+
+sudo mkdir -p /mnt/others /mnt/tv /mnt/movies
+
+sudo mount -t cifs //omv/others /mnt/others $auth
+sudo mount -t cifs //omv/tv /mnt/tv $auth
+sudo mount -t cifs //omv/movies /mnt/movies $auth

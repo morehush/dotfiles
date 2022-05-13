@@ -1,0 +1,35 @@
+#
+# wm independent hotkeys
+#
+
+# terminal emulator
+super + Return
+	alacritty
+
+# program launcher
+ctrl + @space
+  dmenu_run
+
+super + alt + n
+  chromium --incognito
+
+super + alt +  {b, f, d, t, v, w, y, p}
+	{google-chrome-beta, pcmanfm, discord, telegram-desktop, clipmenu, networkmanager_dmenu, yt -g, powerpro}
+
+super + {r}
+	{rofi -show drun}
+
+super + alt + x
+	$HOME/.local/bin/dmkill
+
+
+# Screenshot
+Print
+		scrot
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+F8
+	playerctl play-pause

@@ -1,0 +1,27 @@
+#!/bin/bash
+
+sync_dir=$HOME/Sync/linux
+input=$HOME/syncfile
+remote_loc=morehush@omv:/home/morehush
+
+{
+rsync -turPh ~/.bashrc ~/.aliases ~/.vimrc ~/.tmux.conf ~/.zshrc $remote_loc/ | ts
+rsync -turPh --delete ~/.config/ranger/ $remote_loc/.config/ranger/ | ts
+rsync -turPh --delete ~/.config/bat/ $remote_loc/.config/bat/ | ts
+rsync -turPh --delete ~/.config/lf/ $remote_loc/.config/lf/ | ts
+rsync -turPh --delete ~/.config/nvim/init.vim $remote_loc/.config/nvim/init.vim | ts
+rsync -turPh --delete ~/.config/nvim/mappings.vim $remote_loc/.config/nvim/mappings.vim | ts
+rsync -turPh --delete ~/.config/nvim/plugins.vim $remote_loc/.config/nvim/plugins.vim | ts
+rsync -turPh --delete ~/.config/nvim/settings.vim $remote_loc/.config/nvim/settings.vim | ts
+rsync -turPh ~/.config/starship.toml $remote_loc/.config/starship.toml | ts
+rsync -turPh --delete ~/.local/bin/ $remote_loc/.local/bin/ | ts
+
+tar -C $HOME -cpzf $sync_dir/dotfiles.tar.gz -T $input | ts
+tar -C $HOME -cpzf $sync_dir/fonts.tar.gz .fonts | ts
+tar -C $HOME -cpzf $sync_dir/icons.tar.gz .icons | ts
+tar -C $HOME -cpzf $sync_dir/themes.tar.gz .themes | ts
+
+rsync -turPh --delete --files-from=$HOME/syncfile $HOME $HOME/Sync/dotfiles/ | ts
+
+echo "backup completed" | ts
+} | tee $HOME/backuplog

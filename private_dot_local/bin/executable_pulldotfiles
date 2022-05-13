@@ -1,0 +1,6 @@
+#!/bin/sh
+
+remote_loc=morehush@omv:/sgt5tb/others/Sync/dotfiles/
+
+rsync -turPh $remote_loc $HOME/
+

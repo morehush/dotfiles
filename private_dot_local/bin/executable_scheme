@@ -1,0 +1,6 @@
+#!/bin/sh
+
+color=$1
+alacritty=$HOME/.config/alacritty
+
+cat ${alacritty}/base.yml ${alacritty}/themes/${color}.yml > ${alacritty}/alacritty.yml

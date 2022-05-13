@@ -1,0 +1,174 @@
+# ╋╋╋╋╋╋╋╋╋┏┓╋╋┏━┳┓
+# ┏━━┳━┳┳┳━┫┗┳┳┫━┫┗┓
+# ┃┃┃┃╋┃┏┫┻┫┃┃┃┣━┃┃┃
+# ┗┻┻┻━┻┛┗━┻┻┻━┻━┻┻┛
+
+HISTFILE=~/.zsh_history
+HISTSIZE=500000
+SAVEHIST=500000
+setopt appendhistory
+setopt INC_APPEND_HISTORY
+setopt HIST_IGNORE_ALL_DUPS
+setopt SHARE_HISTORY
+bindkey '^R' history-incremental-search-backward
+
+
+# some useful options (man zshoptions)
+setopt autocd extendedglob nomatch menucomplete
+setopt interactive_comments
+stty stop undef		# Disable ctrl-s to freeze terminal.
+zle_highlight=('paste:none')
+
+# beeping is annoying
+unsetopt BEEP
+
+# completions
+autoload -Uz compinit
+# zstyle ':completion:*' menu select
+# zstyle ':completion:*'  matcher-list 'm:{a-z}={A-Z}'
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*'
+# zstyle ':completion::complete:lsof:*' menu yes select
+# zmodload zsh/complist
+compinit
+_comp_options+=(globdots)		# Include hidden files.
+
+setopt MENU_COMPLETE
+setopt no_list_ambiguous
+
+autoload -U up-line-or-beginning-search
+autoload -U down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+
+
+# Environment variables
+export EDITOR="nvim"
+export VISUAL="nvim"
+export BROWSER="google-chrome-beta"
+export TERM="xterm-256color"
+
+### PATH
+if [ -d "$HOME/.bin" ] ;
+  then PATH="$HOME/.bin:$PATH"
+fi
+
+if [ -d "$HOME/.local/bin" ] ;
+  then PATH="$HOME/.local/bin:$PATH"
+fi
+
+if [ -d "$HOME/go/bin" ] ;
+  then PATH="$HOME/go/bin:$PATH"
+fi
+
+if [ -d "/home/linuxbrew/.linuxbrew/bin" ] ;
+  then PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+fi
+
+### "bat" as manpager
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
+### "vim" as manpager
+# export MANPAGER='/bin/bash -c "vim -MRn -c \"set buftype=nofile showtabline=0 ft=man ts=8 nomod nolist norelativenumber nonu noma\" -c \"normal L\" -c \"nmap q :qa<CR>\"</dev/tty <(col -b)"'
+
+### "nvim" as manpager
+# export MANPAGER="nvim -c 'set ft=man' -"
+
+### SET VI MODE ###
+# Comment this line out to enable default emacs-like bindings
+bindkey -v
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+### CHANGE TITLE OF TERMINALS
+# case ${TERM} in
+#   xterm*|rxvt*|Eterm*|aterm|kterm|gnome*|alacritty|st|konsole*)
+#     PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\007"'
+#         ;;
+#   screen*)
+#     PROMPT_COMMAND='echo -ne "\033_${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\033\\"'
+#     ;;
+# esac
+
+### Function extract for common file formats ###
+SAVEIFS=$IFS
+IFS=$(echo -en "\n\b")
+
+function extract {
+ if [ -z "$1" ]; then
+    # display usage if no parameters given
+    echo "Usage: extract <path/file_name>.<zip|rar|bz2|gz|tar|tbz2|tgz|Z|7z|xz|ex|tar.bz2|tar.gz|tar.xz>"
+    echo "       extract <path/file_name_1.ext> [path/file_name_2.ext] [path/file_name_3.ext]"
+ else
+    for n in "$@"
+    do
+      if [ -f "$n" ] ; then
+          case "${n%,}" in
+            *.cbt|*.tar.bz2|*.tar.gz|*.tar.xz|*.tbz2|*.tgz|*.txz|*.tar)
+                         tar xvf "$n"       ;;
+            *.lzma)      unlzma ./"$n"      ;;
+            *.bz2)       bunzip2 ./"$n"     ;;
+            *.cbr|*.rar)       unrar x -ad ./"$n" ;;
+            *.gz)        gunzip ./"$n"      ;;
+            *.cbz|*.epub|*.zip)       unzip ./"$n"       ;;
+            *.z)         uncompress ./"$n"  ;;
+            *.7z|*.arj|*.cab|*.cb7|*.chm|*.deb|*.dmg|*.iso|*.lzh|*.msi|*.pkg|*.rpm|*.udf|*.wim|*.xar)
+                         7z x ./"$n"        ;;
+            *.xz)        unxz ./"$n"        ;;
+            *.exe)       cabextract ./"$n"  ;;
+            *.cpio)      cpio -id < ./"$n"  ;;
+            *.cba|*.ace)      unace x ./"$n"      ;;
+            *)
+                         echo "extract: '$n' - unknown archive method"
+                         return 1
+                         ;;
+          esac
+      else
+          echo "'$n' - file does not exist"
+          return 1
+      fi
+    done
+fi
+}
+
+IFS=$SAVEIFS
+
+#tmux ssh function
+tssh(){ssh $1 -t "tmux attach || tmux"}
+
+# navigation
+up () {
+  local d=""
+  local limit="$1"
+
+  # Default to limit of 1
+  if [ -z "$limit" ] || [ "$limit" -le 0 ]; then
+    limit=1
+  fi
+
+  for ((i=1;i<=limit;i++)); do
+    d="../$d"
+  done
+
+  # perform cd. Show error if cd fails
+  if ! cd "$d"; then
+    echo "Couldn't go up $limit dirs.";
+  fi
+}
+
+# arch wiki search from terminal
+wiki() {
+    search_term=$(echo $@ | sed 's/ /+/g')
+    noglob firefox https://wiki.archlinux.org/index.php?search=${search_term}
+}
+
+# wtf is?
+wtfis() {
+    curl "https://cheat.sh/$1"
+}
+
+if [ -f ~/.aliases ]; then
+    source ~/.aliases
+fi
+
+eval "$(starship init zsh)"

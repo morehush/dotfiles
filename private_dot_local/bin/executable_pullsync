@@ -1,0 +1,4 @@
+#!/bin/sh
+
+rsync -turPh $HOME/Sync/dotfiles/ $HOME/ | pv
+

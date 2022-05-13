@@ -1,0 +1,7 @@
+#!/bin/bash
+
+localytdls_dir="$HOME/Videos/youtube/"
+ext_dir="morehush@omv:/sgt5tb/others/youtube/"
+creds="-o credentials=$HOME/creds,uid=1000"
+
+rsync -turPh $localytdls_dir $ext_dir
