@@ -2,7 +2,7 @@
 
 dcomp=/home/morehush/tkhtpc
 
-rsync -turPh /home/morehush/git/dockersrv/tkhtpc/ $dcomp/
+rsync -turPh /sgt5tb/others/git/dockersrv/tkhtpc/ $dcomp/
 
 cd $dcomp
 docker-compose pull
