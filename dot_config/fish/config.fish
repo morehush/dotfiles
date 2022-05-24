@@ -23,7 +23,7 @@ set VIRTUAL_ENV_DISABLE_PROMPT "1"
 ### Uncomment only one of these!
 
 ### "bat" as manpager
-set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
+set -x MANPAGER "sh -c 'col -bx | batcat -l man -p'"
 
 ### "vim" as manpager
 # set -x MANPAGER '/bin/bash -c "vim -MRn -c \"set buftype=nofile showtabline=0 ft=man ts=8 nomod nolist norelativenumber nonu noma\" -c \"normal L\" -c \"nmap q :qa<CR>\"</dev/tty <(col -b)"'
@@ -110,7 +110,7 @@ abbr sxiv 'sxiv -a'
 abbr walls 'sxiv -r ~/Pictures/wallpaper/'
 abbr mimempv 'cat $HOME/.config/mimeapps.list | grep ^video/ | cut -d\t -f1 | xargs xdg-mime default mpv.desktop'
 abbr batstat 'upower -i /org/freedesktop/UPower/devices/battery_BAT0'
-abbr omv 'ssh morehush@omv'
+abbr omv 'ssh morehush@omv -t "tmux a || tmux"'
 
 #chezmoi
 abbr che 'chezmoi'
@@ -210,6 +210,7 @@ alias yta-vorbis='yt-dlp --extract-audio --audio-format vorbis '
 alias yta-wav='yt-dlp --extract-audio --audio-format wav '
 alias ytv-best='yt-dlp -f bestvideo+bestaudio '
 
+abbr jctl 'journalctl -p 3 -xb'
 
 ## Starship prompt
 starship init fish | source
