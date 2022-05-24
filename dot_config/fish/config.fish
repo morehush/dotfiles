@@ -154,7 +154,7 @@ abbr jctl "journalctl -p 3 -xb"
 # Recent installed packages
 alias rip='expac --timefmt="%Y-%m-%d %T" "%l\t%n %v" | sort | tail -200 | nl'
 
-#alias update='sudo apt update && sudo apt upgrade -y'
+abbr update 'sudo apt update && sudo apt upgrade -y'
 alias df=pydf
 alias top=htop
 alias du=ncdu
