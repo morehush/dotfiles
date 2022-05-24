@@ -34,4 +34,6 @@
 .xinitrc
 .Xresources
 .zshrc
+.zim
+.zimrc
 syncfile
