@@ -5,7 +5,7 @@ window:
     x: 2
     y: 2
 shell:
-  program: /bin/bash
+  program: /bin/zsh
   args:
     - --login
 font:
@@ -30,7 +30,7 @@ colors:
     primary:
       background: '#0D1117'
       foreground: '#abb2bf'
-  
+
     # Normal colors
     normal:
       # NOTE: Use '#131613' for the `black` color if you'd like to see
@@ -43,7 +43,7 @@ colors:
       magenta: '#c678dd'
       cyan:    '#56b6c2'
       white:   '#abb2bf'
-  
+
     # Bright colors
     bright:
       black:   '#5c6370'
@@ -54,4 +54,4 @@ colors:
       magenta: '#c678dd'
       cyan:    '#56b6c2'
       white:   '#ffffff'
-  
+
