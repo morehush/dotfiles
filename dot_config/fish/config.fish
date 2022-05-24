@@ -8,7 +8,7 @@
 # First line removes the path; second line sets it.  Without the first line,
 # your path gets massive and fish becomes very slow.
 set -e fish_user_paths
-set -U fish_user_paths $HOME/.local/bin $HOME/Applications $fish_user_paths
+set -U fish_user_paths $HOME/.local/bin $HOME/Applications /home/linuxbrew/.linuxbrew/bin $fish_user_paths
 
 ## Set values
 # Hide welcome message
