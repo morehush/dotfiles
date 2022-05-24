@@ -117,12 +117,12 @@ abbr omv 'ssh morehush@omv -t "tmux a || tmux"'
 abbr che 'chezmoi'
 
 # Changing 'ls' to 'exa'
-alias l='exa -l --group-directories-first --git'
-alias la='exa --all --group-directories-first --git'
-alias ll='exa -al --group-directories-first --git'
-alias lt='exa -T --git-ignore --level=2 --group-directories-first'
-alias llt='exa -lT --git-ignore --level=2 --group-directories-first'
-alias lT='exa -T --git-ignore --level=4 --group-directories-first'
+alias l='exa -l --group-directories-first'
+alias la='exa --all --group-directories-first'
+alias ll='exa -al --group-directories-first'
+alias lt='exa -T-ignore --level=2 --group-directories-first'
+alias llt='exa -lT-ignore --level=2 --group-directories-first'
+alias lT='exa -T-ignore --level=4 --group-directories-first'
 alias l.='exa -a | egrep "^\."'
 
 
