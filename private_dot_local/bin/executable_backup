@@ -5,7 +5,7 @@ input=$HOME/syncfile
 remote_loc=morehush@omv:/home/morehush
 
 {
-rsync -turPh ~/.bashrc ~/.aliases ~/.vimrc ~/.tmux.conf ~/.zshrc $remote_loc/ | ts
+rsync -turPh ~/.bashrc ~/.aliases ~/.vimrc ~/.tmux.conf ~/.zshrc ~/.zimrc $remote_loc/ | ts
 rsync -turPh --delete ~/.config/ranger/ $remote_loc/.config/ranger/ | ts
 rsync -turPh --delete ~/.config/bat/ $remote_loc/.config/bat/ | ts
 rsync -turPh --delete ~/.config/lf/ $remote_loc/.config/lf/ | ts
