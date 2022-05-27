@@ -49,6 +49,13 @@ set fish_color_param '#56b6c2'
 
 ## Functions ##
 # Functions needed for !! and !$ https://github.com/oh-my-fish/plugin-bang-bang
+function forget
+    set -l cmd (commandline | string collect)
+    history delete --exact --case-sensitive -- $cmd
+end
+bind \cg forget
+
+
 function __history_previous_command
   switch (commandline -t)
   case "!"
