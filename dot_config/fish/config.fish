@@ -102,6 +102,7 @@ end
 ## Useful aliases
 # morehush bash aliases
 
+abbr bat 'batcat'
 abbr wf 'nmcli device wifi'
 abbr wificonnect 'sudo nmcli dev wifi connect'
 abbr myip 'curl http://ipecho.net/plain; echo'
@@ -152,12 +153,12 @@ alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pac
 abbr jctl "journalctl -p 3 -xb"
 
 # Recent installed packages
-alias rip='expac --timefmt="%Y-%m-%d %T" "%l\t%n %v" | sort | tail -200 | nl'
+abbr rip 'expac --timefmt="%Y-%m-%d %T" "%l\t%n %v" | sort | tail -200 | nl'
 
 abbr update 'sudo apt update && sudo apt upgrade -y'
-alias df=pydf
-alias top=htop
-alias du=ncdu
+abbr df 'pydf'
+abbr top 'htop'
+abbr du 'ncdu'
 abbr reload 'source ~/.config/fish/config.fish'
 abbr editalias 'nvim ~/.config/fish/config.fish'
 abbr tarnow 'tar -acf '
@@ -195,21 +196,21 @@ abbr path 'echo -e {$PATH\n}'
 abbr now 'date +"%I:%M %d-%m-%Y"'
 abbr ports 'netstat -tulanp'
 alias gh='history|grep'
-alias adl='aria2c -x 16 -s 16 -k 1M'
+abbr adl 'aria2c -x 16 -s 16 -k 1M'
 abbr genkey 'ssh-keygen -t rsa -b 4096 -C t@morehush.com'
 
 # yt-dlp
-alias ytu='yt-dlp -U'
-alias ytd='yt-dlp'
-alias yta-aac='yt-dlp --extract-audio --audio-format aac '
-alias yta-best='yt-dlp --extract-audio --audio-format best '
-alias yta-flac='yt-dlp --extract-audio --audio-format flac '
-alias yta-m4a='yt-dlp --extract-audio --audio-format m4a '
-alias yta-mp3='yt-dlp --extract-audio --audio-format mp3 '
-alias yta-opus='yt-dlp --extract-audio --audio-format opus '
-alias yta-vorbis='yt-dlp --extract-audio --audio-format vorbis '
-alias yta-wav='yt-dlp --extract-audio --audio-format wav '
-alias ytv-best='yt-dlp -f bestvideo+bestaudio '
+abbr ytd 'yt-dlp '
+abbr ytu 'yt-dlp -U'
+abbr yta-aac 'yt-dlp --extract-audio --audio-format aac '
+abbr yta-best 'yt-dlp --extract-audio --audio-format best '
+abbr yta-flac 'yt-dlp --extract-audio --audio-format flac '
+abbr yta-m4a 'yt-dlp --extract-audio --audio-format m4a '
+abbr yta-mp3 'yt-dlp --extract-audio --audio-format mp3 '
+abbr yta-opus 'yt-dlp --extract-audio --audio-format opus '
+abbr yta-vorbis 'yt-dlp --extract-audio --audio-format vorbis '
+abbr yta-wav 'yt-dlp --extract-audio --audio-format wav '
+abbr ytv-best 'yt-dlp -f bestvideo+bestaudio '
 
 abbr jctl 'journalctl -p 3 -xb'
 
