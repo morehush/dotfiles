@@ -198,6 +198,7 @@ abbr ports 'netstat -tulanp'
 alias gh='history|grep'
 abbr adl 'aria2c -x 16 -s 16 -k 1M'
 abbr genkey 'ssh-keygen -t rsa -b 4096 -C t@morehush.com'
+abbr jctl 'journalctl -p 3 -xb'
 
 # yt-dlp
 abbr ytd 'yt-dlp '
@@ -212,7 +213,12 @@ abbr yta-vorbis 'yt-dlp --extract-audio --audio-format vorbis '
 abbr yta-wav 'yt-dlp --extract-audio --audio-format wav '
 abbr ytv-best 'yt-dlp -f bestvideo+bestaudio '
 
-abbr jctl 'journalctl -p 3 -xb'
+
+## Docker Compose
+abbr dcd 'docker-compose down'
+abbr dcp 'docker-compose pull'
+abbr dcu 'docker-compose up -d'
+
 
 ## Starship prompt
 starship init fish | source
