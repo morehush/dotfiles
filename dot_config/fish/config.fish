@@ -99,8 +99,7 @@ end
 
 ## END OF FUNCTIONS ##
 
-## Useful aliases
-# morehush bash aliases
+# morehush fish abbreviations
 
 abbr bat 'batcat'
 abbr wf 'nmcli device wifi'
@@ -118,13 +117,13 @@ abbr omv 'ssh morehush@omv -t "tmux a || tmux"'
 abbr che 'chezmoi'
 
 # Changing 'ls' to 'exa'
-alias l='exa -l --group-directories-first'
-alias la='exa --all --group-directories-first'
-alias ll='exa -al --group-directories-first'
-alias lt='exa -T-ignore --level=2 --group-directories-first'
-alias llt='exa -lT-ignore --level=2 --group-directories-first'
-alias lT='exa -T-ignore --level=4 --group-directories-first'
-alias l.='exa -a | egrep "^\."'
+abbr l 'exa -l --group-directories-first'
+abbr la 'exa --all --group-directories-first'
+abbr ll 'exa -al --group-directories-first'
+abbr lt 'exa -T-ignore --level=2 --group-directories-first'
+abbr llt 'exa -lT-ignore --level=2 --group-directories-first'
+abbr lT 'exa -T-ignore --level=4 --group-directories-first'
+abbr l. 'exa -a | egrep "^\."'
 
 
 abbr hw 'hwinfo --short'                                   # Hardware Info
@@ -134,12 +133,12 @@ abbr gitpkg 'pacman -Q | egrep -i "\-git" | wc -l'			# List amount of -git packa
 
 # pacman and paru
 abbr yeet 'paru -Rcs'
-alias pacsyu='sudo pacman -Syyu'                 # update only standard pkgs
-alias yaysua='yay -Sua --noconfirm'              # update only AUR pkgs (yay)
-alias yaysyu='yay -Syu --noconfirm'              # update standard pkgs and AUR pkgs (yay)
-alias parsua='paru -Sua --noconfirm'             # update only AUR pkgs (paru)
-alias parsyu='paru -Syu --noconfirm'             # update standard pkgs and AUR pkgs (paru)
-alias unlock='sudo rm /var/lib/pacman/db.lck'    # remove pacman lock
+abbr pacsyu 'sudo pacman -Syyu'                 # update only standard pkgs
+abbr yaysua 'yay -Sua --noconfirm'              # update only AUR pkgs (yay)
+abbr yaysyu 'yay -Syu --noconfirm'              # update standard pkgs and AUR pkgs (yay)
+abbr parsua 'paru -Sua --noconfirm'             # update only AUR pkgs (paru)
+abbr parsyu 'paru -Syu --noconfirm'             # update standard pkgs and AUR pkgs (paru)
+abbr unlock 'sudo rm /var/lib/pacman/db.lck'    # remove pacman lock
 abbr cleanup 'sudo pacman -Rns (pacman -Qtdq)'  # remove orphaned packages
 abbr fixpacman 'sudo rm /var/lib/pacman/db.lck'
 
