@@ -92,7 +92,7 @@ exec swayidle -w \
     bindsym $mod+Alt+p exec powerpro
     bindsym $mod+Alt+n exec "chromium --incognito"
     bindsym $mod+Alt+x exec dmkill
-    bindsym $mod+Alt+b exec google-chrome-beta
+    bindsym $mod+Alt+b exec chromium
 
     bindsym XF86AudioLowerVolume exec "amixer set Master 5%-"
     bindsym XF86AudioRaiseVolume exec "amixer set Master 5%+"
