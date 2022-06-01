@@ -33,7 +33,7 @@ set $menu rofi -show combi
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output "*" background "~/.cache/wallpaper" fill
+output "*" background "~/Pictures/wallpaper/control/wallhaven-q6mx55.png" fill
 #
 # Example configuration:
 #
