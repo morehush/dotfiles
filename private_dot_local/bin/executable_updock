@@ -5,7 +5,7 @@ dcomp=/home/morehush/tkhtpc
 rsync -turPh /sgt5tb/others/Sync/dockersrv/tkhtpc/ $dcomp/
 
 cd $dcomp
-docker-compose pull
-docker-compose up -d --remove-orphans
+docker compose pull
+docker compose up -d --remove-orphans
 docker ps --format '{{.Names}}'
 docker image prune -f
