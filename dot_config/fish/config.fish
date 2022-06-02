@@ -221,9 +221,9 @@ abbr ytv-best 'yt-dlp -f bestvideo+bestaudio '
 
 
 ## Docker Compose
-abbr dcd 'docker-compose down'
-abbr dcp 'docker-compose pull'
-abbr dcu 'docker-compose up -d'
+abbr dcd 'docker compose down'
+abbr dcp 'docker compose pull'
+abbr dcu 'docker compose up -d'
 
 
 ## Starship prompt
