@@ -179,10 +179,10 @@ alias up3='cd ../../..'
 alias up4='cd ../../../..'
 
 # confirm before overwriting something
-abbr cp 'cp -i'
-abbr mv 'mv -i'
-abbr rm 'rm -i'
-abbr ip 'ip -c'
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'
+alias ip='ip -c'
 
 ## get top process eating memory
 abbr psmem 'ps auxf | sort -nr -k 4'
