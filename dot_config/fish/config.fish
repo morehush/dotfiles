@@ -207,17 +207,17 @@ abbr genkey 'ssh-keygen -t rsa -b 4096 -C t@morehush.com'
 abbr jctl 'journalctl -p 3 -xb'
 
 # yt-dlp
-abbr ytd 'yt-dlp'
-abbr ytu 'yt-dlp -U'
-abbr yta-aac 'yt-dlp --extract-audio --audio-format aac '
-abbr yta-best 'yt-dlp --extract-audio --audio-format best '
-abbr yta-flac 'yt-dlp --extract-audio --audio-format flac '
-abbr yta-m4a 'yt-dlp --extract-audio --audio-format m4a '
-abbr yta-mp3 'yt-dlp --extract-audio --audio-format mp3 '
-abbr yta-opus 'yt-dlp --extract-audio --audio-format opus '
-abbr yta-vorbis 'yt-dlp --extract-audio --audio-format vorbis '
-abbr yta-wav 'yt-dlp --extract-audio --audio-format wav '
-abbr ytv-best 'yt-dlp -f bestvideo+bestaudio '
+alias ytd='yt-dlp'
+alias ytu='yt-dlp -U'
+alias yta-aac='yt-dlp --extract-audio --audio-format aac '
+alias yta-best='yt-dlp --extract-audio --audio-format best '
+alias yta-flac='yt-dlp --extract-audio --audio-format flac '
+alias yta-m4a='yt-dlp --extract-audio --audio-format m4a '
+alias yta-mp3='yt-dlp --extract-audio --audio-format mp3 '
+alias yta-opus='yt-dlp --extract-audio --audio-format opus '
+alias yta-vorbis='yt-dlp --extract-audio --audio-format vorbis '
+alias yta-wav='yt-dlp --extract-audio --audio-format wav '
+alias ytv-best='yt-dlp -f bestvideo+bestaudio '
 
 
 ## Docker Compose
