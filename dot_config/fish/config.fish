@@ -118,7 +118,7 @@ abbr sxiv 'sxiv -a'
 abbr walls 'sxiv -r ~/Pictures/wallpaper/'
 abbr mimempv 'cat $HOME/.config/mimeapps.list | grep ^video/ | cut -d\t -f1 | xargs xdg-mime default mpv.desktop'
 abbr batstat 'upower -i /org/freedesktop/UPower/devices/battery_BAT0'
-abbr omv 'ssh morehush@omv -t "tmux a || tmux"'
+abbr omv 'ssh morehush@omv'
 
 #chezmoi
 abbr che 'chezmoi'
