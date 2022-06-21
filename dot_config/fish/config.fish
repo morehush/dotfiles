@@ -207,7 +207,7 @@ abbr genkey 'ssh-keygen -t rsa -b 4096 -C t@morehush.com'
 abbr jctl 'journalctl -p 3 -xb'
 
 # yt-dlp
-abbr ytd 'yt-dlp '
+abbr ytd 'yt-dlp'
 abbr ytu 'yt-dlp -U'
 abbr yta-aac 'yt-dlp --extract-audio --audio-format aac '
 abbr yta-best 'yt-dlp --extract-audio --audio-format best '
