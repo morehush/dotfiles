@@ -5,7 +5,7 @@ window:
     x: 2
     y: 2
 shell:
-  program: /usr/bin/fish
+  program: /bin/bash
   args:
     - --login
 font:
