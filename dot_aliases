@@ -106,3 +106,8 @@ alias yta-opus='yt-dlp --extract-audio --audio-format opus '
 alias yta-vorbis='yt-dlp --extract-audio --audio-format vorbis '
 alias yta-wav='yt-dlp --extract-audio --audio-format wav '
 alias ytv-best='yt-dlp -f bestvideo+bestaudio '
+
+# docker compose
+alias dcp='docker compose pull'
+alias dcu='docker compose up -d'
+alias dcd='docker compose down'
