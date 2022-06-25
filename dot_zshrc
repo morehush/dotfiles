@@ -8,11 +8,15 @@
 HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.cache/zsh/history
+export HISTORY_IGNORE="(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
 setopt appendhistory
 setopt INC_APPEND_HISTORY
 setopt HIST_IGNORE_ALL_DUPS
 setopt SHARE_HISTORY
 bindkey '^R' history-incremental-search-backward
+
+# Disable files
+export LESSHISTFILE=-
 
 # some useful options (man zshoptions)
 setopt autocd extendedglob nomatch menucomplete
@@ -43,7 +47,7 @@ bindkey '^R' history-incremental-pattern-search-backward
 # Environment variables
 export EDITOR="nvim"
 export VISUAL="nvim"
-export BROWSER="google-chrome-beta"
+export BROWSER="google-chrome-stable"
 export TERM="xterm-256color"
 
 ### PATH
@@ -80,14 +84,14 @@ bindkey -v
 [[ $- != *i* ]] && return
 
 ### CHANGE TITLE OF TERMINALS
-# case ${TERM} in
-#   xterm*|rxvt*|Eterm*|aterm|kterm|gnome*|alacritty|st|konsole*)
-#     PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\007"'
-#         ;;
-#   screen*)
-#     PROMPT_COMMAND='echo -ne "\033_${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\033\\"'
-#     ;;
-# esac
+case ${TERM} in
+  xterm*|rxvt*|Eterm*|aterm|kterm|gnome*|alacritty|st|konsole*)
+    PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\007"'
+        ;;
+  screen*)
+    PROMPT_COMMAND='echo -ne "\033_${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\033\\"'
+    ;;
+esac
 
 ### Function extract for common file formats ###
 SAVEIFS=$IFS
