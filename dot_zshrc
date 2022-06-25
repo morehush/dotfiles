@@ -3,16 +3,16 @@
 # ┃┃┃┃╋┃┏┫┻┫┃┃┃┣━┃┃┃
 # ┗┻┻┻━┻┛┗━┻┻┻━┻━┻┻┛
 
-setopt appendhistory
-setopt INC_APPEND_HISTORY
-setopt HIST_IGNORE_ALL_DUPS
-setopt SHARE_HISTORY
-bindkey '^R' history-incremental-search-backward
 
 # History in cache directory:
 HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.cache/zsh/history
+setopt appendhistory
+setopt INC_APPEND_HISTORY
+setopt HIST_IGNORE_ALL_DUPS
+setopt SHARE_HISTORY
+bindkey '^R' history-incremental-search-backward
 
 # some useful options (man zshoptions)
 setopt autocd extendedglob nomatch menucomplete
