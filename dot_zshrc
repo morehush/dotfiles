@@ -3,17 +3,11 @@
 # ┃┃┃┃╋┃┏┫┻┫┃┃┃┣━┃┃┃
 # ┗┻┻┻━┻┛┗━┻┻┻━┻━┻┻┛
 
-HISTFILE=~/.zsh_history
-HISTSIZE=500000
-SAVEHIST=500000
 setopt appendhistory
 setopt INC_APPEND_HISTORY
 setopt HIST_IGNORE_ALL_DUPS
 setopt SHARE_HISTORY
 bindkey '^R' history-incremental-search-backward
-
-# Enable colors and change prompt:
-autoload -U colors && colors
 
 # History in cache directory:
 HISTSIZE=1000
