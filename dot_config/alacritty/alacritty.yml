@@ -5,8 +5,8 @@ window:
     x: 2
     y: 2
 shell:
-  program: /bin/bash
-  args:
+  program: /usr/bin/zsh
+   args:
     - --login
 font:
   normal:
