@@ -12,6 +12,8 @@ setopt HIST_IGNORE_ALL_DUPS
 setopt SHARE_HISTORY
 bindkey '^R' history-incremental-search-backward
 
+# Enable colors and change prompt:
+autoload -U colors && colors
 
 # some useful options (man zshoptions)
 setopt autocd extendedglob nomatch menucomplete
