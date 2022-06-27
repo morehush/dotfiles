@@ -17,7 +17,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-commentary'
 call plug#end()
 
-let g:onedark_terminal_italics=1
+let g:onedark_terminal_italics=0
 
 let g:lightline = {
       \ 'colorscheme': 'onedark',
