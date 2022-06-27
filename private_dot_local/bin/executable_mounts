@@ -2,8 +2,8 @@
 
 auth="-o credentials=$HOME/.creds,uid=1000"
 
-sudo mkdir -p $HOME/remote/others $HOME/remote/tv $HOME/remote/movies
+mkdir -p $HOME/remote/others $HOME/remote/tv $HOME/remote/movies
 
-sudo mount -t cifs //omv/others $HOME/remote/others $auth
-sudo mount -t cifs //omv/tv $HOME/remote/tv $auth
-sudo mount -t cifs //omv/movies $HOME/remote/movies $auth
+mount -t cifs //omv/others $HOME/remote/others $auth
+mount -t cifs //omv/tv $HOME/remote/tv $auth
+mount -t cifs //omv/movies $HOME/remote/movies $auth
