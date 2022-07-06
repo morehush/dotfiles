@@ -8,4 +8,4 @@ cd $dcomp
 docker compose pull
 docker compose up -d --remove-orphans
 docker ps --format '{{.Names}}'
-docker image prune -f
+docker image prune -af
