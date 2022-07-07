@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dcomp=/home/morehush/tkhtpc
+dcomp=/home/morehush/docker/tkhtpc
 
 rsync -turPh /sgt5tb/others/Sync/dockersrv/tkhtpc/ $dcomp/
 
