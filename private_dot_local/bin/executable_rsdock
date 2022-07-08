@@ -2,4 +2,4 @@
 
 sudo rsync -azPh --delete /home/morehush/docker/ /sgt5tb/others/docker_backup
 
-tar -cpzf /sgt5tb/others/Sync/docker.tar.gz $HOME/docker
+tar -cpzfv /sgt5tb/others/Sync/docker.tar.gz $HOME/docker
