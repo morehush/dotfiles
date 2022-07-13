@@ -24,7 +24,7 @@ alias l.='exa -a | egrep "^\."'
 
 
 alias hw='hwinfo --short'                                   # Hardware Info
-alias big='expac -H M "%m\t%n" | sort -h | nl'              # Sort installed packages according to size in MB (expac must be installed)
+# alias big='expac -H M "%m\t%n" | sort -h | nl'              # Sort installed packages according to size in MB (expac must be installed)
 alias gitpkg='pacman -Q | grep -i "\-git" | wc -l'			# List amount of -git packages
 
 
