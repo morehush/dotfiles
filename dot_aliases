@@ -60,7 +60,7 @@ alias tarnow='tar -acf '
 alias untar='tar -zxvf '
 alias wget='wget -c '
 alias tb='nc termbin.com 9999'
-alias bat=batcat
+# alias bat=batcat
 
 # cd shorteners
 alias ..='cd ..'
