@@ -1,9 +1,11 @@
 #!/bin/bash
 
-auth="-o credentials=$HOME/.creds,uid=1000"
+ssfs morehush@omv:/srv/dev-disk-by-uuid-d669b68c-ead8-4e10-a769-81858157b1e2 $HOME/remote -C -o idmap=user
 
-mkdir -p $HOME/remote/others $HOME/remote/tv $HOME/remote/movies
-
-sudo mount -t cifs $auth //omv/others $HOME/remote/others
-sudo mount -t cifs $auth //omv/tv $HOME/remote/tv
-sudo mount -t cifs $auth //omv/movies $HOME/remote/movies
+# auth="-o credentials=$HOME/.creds,uid=1000"
+#
+# mkdir -p $HOME/remote/others $HOME/remote/tv $HOME/remote/movies
+#
+# sudo mount -t cifs $auth //omv/others $HOME/remote/others
+# sudo mount -t cifs $auth //omv/tv $HOME/remote/tv
+# sudo mount -t cifs $auth //omv/movies $HOME/remote/movies
