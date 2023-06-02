@@ -1,5 +1,4 @@
 #!/bin/sh
-export HISTORY_IGNORE="(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
 export XDG_CURRENT_DESKTOP="Wayland"
 export EDITOR="hx"
 export VISUAL="hx"
