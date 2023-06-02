@@ -1,0 +1,16 @@
+#!/bin/bash
+
+sync_dir=$HOME/Sync/linux
+input=$HOME/Sync/syncfile
+remote_loc=morehush@omv:/home/morehush
+
+# {
+tar -C $HOME -cpzf $sync_dir/dotfiles.tar.gz -T $input
+# tar -C $HOME -cpzf $sync_dir/fonts.tar.gz .fonts
+# tar -C $HOME -cpzf $sync_dir/icons.tar.gz .icons
+# tar -C $HOME -cpzf $sync_dir/themes.tar.gz .themes
+
+# rsync -turPh --delete --files-from=$input $HOME $remote_loc
+
+echo "backup completed"
+# } | tee $HOME/backuplog

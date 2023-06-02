@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# ffmpeg -i $1 -f gif $2.gif
+
+ffmpeg -y -i $1 -vf fps=12,scale=480:-1:flags=lanczos,palettegen palette.png
+ffmpeg -i $1 -i palette.png -filter_complex "fps=12,scale=480:-1:flags=lanczos[x];[x][1:v]paletteuse" $2.gif

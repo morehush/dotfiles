@@ -1,0 +1,19 @@
+#!/bin/sh
+
+cd ~
+
+# Log WLR errors and logs to the hyprland log
+export HYPRLND_LOG_WLR=1
+
+# Tell XWayland to use a cursor theme
+export XCURSOR_THEME=Qogir-dark
+
+# Set a cursor size
+export XCURSOR_SIZE=24
+
+# Execute Hyprland
+if [ -f /usr/local/bin/Hyprland ]; then
+   exec /usr/local/bin/Hyprland >/dev/null 2>&1 
+elif [ -f /usr/bin/Hyprland ]; then
+   exec /usr/bin/Hyprland >/dev/null 2>&1 
+fi

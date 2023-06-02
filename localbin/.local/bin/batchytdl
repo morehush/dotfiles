@@ -1,0 +1,4 @@
+#!/bin/bash
+
+yt-dlp -a $HOME/Sync/batchlist.txt
+

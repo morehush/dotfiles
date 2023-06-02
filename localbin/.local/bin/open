@@ -1,0 +1,3 @@
+#!/bin/sh
+
+hx "$(find $HOME -type f | fzf)"

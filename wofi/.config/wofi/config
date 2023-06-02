@@ -1,0 +1,11 @@
+location=center
+width=400
+height=250
+mode=run
+allow_images=true
+halign=fill
+insensitive=true
+gtk_dark=true
+orientation=vertical
+content_halign=fill
+image_size=40
