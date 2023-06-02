@@ -24,10 +24,6 @@ alias uc='systemctl --user'
 alias sj='journalctl --all --follow --unit'
 alias uj='journalctl --all --follow --user-unit'
 
-#dotfiles
-alias dots='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias dotc='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME commit -am "autocommit"'
-
 # Changing 'ls' to 'exa'
 alias l='exa -l --group-directories-first'
 alias la='exa --all --group-directories-first'

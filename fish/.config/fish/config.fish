@@ -136,10 +136,6 @@ abbr mimempv 'cat $HOME/.config/mimeapps.list | grep ^video/ | cut -d\t -f1 | xa
 abbr batstat 'upower -i /org/freedesktop/UPower/devices/battery_BAT0'
 abbr omv 'ssh morehush@omv'
 
-#dotfiles
-alias dots='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias dotc='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME commit -am "autocommit"'
-
 # history search
 abbr hst 'history | fzf'
 
