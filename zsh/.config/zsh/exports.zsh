@@ -5,7 +5,6 @@ export VISUAL="hx"
 export TERMINAL="alacritty"
 export TERM="xterm-256color"
 export BROWSER="brave"
-export XDG_CURRENT_DESKTOP="Wayland"
 
 
 ### PATH
