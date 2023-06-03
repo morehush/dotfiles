@@ -15,7 +15,7 @@ suppress_default_binds = true
 # Define some key bindings
 q = quit
 y = exec echo working!
-<Shift+W> = exec swaybg -m fit -i "$imv_current_file"
+<Shift+W> = setbg "$imv_current_file"
 
 # Image navigation
 <Left> = prev
