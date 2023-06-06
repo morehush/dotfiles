@@ -12,8 +12,8 @@ plug "zap-zsh/fzf"
 # plug "Aloxaf/fzf-tab"
 plug "wintermi/zsh-brew"
 
-plug "$HOME/.config/zsh/aliases.zsh"
-plug "$HOME/.config/zsh/exports.zsh"
+source "$HOME/.config/zsh/aliases.zsh"
+source "$HOME/.config/zsh/exports.zsh"
 
 
 HISTFILE=~/.zsh_history
