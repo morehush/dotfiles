@@ -103,7 +103,7 @@ alias path='echo -e ${PATH//:/\\n}'
 alias now='date +"%I:%M %d-%m-%Y"'
 alias ports='netstat -tulanp'
 alias gh='history|grep'
-alias hst='cat ~/.bash_history | fzf'
+alias hst='history | fzf'
 alias adl='aria2c -x 16 -s 16 -k 1M'
 alias genkey='ssh-keygen -t rsa -b 4096 -C t@morehush.com'
 
