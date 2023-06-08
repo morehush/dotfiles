@@ -2,7 +2,8 @@
 
 dcomp=$HOME/docker/tkhtpc
 
-rsync -turPh /sgt5tb/others/Sync/dockersrv/tkhtpc/ $dcomp/
+rsync -turPh /sgt5tb/others/Sync/dockersrv/tkhtpc/docker-compose.yml $dcomp/
+rsync -turPh /sgt5tb/others/Sync/dockersrv/tkhtpc/.env $dcomp/
 
 cd $dcomp
 docker compose pull
