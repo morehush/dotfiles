@@ -4,10 +4,10 @@ window:
   padding:
     x: 2
     y: 2
-shell:
-  program: /usr/bin/zsh
-  args:
-    - --login
+# shell:
+#   program: /usr/bin/zsh
+#   args:
+#     - --login
 font:
   normal:
     family: JetBrainsMono Nerd Font
