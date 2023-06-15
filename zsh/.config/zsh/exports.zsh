@@ -4,7 +4,7 @@ export EDITOR="hx"
 export VISUAL="hx"
 export TERMINAL="alacritty"
 export TERM="xterm-256color"
-export BROWSER="brave"
+export BROWSER="firefox"
 
 ### PATH
 if [ -d "$HOME/.bin" ] ;
