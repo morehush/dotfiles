@@ -23,13 +23,6 @@ if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
 fi
 
-if [ -d "/home/linuxbrew/.linuxbrew/bin" ] ;
-  then PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
-fi
-
-if [ -d "/home/linuxbrew/.linuxbrew/sbin" ] ;
-  then PATH="/home/linuxbrew/.linuxbrew/sbin:$PATH"
-fi
 ### PROMPT
 # This is commented out if using starship prompt
 PS1='[\u@\h \W]\$ '

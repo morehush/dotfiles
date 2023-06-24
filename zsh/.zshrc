@@ -10,7 +10,6 @@ plug "zap-zsh/supercharge"
 plug "zsh-users/zsh-syntax-highlighting"
 plug "zap-zsh/fzf"
 # plug "Aloxaf/fzf-tab"
-plug "wintermi/zsh-brew"
 plug "zap-zsh/sudo"
 
 source "$HOME/.config/zsh/aliases.zsh"
