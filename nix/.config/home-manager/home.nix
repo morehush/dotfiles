@@ -33,6 +33,7 @@
     pkgs.zellij
     pkgs.starship
     pkgs.neovim
+    pkgs.exa
 
   ];
 
