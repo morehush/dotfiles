@@ -32,6 +32,7 @@
     pkgs.yt-dlp
     pkgs.zellij
     pkgs.starship
+    pkgs.neovim
 
   ];
 
