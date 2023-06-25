@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo rsync -azPh --delete $HOME/docker/tkhtpc/ /sgt5tb/others/Sync/docker_backup
+sudo rsync -azPh --delete $HOME/docker/tkmedia/ /sgt5tb/others/Sync/docker_backup
 
-# sudo tar -cpzf /home/morehush/docker.tar.gz /home/morehush/docker/
+# sudo tar -cpzf /home/morehush/docker.tar.gz /home/morehush/docker/tkmedia
 
