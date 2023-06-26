@@ -34,6 +34,7 @@
     pkgs.starship
     pkgs.neovim
     pkgs.exa
+    pkgs.bottom
 
   ];
 
