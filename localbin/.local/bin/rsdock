@@ -1,5 +1,5 @@
 #!/bin/bash
-backup_dir=/sgt5tb/others/Sync/docker_bak/
+backup_dir=/sgt5tb/others/docker_bak/
 
 sudo rsync -azPh --delete $HOME/docker/tkmedia $backup_dir
 sudo rsync -azPh --delete $HOME/docker/portainer $backup_dir
