@@ -51,6 +51,7 @@ alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'  # remove orphaned packages
 alias fixpacman='sudo rm /var/lib/pacman/db.lck'
 
 # Get fastest mirrors
+alias ratem="rate-mirrors arch | sudo tee /etc/pacman.d/mirrorlist"
 alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
 alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
 alias mirrors="sudo reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"
