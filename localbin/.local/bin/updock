@@ -1,12 +1,17 @@
 #!/bin/bash
 
 dcomp=$HOME/docker/tkmedia
+piped=$HOME/docker/piped
 
 rsync -turPh /sgt5tb/others/Sync/dockersrv/tkmedia/docker-compose.yml $dcomp/
 rsync -turPh /sgt5tb/others/Sync/dockersrv/tkmedia/.env $dcomp/
+rsync -turPh /sgt5tb/others/Sync/dockersrv/piped/docker-compose.yml $piped/
 
 cd $dcomp
 docker compose pull
 docker compose up -d --remove-orphans
 # docker ps --format '{{.Names}}'
+cd $piped
+docker compose pull
+docker compose up -d --remove-orphans
 docker image prune -af
