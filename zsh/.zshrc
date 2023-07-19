@@ -11,6 +11,7 @@ plug "zsh-users/zsh-syntax-highlighting"
 plug "zap-zsh/fzf"
 # plug "Aloxaf/fzf-tab"
 plug "zap-zsh/sudo"
+plug "wintermi/zsh-brew"
 
 source "$HOME/.config/zsh/aliases.zsh"
 source "$HOME/.config/zsh/exports.zsh"
