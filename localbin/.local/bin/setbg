@@ -1,5 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-cp $1 ~/.config/wall.jpg
-
-# swaybg -m fill -i ~/.config/wall.jpg
+cp $1 $HOME/.config/hypr/bg.jpg
+pkill swaybg
+swaybg -m fill -i $HOME/.config/hypr/bg.jpg &

@@ -6,7 +6,7 @@
     // Choose the order of the modules
     "modules-left": ["wlr/workspaces", "hyprland/window"],
     "modules-center": ["clock"],
-    "modules-right": ["network", "bluetooth", "backlight", "battery", "cpu", "memory", "pulseaudio", "idle_inhibitor", "tray"],
+    "modules-right": ["network", "bluetooth", "cpu", "memory", "pulseaudio", "idle_inhibitor", "tray"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
