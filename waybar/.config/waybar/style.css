@@ -8,9 +8,9 @@
 }
 
 window#waybar {
-    background-color: #24283b;
-    /* border-bottom: 3px solid #24283b; */
-    color: #a9b1d6;
+    background-color: #0a0a0a;
+    /* border-bottom: 3px solid #0a0a0a; */
+    color: #9a9a9a;
     transition-property: background-color;
     transition-duration: .5s;
 }
@@ -33,14 +33,14 @@ window#waybar.termite {
 }
 
 window#waybar.chromium {
-    background-color: #24283b;
+    background-color: #0a0a0a;
     border: none;
 }
 
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
-    color: #a9b1d6;
+    color: #9a9a9a;
     /* Use box-shadow instead of border so the text isn't offset */
     box-shadow: inset 0 -3px transparent;
 }
@@ -48,13 +48,13 @@ window#waybar.chromium {
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 #workspaces button:hover {
     background: #84a0c6;
-    box-shadow: inset 0 -3px #a9b1d6;
+    box-shadow: inset 0 -3px #9a9a9a;
 }
 
 #workspaces button.focused {
     background-color: #6b7089;
-    color: #a9b1d6;
-    box-shadow: inset 0 -3px #a9b1d6;
+    color: #9a9a9a;
+    box-shadow: inset 0 -3px #9a9a9a;
 }
 
 #workspaces button.urgent {
@@ -62,8 +62,8 @@ window#waybar.chromium {
 }
 
 #mode {
-    background-color: #24283b;
-    border-bottom: 2px solid #a9b1d6;
+    background-color: #0a0a0a;
+    border-bottom: 2px solid #9a9a9a;
 }
 
 #clock,
@@ -82,7 +82,7 @@ window#waybar.chromium {
 #mpd {
     padding: 0 10px;
     margin: 0 4px;
-    color: #a9b1d6;
+    color: #9a9a9a;
 }
 
 #window,
@@ -101,17 +101,17 @@ window#waybar.chromium {
 }
 
 #clock {
-    background-color: #24283b;
+    background-color: #0a0a0a;
 }
 
 #battery {
-    background-color: #24283b;
-    color: #a9b1d6;
+    background-color: #0a0a0a;
+    color: #9a9a9a;
 }
 
 #battery.charging, #battery.plugged {
-    color: #a9b1d6;
-    background-color: #24283b;
+    color: #9a9a9a;
+    background-color: #0a0a0a;
 }
 
 @keyframes blink {
@@ -123,7 +123,7 @@ window#waybar.chromium {
 
 #battery.critical:not(.charging) {
     background-color: #e27878;
-    color: #a9b1d6;
+    color: #9a9a9a;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -132,28 +132,28 @@ window#waybar.chromium {
 }
 
 label:focus {
-    background-color: #24283b;
+    background-color: #0a0a0a;
 }
 
 #cpu {
-    background-color: #24283b;
-    color: #a9b1d6;
+    background-color: #0a0a0a;
+    color: #9a9a9a;
 }
 
 #memory {
-    background-color: #24283b;
+    background-color: #0a0a0a;
 }
 
 #disk {
-    background-color: #24283b;
+    background-color: #0a0a0a;
 }
 
 #backlight {
-    background-color: #24283b;
+    background-color: #0a0a0a;
 }
 
 #network {
-    background-color: #24283b;
+    background-color: #0a0a0a;
 }
 
 #network.disconnected {
@@ -161,13 +161,13 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: #24283b;
-    color: #a9b1d6;
+    background-color: #0a0a0a;
+    color: #9a9a9a;
 }
 
 #pulseaudio.muted {
     background-color: #e27878;
-    color: #24283b;
+    color: #0a0a0a;
 }
 
 #custom-media {
@@ -193,7 +193,7 @@ label:focus {
 }
 
 #tray {
-    background-color: #24283b;
+    background-color: #0a0a0a;
 }
 
 #tray > .passive {
@@ -206,12 +206,12 @@ label:focus {
 }
 
 #idle_inhibitor {
-    background-color: #24283b;
+    background-color: #0a0a0a;
 }
 
 #idle_inhibitor.activated {
     background-color: #84a0c6;
-    color: #24283b;
+    color: #0a0a0a;
 }
 
 #mpd {
