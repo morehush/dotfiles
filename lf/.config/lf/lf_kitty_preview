@@ -12,13 +12,6 @@ if [[ "$filetype" =~ ^image ]]; then
     exit 1
 fi
 
-if [[ "$filetype" =~ ^video ]]; then
-    # vidthumb is from here:
-    # https://raw.githubusercontent.com/duganchen/kitty-pistol-previewer/main/vidthumb
-    kitty +kitten icat --silent --stdin no --transfer-mode file --place "${w}x${h}@${x}x${y}" "$(vidthumb "$file")" < /dev/null > /dev/tty
-    exit 1
-fi
-
 case "$1" in
 	*.sh|*.bash*|*.zsh*|*.fish|*.conf*|*.md|*.vim*) bat --color always "$1";;
 #	*.gif|*.bmp|*.jpg|*.jpeg|*.png|*.xpm) img2sixel "$1" "$(($2-2))x$3" | sed 's/#/\n#/g';;
