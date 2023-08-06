@@ -2,9 +2,9 @@
 export XDG_CURRENT_DESKTOP="Wayland"
 export EDITOR="nvim"
 export VISUAL="nvim"
-export TERMINAL="alacritty"
+export TERMINAL="kitty"
 export TERM="xterm-256color"
-export BROWSER="firefox"
+export BROWSER="brave"
 
 ### PATH
 if [ -d "$HOME/.bin" ] ;
