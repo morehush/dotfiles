@@ -4,8 +4,8 @@
 # ┗┻┻┻━┻┛┗━┻┻┻━┻━┻┻┛
 
 
-export EDITOR="hx"
-export VISUAL="hx"
+export EDITOR="nvim"
+export VISUAL="nvim"
 export TERM="xterm-256color"
 
 # If not running interactively, don't do anything
@@ -23,9 +23,17 @@ if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
 fi
 
+if [ -d "/home/linuxbrew/.linuxbrew/bin" ] ;
+  then PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+fi
+
+if [ -d "/home/linuxbrew/.linuxbrew/sbin" ] ;
+  then PATH="/home/linuxbrew/.linuxbrew/sbin:$PATH"
+fi
+
 ### PROMPT
 # This is commented out if using starship prompt
-PS1='[\u@\h \W]\$ '
+# PS1='[\u@\h \W]\$ '
 
 ### SET MANPAGER
 ### Uncomment only one of these!
@@ -103,6 +111,8 @@ shopt -s histappend # do not overwrite history
 shopt -s expand_aliases # expand aliases
 shopt -s checkwinsize # checks term size when bash regains control
 
+bind "set bell-style none"
+
 #prettyfi
 bind "set colored-stats on"
 bind "set colored-completion-prefix on"
@@ -169,6 +179,4 @@ wtfis() {
     curl "https://cheat.sh/$1"
 }
 
-# eval "$(zellij setup --generate-auto-start bash)"
-
-# eval "$(starship init bash)"
+eval "$(starship init bash)"
