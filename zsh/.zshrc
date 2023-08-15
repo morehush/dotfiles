@@ -12,7 +12,7 @@ plug "zap-zsh/fzf"
 # plug "Aloxaf/fzf-tab"
 plug "zap-zsh/sudo"
 
-source "$HOME/.aliases"
+source "$HOME/.config/zsh/alias.zsh"
 source "$HOME/.config/zsh/exports.zsh"
 
 

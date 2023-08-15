@@ -87,8 +87,8 @@ fi
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-if [ -f ~/.aliases ]; then
-    . ~/.aliases
+if [ -f ~/.config/zsh/alias.zsh ]; then
+    . ~/.config/zsh/alias.zsh
 fi
 
 # enable programmable completion features (you don't need to enable

@@ -67,7 +67,7 @@ alias rip='expac --timefmt="%Y-%m-%d %T" "%l\t%n %v" | sort | tail -200 | nl'
 alias update='sudo apt update && sudo apt upgrade'
 alias df='df -h'
 alias top=htop
-alias reload='source ~/.bashrc'
+alias reload='source ~/.zshrc'
 alias editalias='hx ~/.aliases'
 alias tarnow='tar -acf '
 alias untar='tar -zxvf '

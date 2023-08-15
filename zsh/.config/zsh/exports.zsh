@@ -15,5 +15,13 @@ if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
 fi
 
+if [ -d "/home/linuxbrew/.linuxbrew/bin" ] ;
+  then PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+fi
+
+if [ -d "/home/linuxbrew/.linuxbrew/sbin" ] ;
+  then PATH="/home/linuxbrew/.linuxbrew/sbin:$PATH"
+fi
+
 ### "bat" as manpager
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
