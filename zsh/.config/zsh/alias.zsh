@@ -9,7 +9,7 @@ alias imv='imv -r'
 alias walls='sxiv -r ~/Pictures/wallpaper/'
 alias mimempv='cat $HOME/.config/mimeapps.list | grep ^video/ | cut -d\t -f1 | xargs xdg-mime default mpv.desktop'
 alias batstat='upower -i /org/freedesktop/UPower/devices/battery_BAT0'
-alias omv='ssh morehush@omv'
+alias omv='ssh morehush@h.morehush.com'
 alias grubfix='sudo grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=EndeavourOS-grub'
 alias grubmk='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 
