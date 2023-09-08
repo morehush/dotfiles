@@ -25,14 +25,14 @@ alias uc='systemctl --user'
 alias sj='journalctl --all --follow --unit'
 alias uj='journalctl --all --follow --user-unit'
 
-# Changing 'ls' to 'exa'
-alias l='exa -l --group-directories-first'
-alias la='exa --all --group-directories-first'
-alias ll='exa -al --group-directories-first'
-alias lt='exa -T --level=2 --group-directories-first'
-alias llt='exa -lT --level=2 --group-directories-first'
-alias lT='exa -T --level=4 --group-directories-first'
-alias l.='exa -a | grep -E "^\."'
+# Changing 'ls' to 'eza'
+alias l='eza -l --group-directories-first'
+alias la='eza --all --group-directories-first'
+alias ll='eza -al --group-directories-first'
+alias lt='eza -T --level=2 --group-directories-first'
+alias llt='eza -lT --level=2 --group-directories-first'
+alias lT='eza -T --level=4 --group-directories-first'
+alias l.='eza -a | grep -E "^\."'
 
 
 alias hw='hwinfo --short'                                   # Hardware Info
