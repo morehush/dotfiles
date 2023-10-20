@@ -33,7 +33,7 @@ fi
 
 ### PROMPT
 # This is commented out if using starship prompt
-# PS1='[\u@\h \W]\$ '
+PS1='[\u@\h \W]\$ '
 
 ### SET MANPAGER
 ### Uncomment only one of these!
@@ -179,4 +179,4 @@ wtfis() {
     curl "https://cheat.sh/$1"
 }
 
-eval "$(starship init bash)"
+# eval "$(starship init bash)"
