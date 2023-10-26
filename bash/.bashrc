@@ -23,17 +23,16 @@ if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
 fi
 
-if [ -d "/home/linuxbrew/.linuxbrew/bin" ] ;
-  then PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
-fi
-
-if [ -d "/home/linuxbrew/.linuxbrew/sbin" ] ;
-  then PATH="/home/linuxbrew/.linuxbrew/sbin:$PATH"
-fi
-
 ### PROMPT
-# This is commented out if using starship prompt
-PS1='[\u@\h \W]\$ '
+function parse_git_dirty {
+  [[ $(git status --porcelain 2> /dev/null) ]] && echo "*"
+}
+function parse_git_branch {
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/ (\1$(parse_git_dirty))/"
+}
+
+export PS1="\n\t \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
+# PS1='[\u@\h \W]\$ '
 
 ### SET MANPAGER
 ### Uncomment only one of these!
