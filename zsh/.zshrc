@@ -11,6 +11,7 @@ plug "zsh-users/zsh-syntax-highlighting"
 plug "zap-zsh/fzf"
 # plug "Aloxaf/fzf-tab"
 plug "zap-zsh/sudo"
+plug "spaceship-prompt/spaceship-prompt"
 
 source "$HOME/.config/zsh/alias.zsh"
 source "$HOME/.config/zsh/exports.zsh"
@@ -88,4 +89,4 @@ up () {
   fi
 }
 
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
