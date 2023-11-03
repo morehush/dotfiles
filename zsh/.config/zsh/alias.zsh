@@ -16,7 +16,7 @@ alias grubmk='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 
 # wireguard
 alias wgup='wg-quick up wg0'
-alias wgdn='wg-quick down wg0'
+alias wgd='wg-quick down wg0'
 
 # tailscale
 alias tsvpn='sudo tailscale up --exit-node=100.112.40.23 --exit-node-allow-lan-access=true --accept-routes'
