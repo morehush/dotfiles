@@ -114,6 +114,10 @@ function replace_history; echo -- $history[1]; end
 
 # morehush fish abbreviations
 
+# wireguard
+alias wgup='wg-quick up wg0'
+alias wgdn='wg-quick down wg0'
+
 # tailscale
 abbr tsvpn 'sudo tailscale up --exit-node=100.112.40.23 --exit-node-allow-lan-access=true --accept-routes'
 abbr tsup 'sudo tailscale up --accept-routes'
@@ -231,6 +235,3 @@ alias ytv-best='yt-dlp -f bestvideo+bestaudio '
 abbr dcd 'docker compose down'
 abbr dcp 'docker compose pull'
 abbr dcu 'docker compose up -d'
-
-## Starship prompt
-starship init fish | source
