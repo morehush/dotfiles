@@ -1,6 +1,8 @@
 #!/bin/bash
 
 dcomp=$HOME/docker/tkmedia
+invidious=$HOME/docker/invidious
+portainer=$HOME/docker/portainer
 
 rsync -turPh /sgt5tb/others/Sync/dockersrv/tkmedia/docker-compose.yml $dcomp/
 rsync -turPh /sgt5tb/others/Sync/dockersrv/tkmedia/.env $dcomp/
@@ -9,4 +11,10 @@ cd $dcomp
 docker compose pull
 docker compose up -d --remove-orphans
 # docker ps --format '{{.Names}}'
+cd $invidious
+docker compose pull
+docker compose up -d
+cd $portainer
+docker compose pull
+docker compose up -d
 docker image prune -af
