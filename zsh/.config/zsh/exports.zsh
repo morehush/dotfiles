@@ -1,7 +1,7 @@
 #!/bin/sh
 export XDG_CURRENT_DESKTOP="Wayland"
-export EDITOR="hx"
-export VISUAL="hx"
+export EDITOR="helix"
+export VISUAL="helix"
 export TERMINAL="kitty"
 export TERM="xterm-256color"
 export BROWSER="brave"

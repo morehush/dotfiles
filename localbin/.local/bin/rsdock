@@ -1,8 +1,6 @@
 #!/bin/bash
 
-backup_dir=$HOME/docker-bak/
-secondary=/sgt5tb/others/docker-bak/
+backup_dir=$HOME/ssd/docker-bak/
 
 sudo rsync -azPh --delete $HOME/docker/ $backup_dir
-sudo rsync -azPh --delete $backup_dir $secondary
 # sudo tar -cpzf /home/morehush/docker.tar.gz /home/morehush/docker/tkmedia
