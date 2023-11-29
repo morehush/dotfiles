@@ -3,8 +3,8 @@
 # ┃┃┃┃╋┃┏┫┻┫┃┃┃┣━┃┃┃
 # ┗┻┻┻━┻┛┗━┻┻┻━┻━┻┻┛
 
-export EDITOR="nvim"
-export VISUAL="nvim"
+export EDITOR="hx"
+export VISUAL="hx"
 export TERM="xterm-256color"
 
 # If not running interactively, don't do anything
