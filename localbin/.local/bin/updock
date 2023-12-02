@@ -3,7 +3,6 @@
 dcomp=$HOME/docker/tkmedia
 invidious=$HOME/docker/invidious
 portainer=$HOME/docker/portainer
-piped=$HOME/docker/piped
 
 rsync -turPh $HOME/ssd/Sync/dockersrv/tkmedia/docker-compose.yml $dcomp/
 rsync -turPh $HOME/ssd/Sync/dockersrv/tkmedia/.env $dcomp/
@@ -16,9 +15,6 @@ cd $invidious
 docker compose pull
 docker compose up -d
 cd $portainer
-docker compose pull
-docker compose up -d
-cd $piped
 docker compose pull
 docker compose up -d
 docker image prune -af
