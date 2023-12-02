@@ -6,6 +6,8 @@ portainer=$HOME/docker/portainer
 
 rsync -turPh $HOME/ssd/Sync/dockersrv/tkmedia/docker-compose.yml $dcomp/
 rsync -turPh $HOME/ssd/Sync/dockersrv/tkmedia/.env $dcomp/
+rsync -turPh $HOME/ssd/Sync/dockersrv/invidious/docker-compose.yml $invidious/
+rsync -turPh $HOME/ssd/Sync/dockersrv/portainer/docker-compose.yml $portainer/
 
 cd $dcomp
 docker compose pull
