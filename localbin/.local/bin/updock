@@ -1,15 +1,15 @@
 #!/bin/bash
 
-dcomp=$HOME/docker/tkmedia
+tkmedia=$HOME/docker/tkmedia
 invidious=$HOME/docker/invidious
 portainer=$HOME/docker/portainer
 
-rsync -turPh $HOME/ssd/Sync/dockersrv/tkmedia/docker-compose.yml $dcomp/
-rsync -turPh $HOME/ssd/Sync/dockersrv/tkmedia/.env $dcomp/
+rsync -turPh $HOME/ssd/Sync/dockersrv/tkmedia/.env $tkmedia/
+rsync -turPh $HOME/ssd/Sync/dockersrv/tkmedia/docker-compose.yml $tkmedia/
 rsync -turPh $HOME/ssd/Sync/dockersrv/invidious/docker-compose.yml $invidious/
 rsync -turPh $HOME/ssd/Sync/dockersrv/portainer/docker-compose.yml $portainer/
 
-cd $dcomp
+cd $tkmedia
 docker compose pull
 docker compose up -d --remove-orphans
 # docker ps --format '{{.Names}}'
