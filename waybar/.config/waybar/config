@@ -4,7 +4,7 @@
     "height": 28, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     // Choose the order of the modules
-    "modules-left": ["wlr/workspaces", "hyprland/window"],
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
     "modules-center": ["clock"],
     "modules-right": ["network", "bluetooth", "cpu", "memory", "pulseaudio", "idle_inhibitor", "tray"],
     // Modules configuration
@@ -32,7 +32,7 @@
             "unlocked": ""
         }
     },
-    "wlr/workspaces": {
+    "hyprland/workspaces": {
         "sort-by-number": true,
         "format": "{icon}",
         "disable-scroll": true,
