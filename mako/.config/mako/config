@@ -1,0 +1,20 @@
+font=JetBrainsMono NF 14
+background-color=#282828
+text-color=#6fabc6
+width=350
+height=250
+border-size=2
+border-color=#6fabc6
+border-radius=10
+padding=20
+icons=1
+actions=1
+history=1
+layer=overlay
+text-alignment=center
+
+[urgency=high]
+border-color=#f7768e
+text-color=#f7768e
+default-timeout=0
+

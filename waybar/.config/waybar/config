@@ -1,29 +1,28 @@
 {
     "layer": "top", // Waybar at top layer
-    "position": "top", // Waybar position (top|bottom|left|right)
-    "height": 28, // Waybar height (to be removed for auto height)
-    "spacing": 4,
+    // "position": "bottom", // Waybar position (top|bottom|left|right)
+    "height": 30, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
+    "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces", "hyprland/window"],
-    "modules-center": ["clock"],
-    "modules-right": ["network", "bluetooth", "cpu", "memory", "pulseaudio", "idle_inhibitor", "backlight", "tray"],
+    //"modules-center": ["hyprland/window"],
+    "modules-right": ["tray", "pulseaudio", "cpu", "memory", "backlight", "battery", "battery#bat2", "clock", "idle_inhibitor"],
     // Modules configuration
-    // "sway/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "format": "{name}: {icon}",
-    //     "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
-    //         "urgent": "",
-    //         "focused": "",
-    //         "default": ""
-    //     }
-    // },
+    "custom/powermenu": {
+	"format": " ",
+	"on-click": "~/.config/hypr/eww/scripts/waybar/powermenu",
+	"tooltip": false,
+    },
+    "custom/swaync": {
+	"format": " ",
+	"on-click": "~/.config/swaync/scripts/tray_waybar.sh",
+    "on-click-right": "swaync-client -C",
+	"tooltip": false,
+    },
+    "wlr/workspaces": {
+	"on-click": "activate",
+    },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -33,39 +32,42 @@
             "unlocked": ""
         }
     },
-    "hyprland/workspaces": {
-        "sort-by-number": true,
-        "format": "{icon}",
-        "disable-scroll": true,
-        "all-outputs": true,
-        "on-click": "activate",
+    "sway/mode": {
+        "format": "<span style=\"italic\">{}</span>"
     },
-   "mpd": {
-       "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
-       "format-disconnected": "Disconnected ",
-       "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
-       "unknown-tag": "N/A",
-       "interval": 2,
-       "consume-icons": {
-           "on": " "
-       },
-       "random-icons": {
-           "off": "<span color=\"#f53c3c\"></span> ",
-           "on": " "
-       },
-       "repeat-icons": {
-           "on": " "
-       },
-       "single-icons": {
-           "on": "1 "
-       },
-       "state-icons": {
-           "paused": "",
-           "playing": ""
-       },
-       "tooltip-format": "MPD (connected)",
-       "tooltip-format-disconnected": "MPD (disconnected)"
-   },
+    "sway/scratchpad": {
+        "format": "{icon} {count}",
+        "show-empty": false,
+        "format-icons": ["", ""],
+        "tooltip": true,
+        "tooltip-format": "{app}: {title}"
+    },
+    "mpd": {
+        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
+        "format-disconnected": "Disconnected ",
+        "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
+        "unknown-tag": "N/A",
+        "interval": 2,
+        "consume-icons": {
+            "on": " "
+        },
+        "random-icons": {
+            "off": "<span color=\"#f53c3c\"></span> ",
+            "on": " "
+        },
+        "repeat-icons": {
+            "on": " "
+        },
+        "single-icons": {
+            "on": "1 "
+        },
+        "state-icons": {
+            "paused": "",
+            "playing": ""
+        },
+        "tooltip-format": "MPD (connected)",
+        "tooltip-format-disconnected": "MPD (disconnected)"
+    },
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
@@ -74,14 +76,15 @@
         }
     },
     "tray": {
-        // "icon-size": 18,
+        // "icon-size": 21,
         "spacing": 10
     },
     "clock": {
         // "timezone": "America/New_York",
-        "format": "{:%I:%M %p - %B %d}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "tooltip-format": "{:%H:%M}",
+        "tooltip": true,
+        "format-alt": "{:%B %d, %Y}",
+	    "format": "{:%I:%M %p}"
     },
     "cpu": {
         "format": "{usage}% ",
@@ -99,12 +102,10 @@
         "format-icons": ["", "", ""]
     },
     "backlight": {
-        "device": "acpi_video1",
+        // "device": "acpi_video1",
         "format": "{percent}% {icon}",
-        "format-icons": ["", ""],
-        "on-scroll-up": "brightnessctl set 1%+",
-        "on-scroll-down": "brightnessctl set 1%-",
-        "min-length": 6
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "tooltip-format": "Left click to save brightness.",
     },
     "battery": {
         "states": {
@@ -113,12 +114,12 @@
             "critical": 15
         },
         "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
+        "format-charging": "{capacity}%  ",
+        "format-plugged": "{capacity}%  ",
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": [" ", " ", " ", " ", " "]
     },
     "battery#bat2": {
         "bat": "BAT2"
@@ -126,7 +127,8 @@
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
@@ -149,23 +151,6 @@
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
-    },
-    "pulseaudio#microphone": {
-        "format": "{format_source}",
-        "format-source": " {volume}%",
-        "format-source-muted": " Muted",
-        "on-click": "pamixer --default-source -t",
-        "on-scroll-up": "pamixer --default-source -i 5",
-        "on-scroll-down": "pamixer --default-source -d 5",
-        "scroll-step": 5
-    },
-    "bluetooth": {
-	    "format": " {status}",
-	    "format-disabled": "", // an empty format will hide the module
-	    "format-connected": " {num_connections}",
-	    "tooltip-format": "{device_alias}",
-	    "tooltip-format-connected": " {device_enumerate}",
-	    "tooltip-format-enumerate-connected": "{device_alias}"
     },
     "custom/media": {
         "format": "{icon} {}",

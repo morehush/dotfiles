@@ -3,5 +3,4 @@
 killall swaync
 pkill swaync
 sleep 0.1
-swaync -c ~/.config/hypr/swaync/config -s ~/.config/hypr/swaync/style.css &
-
+swaync -c ~/.config/swaync/config -s ~/.config/swaync/style.css &

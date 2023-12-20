@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-cp $1 $HOME/.config/hypr/bg.jpg
+cp -f "$1" ~/.cache/wallpaper
 pkill swaybg
-swaybg -m fill -i $HOME/.config/hypr/bg.jpg &
+swaybg -m fill -i ~/.cache/wallpaper &
