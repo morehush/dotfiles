@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
 cp -f "$1" ~/.cache/wallpaper
-pkill swaybg
-swaybg -m fill -i ~/.cache/wallpaper &
+pkill hyprpaper
+hyprctl hyprpaper preload "~/.cache/wallpaper" &>/dev/null
+hyprctl hyprpaper wallpaper ",~/.cache/wallpaper" &>/dev/null
+hyprpaper &>/dev/null & disown
