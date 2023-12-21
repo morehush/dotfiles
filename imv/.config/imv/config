@@ -22,16 +22,18 @@ bg = exec gsettings set org.gnome.desktop.background picture-uri-dark file://"$i
 # Image navigation
 <Left> = prev
 <bracketleft> = prev
+k = prev
 <Right> = next
 <bracketright> = next
+j = next
 gg = goto 1
 <Shift+G> = goto -1
 
 # Panning
-j = pan 0 -50
-k = pan 0 50
-h = pan 50 0
-l = pan -50 0
+# j = pan 0 -50
+# k = pan 0 50
+# h = pan 50 0
+# l = pan -50 0
 
 # Zooming
 <Up> = zoom 1
@@ -45,7 +47,7 @@ o = zoom -1
 <Ctrl+r> = rotate by 90
 
 # Other commands
-x = close
+# x = close
 f = fullscreen
 d = overlay
 p = exec echo $imv_current_file
@@ -54,6 +56,7 @@ s = scaling next
 <Shift+S> = upscaling next
 a = zoom actual
 r = reset
+<Shift+X> = exec rm "$imv_current_file"; next
 
 # Gif playback
 <period> = next_frame
