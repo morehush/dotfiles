@@ -97,31 +97,29 @@ button.active {
 }
 
 #window {
-    background-color: #414559;
+    background-color: #444b6a;
     color: #c6d0f5;
     font-family: JetBrainsMono NF;
     font-size: 15px;
     font-weight: bold;
     border: none;
-    border-bottom: 6px solid #323648;
+    border-bottom: 6px solid #32344a;
     border-radius: 5px;
     margin-bottom: 2px;
     padding-left: 10px;
     padding-right: 10px;
 }
 
-#custom-swaync {
-    background-color: #85c1dc;
-    color: #282828;
+#tray {
+    background-color: #444b6a;
+    color: #c6d0f5;
     font-family: JetBrainsMono NF;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
     border: none;
-    border-bottom: 6px solid #6fabc6;
+    border-bottom: 6px solid #32344a;
     border-radius: 5px;
     margin-bottom: 2px;
-    padding-left: 13px;
-    padding-right: 9px;
 }
 
 #custom-powermenu {
@@ -228,6 +226,14 @@ label:focus {
 
 #network {
     background-color: #85c1dc;
+    color: #232634;
+    font-family: JetBrainsMono NF;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-bottom: 6px solid #6fabc6;
+    border-radius: 5px;
+    margin-bottom: 2px;
 }
 
 #network.disconnected {
@@ -282,18 +288,6 @@ label:focus {
 
 #temperature.critical {
     background-color: #eb4d4b;
-}
-
-#tray {
-    background-color: #444b6a;
-    color: #232634;
-    font-family: JetBrainsMono NF;
-    font-size: 15px;
-    font-weight: bold;
-    border: none;
-    border-bottom: 6px solid #32344a;
-    border-radius: 5px;
-    margin-bottom: 2px;
 }
 
 #tray > .passive {

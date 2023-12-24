@@ -6,8 +6,8 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces", "hyprland/window"],
-    //"modules-center": ["hyprland/window"],
-    "modules-right": ["tray", "pulseaudio", "cpu", "memory", "backlight", "battery", "battery#bat2", "clock", "idle_inhibitor"],
+    "modules-center": ["clock"],
+    "modules-right": ["tray", "network", "pulseaudio", "cpu", "memory", "backlight", "battery"],
     // Modules configuration
     "custom/powermenu": {
 	"format": " ",
@@ -105,7 +105,7 @@
         // "device": "acpi_video1",
         "format": "{percent}% {icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""],
-        "tooltip-format": "Left click to save brightness.",
+        // "tooltip-format": "Left click to save brightness.",
     },
     "battery": {
         "states": {
