@@ -1,4 +1,4 @@
 #!/bin/bash
 
-sshfs morehush@h.morehush.com:/srv/dev-disk-by-uuid-d669b68c-ead8-4e10-a769-81858157b1e2 $HOME/remote1 -C -o idmap=user
+sshfs morehush@h.morehush.com:/srv/dev-disk-by-uuid-d28da4eb-26c9-42ab-a30f-4a995c362042/shares $HOME/remote1 -C -o idmap=user
 sshfs morehush@h.morehush.com:/home/morehush/ $HOME/remote2 -C -o idmap=user

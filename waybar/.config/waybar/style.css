@@ -1,7 +1,7 @@
 * {
     font-family: JetBrainsMono NF;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 window#waybar {
@@ -34,9 +34,6 @@ button {
     border-radius: 5px;
     margin-left: 4px;
     margin-bottom: 2px;
-    font-family: JetBrainsMono NF;
-    font-weight: bold;
-    font-size: 14px;
     padding-left: 15px;
     padding-right: 15px;
     transition: transform 0.1s ease-in-out;
@@ -99,9 +96,6 @@ button.active {
 #window {
     background-color: #444b6a;
     color: #c6d0f5;
-    font-family: JetBrainsMono NF;
-    font-size: 15px;
-    font-weight: bold;
     border: none;
     border-bottom: 6px solid #32344a;
     border-radius: 5px;
@@ -113,9 +107,6 @@ button.active {
 #tray {
     background-color: #444b6a;
     color: #c6d0f5;
-    font-family: JetBrainsMono NF;
-    font-size: 15px;
-    font-weight: bold;
     border: none;
     border-bottom: 6px solid #32344a;
     border-radius: 5px;
@@ -125,9 +116,6 @@ button.active {
 #custom-powermenu {
     background-color: #e78284;
     color: #232634;
-    font-family: JetBrainsMono NF;
-    font-size: 22px;
-    font-weight: bold;
     border: none;
     border-bottom: 6px solid #cf6c70;
     border-radius: 5px;
@@ -137,24 +125,17 @@ button.active {
     padding-right: 7px;
 }
 
-#clock {
+#clock,
+#network,
+#battery,
+#cpu,
+#memory,
+#disk,
+#backlight,
+#pulseaudio,
+#idle_inhibitor {
     background-color: #85c1dc;
     color: #232634;
-    font-family: JetBrainsMono NF;
-    font-size: 15px;
-    font-weight: bold;
-    border: none;
-    border-bottom: 6px solid #6fabc6;
-    border-radius: 5px;
-    margin-bottom: 2px;
-}
-
-#battery {
-    background-color: #85c1dc;
-    color: #232634;
-    font-family: JetBrainsMono NF;
-    font-size: 15px;
-    font-weight: bold;
     border: none;
     border-bottom: 6px solid #6fabc6;
     border-radius: 5px;
@@ -184,72 +165,8 @@ label:focus {
     background-color: #000000;
 }
 
-#cpu {
-    background-color: #85c1dc;
-    color: #232634;
-    font-family: JetBrainsMono NF;
-    font-size: 15px;
-    font-weight: bold;
-    border: none;
-    border-bottom: 6px solid #6fabc6;
-    border-radius: 5px;
-    margin-bottom: 2px;
-}
-
-#memory {
-    background-color: #85c1dc;
-    color: #232634;
-    font-family: JetBrainsMono NF;
-    font-size: 15px;
-    font-weight: bold;
-    border: none;
-    border-bottom: 6px solid #6fabc6;
-    border-radius: 5px;
-    margin-bottom: 2px;
-}
-
-#disk {
-    background-color: #964B00;
-}
-
-#backlight {
-    background-color: #85c1dc;
-    color: #232634;
-    font-family: JetBrainsMono NF;
-    font-size: 15px;
-    font-weight: bold;
-    border: none;
-    border-bottom: 6px solid #6fabc6;
-    border-radius: 5px;
-    margin-bottom: 2px;
-}
-
-#network {
-    background-color: #85c1dc;
-    color: #232634;
-    font-family: JetBrainsMono NF;
-    font-size: 15px;
-    font-weight: bold;
-    border: none;
-    border-bottom: 6px solid #6fabc6;
-    border-radius: 5px;
-    margin-bottom: 2px;
-}
-
 #network.disconnected {
     background-color: #f53c3c;
-}
-
-#pulseaudio {
-    background-color: #85c1dc;
-    color: #232634;
-    font-family: JetBrainsMono NF;
-    font-size: 15px;
-    font-weight: bold;
-    border: none;
-    border-bottom: 6px solid #6fabc6;
-    border-radius: 5px;
-    margin-bottom: 2px;
 }
 
 /*
@@ -297,18 +214,6 @@ label:focus {
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
     background-color: #eb4d4b;
-}
-
-#idle_inhibitor {
-    background-color: #85c1dc;
-    color: #232634;
-    font-family: JetBrainsMono NF;
-    font-size: 15px;
-    font-weight: bold;
-    border: none;
-    border-bottom: 6px solid #6fabc6;
-    border-radius: 5px;
-    margin-bottom: 2px;
 }
 
 #idle_inhibitor.activated {
