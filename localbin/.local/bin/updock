@@ -1,22 +1,12 @@
 #!/bin/bash
 
 tkmedia=$HOME/docker/tkmedia
-invidious=$HOME/docker/invidious
-portainer=$HOME/docker/portainer
 
 rsync -turPh $HOME/ssd/Sync/dockersrv/tkmedia/.env $tkmedia/
 rsync -turPh $HOME/ssd/Sync/dockersrv/tkmedia/docker-compose.yml $tkmedia/
-rsync -turPh $HOME/ssd/Sync/dockersrv/invidious/docker-compose.yml $invidious/
-rsync -turPh $HOME/ssd/Sync/dockersrv/portainer/docker-compose.yml $portainer/
 
 cd $tkmedia
 docker compose pull
 docker compose up -d --remove-orphans
 # docker ps --format '{{.Names}}'
-cd $invidious
-docker compose pull
-docker compose up -d
-cd $portainer
-docker compose pull
-docker compose up -d
 docker image prune -af
