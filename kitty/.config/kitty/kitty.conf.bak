@@ -2394,5 +2394,6 @@ tab_powerline_style slanted
 
 
 # BEGIN_KITTY_THEME
-include tokyo-night.conf
+# Tokyo Night Storm
+include tokyo-night-storm.conf
 # END_KITTY_THEME
