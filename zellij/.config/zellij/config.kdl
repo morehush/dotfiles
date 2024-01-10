@@ -83,7 +83,7 @@ theme "tokyo-night-storm"
 // The name of the default layout to load on startup
 // Default: "default"
 //
-default_layout "compact"
+// default_layout "compact"
 
 // Choose the mode that zellij uses when starting up.
 // Default: normal
@@ -134,7 +134,7 @@ copy_command "wl-copy"                    // wayland
 // Path to the default editor to use to edit pane scrollbuffer
 // Default: $EDITOR or $VISUAL
 //
-scrollback_editor "hx"
+scrollback_editor "helix"
 
 // When attaching to an existing session with other users,
 // should the session be mirrored (true)
