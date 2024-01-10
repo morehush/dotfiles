@@ -1,0 +1,3 @@
+#!/bin/bash
+
+tailscale file cp "${1}" taylor-s23:
