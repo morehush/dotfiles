@@ -16,8 +16,8 @@ suppress_default_binds = true
 q = quit
 y = exec echo working!
 
-# bg = exec setbg "$imv_current_file"
-bg = exec gsettings set org.gnome.desktop.background picture-uri-dark file://"$imv_current_file"
+bg = exec setbg "$imv_current_file"
+# bg = exec gsettings set org.gnome.desktop.background picture-uri-dark file://"$imv_current_file"
 
 # Image navigation
 <Left> = prev
