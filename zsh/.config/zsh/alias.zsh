@@ -20,10 +20,10 @@ alias grubmk='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 # alias wgd='wg-quick down wg0'
 
 # tailscale
-alias tsvpn='sudo tailscale up --exit-node=100.81.235.109 --exit-node-allow-lan-access=true --accept-routes'
-alias tsup='sudo tailscale up --accept-routes --operator=$USER'
-alias tssrv='sudo tailscale up --ssh --advertise-routes=192.168.2.0/24 --advertise-exit-node'
-alias tsd='sudo tailscale down'
+alias tsvpn='tailscale up --exit-node=omv --exit-node-allow-lan-access=true --accept-routes'
+alias tsup='tailscale up --accept-routes --operator=$USER'
+alias tssrv='tailscale up --ssh --advertise-routes=192.168.2.0/24 --advertise-exit-node'
+alias tsd='tailscale down'
 
 # systemctl
 alias sc='sudo systemctl'
