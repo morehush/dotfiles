@@ -49,13 +49,10 @@ alias gitpkg='pacman -Q | grep -i "\-git" | wc -l'			# List amount of -git packa
 # pacman and paru
 alias yeet='paru -Rcs'
 alias pacsyu='sudo pacman -Syyu'                 # update only standard pkgs
-alias yaysua='yay -Sua --noconfirm'              # update only AUR pkgs (yay)
-alias yaysyu='yay -Syu --noconfirm'              # update standard pkgs and AUR pkgs (yay)
 alias parsua='paru -Sua --noconfirm'             # update only AUR pkgs (paru)
 alias parsyu='paru -Syu --noconfirm'             # update standard pkgs and AUR pkgs (paru)
 alias unlock='sudo rm /var/lib/pacman/db.lck'    # remove pacman lock
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'  # remove orphaned packages
-alias fixpacman='sudo rm /var/lib/pacman/db.lck'
 
 # Get fastest mirrors
 alias ratem="rate-mirrors arch | sudo tee /etc/pacman.d/mirrorlist"
@@ -74,11 +71,9 @@ alias update='sudo apt update && sudo apt upgrade'
 alias df='df -h'
 alias top=htop
 alias reload='source ~/.zshrc'
-alias editalias='hx ~/.aliases'
 alias tarnow='tar -acf '
 alias untar='tar -zxvf '
 alias wget='wget -c '
-alias tb='nc termbin.com 9999'
 # alias bat=batcat
 
 # cd shorteners
@@ -93,17 +88,6 @@ alias mv='mv -i'
 alias rm='rm -i'
 alias ip='ip -c'
 
-## get top process eating memory
-alias psmem='ps auxf | sort -nr -k 4'
-alias psmem10='ps auxf | sort -nr -k 4 | head -10'
-
-## get top process eating cpu ##
-alias pscpu='ps auxf | sort -nr -k 3'
-alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
-
-# Merge Xresources
-alias merge='xrdb -merge ~/.Xresources'
-
 alias diff='colordiff'
 alias mount='mount |column -t'
 alias jobs='jobs -l'
@@ -111,7 +95,6 @@ alias path='echo -e ${PATH//:/\\n}'
 alias now='date +"%I:%M %d-%m-%Y"'
 alias ports='netstat -tulanp'
 alias gh='history|grep'
-alias hst='history | fzf'
 alias adl='aria2c -x 16 -s 16 -k 1M'
 alias genkey='ssh-keygen -t rsa -b 4096 -C t@morehush.com'
 
