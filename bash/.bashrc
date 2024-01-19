@@ -3,8 +3,8 @@
 # ┃┃┃┃╋┃┏┫┻┫┃┃┃┣━┃┃┃
 # ┗┻┻┻━┻┛┗━┻┻┻━┻━┻┻┛
 
-export EDITOR="helix"
-export VISUAL="helix"
+export EDITOR="nvim"
+export VISUAL="nvim"
 export TERM="xterm-256color"
 
 # If not running interactively, don't do anything
@@ -177,4 +177,3 @@ wtfis() {
 }
 
 # eval "$(starship init bash)"
-. "$HOME/.cargo/env"
