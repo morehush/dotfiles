@@ -16,4 +16,4 @@ if [ -d "$HOME/.local/bin" ] ;
 fi
 
 ### "bat" as manpager
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANPAGER="less -R --use-color -Dd+r -Du+b"

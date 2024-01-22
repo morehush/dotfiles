@@ -33,11 +33,8 @@ function parse_git_branch {
 export PS1="\n\t \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 # PS1='[\u@\h \W]\$ '
 
-### SET MANPAGER
-### Uncomment only one of these!
-
 ### "bat" as manpager
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANPAGER="less -R --use-color -Dd+r -Du+b"
 
 ### SET VI MODE ###
 # Comment this line out to enable default emacs-like bindings
