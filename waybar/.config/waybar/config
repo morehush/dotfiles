@@ -83,8 +83,8 @@
         // "timezone": "America/New_York",
         "tooltip-format": "{:%H:%M}",
         "tooltip": true,
-        "format-alt": "{:%B %d, %Y}",
-	    "format": "{:%I:%M %p}"
+        // "format-alt": "{:%B %d, %Y}",
+	    "format": "{:%I:%M %p %B %d, %Y}"
     },
     "cpu": {
         "format": "{usage}% ",
