@@ -1,10 +1,10 @@
 font=JetBrainsMono NF 12
-background-color=#282828
-text-color=#6fabc6
+background-color=#1a1b26
+text-color=#c0caf5
 width=350
 height=200
 border-size=1
-border-color=#6fabc6
+border-color=#7aa2f7
 border-radius=6
 padding=20
 icons=1
@@ -12,6 +12,7 @@ actions=1
 history=1
 layer=overlay
 text-alignment=center
+default-timeout=10000
 
 [urgency=high]
 border-color=#f7768e
