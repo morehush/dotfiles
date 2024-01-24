@@ -11,14 +11,14 @@ window {
     padding-left: 20px;
     border: none;
     color: #7aa2f7;
-    background-color: #24283b;
+    background-color: #1a1b26;
    	outline: none;
 }
 
 #inner-box {
     margin: 4px;
-    border: 10px solid #24283b;
-    background-color: #24283b;
+    border: 10px solid #1a1b26;
+    background-color: #1a1b26;
     border-radius: 8px;
 }
 
@@ -26,7 +26,7 @@ window {
     margin: 2px;
     border: none;
     border-radius: 8px;
-    background-color: #24283b;
+    background-color: #1a1b26;
 }
 
 #scroll {
@@ -35,7 +35,7 @@ window {
 }
 
 #text:selected {
-    color: #24283b;
+    color: #1a1b26;
     margin: 0px 0px;
     border: none;
     border-radius: 8px;
