@@ -33,8 +33,11 @@
     pkgs.zellij
     pkgs.starship
     pkgs.neovim
-    pkgs.exa
+    pkgs.eza
     pkgs.bottom
+    pkgs.lazygit
+    pkgs.neovim
+    pkgs.tmux
 
   ];
 
