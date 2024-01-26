@@ -173,4 +173,5 @@ wtfis() {
 	curl "https://cheat.sh/$1"
 }
 
-# eval "$(starship init bash)"
+# zoxide
+eval "$(zoxide init bash)"
