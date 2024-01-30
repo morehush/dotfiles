@@ -1,3 +1,4 @@
+@import 'colors.css';
 
 /*
     ┏┓┓ ┏┳┓  ┏┓┏┓┓ ┏┓┳┓┏┓
@@ -17,7 +18,7 @@
 /* workspace text colors */
 @define-color workspace_fg @foreground;
 @define-color act_wrk_fg rgba(0, 0, 0, 1);
-@define-color use_wrk_fg @color5;
+@define-color use_wrk_fg @color4;
 /* workspace button-background colors */
 @define-color workspace_bg rgba(0, 0, 0, 0.6);
 @define-color act_wrk_bg @foreground;
@@ -36,7 +37,7 @@
 */
 
 * {
-    font-family: "Fira Sans SemiBold";
+    font-family: "JetBrainsMono NF";
     font-weight: bold;
     font-size: 12px;
     min-height: 16px;

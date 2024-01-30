@@ -1,0 +1,104 @@
+{
+"battery": {
+  "states": {
+  "warning": 30,
+  "critical": 15
+  },
+  "format": "{icon} {capacity}%",
+  "format-charging": " {capacity}%",
+  "format-plugged": " {capacity}%",
+  "format-alt": "{icon} {time}",
+  "format-icons": [" ", " ", " ", " ", " "]
+},
+"hyprland/workspaces": {
+     "sort-by-name": true,
+     "on-click": "activate"
+},
+"hyprland/window": {
+    "max-length": 200,
+    "separate-outputs": true
+},
+"tray": {
+    "icon-size": {},
+    "spacing": 5
+},
+"clock": {
+    "locale": "C", 
+    "format": " {:%I:%M %p}",
+    "format-alt": " {:%a,%b %d}" // Icon: calendar-alt
+},
+"cpu": {
+    "format": " {usage}%",
+    "tooltip": false,
+    "on-click": "kitty -e 'htop'"
+},
+"memory": {
+    "interval": 30,
+    "format": " {used:0.2f}GB",
+    "max-length": 10,
+    "tooltip": false,
+    "warning": 70,
+    "critical": 90
+},
+"network": {
+  "interval": 2,
+  "format-wifi": " {signalStrength}%",
+  "format-ethernet": "",
+  "format-linked": " {ipaddr}",
+  "format-disconnected": " Disconnected",
+  "format-disabled": "",
+  "tooltip-format": "{ifname}: {ipaddr}/{cidr}",
+  "max-length": 20,
+  "min-length": 6,
+  "format-alt": "{essid}",
+},
+"idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+        "activated": "",
+        "deactivated": ""
+    }
+},
+"backlight": {
+    // "device": "acpi_video1",
+    "format": "{icon} {percent}%",
+    "format-icons": ["", "", "", "", "", "", "", "", ""],
+    "on-scroll-down": "brightnessctl -c backlight set 1%-",
+    "on-scroll-up": "brightnessctl -c backlight set +1%"
+},
+"pulseaudio": {
+  // "scroll-step": 1, // %, can be a float
+  "format": "{icon} {volume}% {format_source}",
+  "format-bluetooth": "{icon} {volume}% {format_source}",
+  "format-bluetooth-muted": " {format_source}",
+  "format-muted": "  {format_source}",
+  "format-source": " {volume}%",
+  "format-source-muted": "",
+  "format-icons": {
+    "headphone": "",
+    "hands-free": "",
+    "headset": "🎧",
+    "phone": "",
+    "portable": "",
+    "car": "",
+    "default": ["", "", ""]
+  },
+  "on-click": "pavucontrol"
+},
+"custom/recorder": {
+    "format": " Rec",
+    "format-disabled": " Off-air", //An empty format will hide the module.
+    "return-type": "json",
+    "interval": 1,
+    "exec": "echo '{\"class\": \"recording\"}'",
+    "exec-if": "pgrep wf-recorder",
+},
+"custom/audiorec": {
+    "format": "♬ Rec",
+    "format-disabled": "♬ Off-air", //An empty format will hide the module.
+    "return-type": "json",
+    "interval": 1,
+    "exec": "echo '{\"class\": \"audio recording\"}'",
+    "exec-if": "pgrep ffmpeg",
+},
+}

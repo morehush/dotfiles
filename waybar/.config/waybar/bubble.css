@@ -1,0 +1,55 @@
+* {
+    font-family: JetBrainsMono NF;
+    font-size: 14px;
+    font-weight: normal;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: transparent; 
+    color: @foreground;
+}
+
+#workspaces{
+    margin-top: 3px;
+    margin-bottom: 2px;
+    margin-right: 10px;
+    margin-left: 25px;
+}
+
+#workspaces button{
+    border-radius: 15px;
+    margin-right: 10px;
+    padding: 1px 10px;
+    font-weight: bolder;
+    background-color: @background;
+}
+
+#workspaces button.active, #workspaces button.focused{
+    padding: 0 22px;
+    background: @highlight;
+    color: @background;
+}
+
+#tray,
+#mpd,
+#custom-weather,
+#cpu, 
+#temperature, 
+#memory,
+#sway-mode,
+#backlight, 
+#pulseaudio, 
+#custom-vpn,
+#disk,
+#custom-recorder,
+#custom-audiorec,
+#battery, 
+#clock, 
+#network {
+  border-radius: 15px;
+  margin: 1px 5px;
+  padding: 1px 10px;
+  font-weight: bolder;
+  background-color: @background;
+}
