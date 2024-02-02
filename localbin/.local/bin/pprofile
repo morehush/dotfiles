@@ -1,0 +1,7 @@
+#!/bin/bash
+
+profiles="performance\nbalanced\npower-saver"
+
+selected=$(echo -e $profiles|wofi --dmenu --cache-file /dev/null)
+
+powerprofilesctl set $selected
