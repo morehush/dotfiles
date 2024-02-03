@@ -9,6 +9,6 @@
     "include": ["~/.config/waybar/modules-mine.json"],
 
 "modules-left": ["cpu","memory","network"],
-"modules-center": ["hyprland/workspaces"],
+"modules-center": ["group/system2"],
 "modules-right":  ["tray","pulseaudio","backlight","battery","clock"],
 }

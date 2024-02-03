@@ -6,7 +6,7 @@
 }
 
 window#waybar {
-  background-color: @background; 
+  background-color: transparent; 
   color: @foreground;
 }
 
@@ -48,8 +48,24 @@ window#waybar {
 #clock, 
 #network {
   border-radius: 15px;
-  margin: 1px 5px;
-  padding: 1px 10px;
+  margin: 1px 10px;
+  padding: 1px 15px;
   font-weight: bolder;
   background-color: @background;
+}
+
+#system1,
+#system2,
+#system3 {
+  border-radius: 15px;
+  margin: 1px 5px;
+  padding: 1px 10px;
+  background-color: @background;
+}
+
+tooltip {
+    background: @color8;
+    color: @foreground;
+    border-radius: 7px;
+    border-width: 0px;
 }

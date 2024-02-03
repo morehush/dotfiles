@@ -1,4 +1,33 @@
 {
+
+    "group/system1": {
+        "orientation": "horizontal",
+        "modules": [
+            "cpu",
+            "memory",
+            "network"
+         ]
+    },
+
+    "group/system2": {
+        "orientation": "horizontal",
+        "modules": [
+            "hyprland/workspaces"
+         ]
+    },
+
+        // Group Right
+    "group/system3": {
+        "orientation": "horizontal",
+        "modules": [
+            "tray",
+            "pulseaudio",
+            "backlight",
+            "battery",
+            "clock"
+         ]
+    },
+
 "battery": {
   "states": {
   "warning": 30,
