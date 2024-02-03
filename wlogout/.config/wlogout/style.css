@@ -39,7 +39,7 @@ button:focus, button:active, button:hover {
 	background-image: image(url("icons/suspend.png"));
 }
 
-#hibernate {
+#exit {
 	margin: 10px;
 	border-radius: 20px;
 	background-image: image(url("icons/hibernate.png"));

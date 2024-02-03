@@ -5,10 +5,10 @@
     "keybind" : "l"
 }
 {
-    "label" : "hibernate",
-    "action" : "systemctl hibernate",
-    "text" : "Hibernate",
-    "keybind" : "h"
+    "label" : "exit",
+    "action" : "hyprctl dispatch exit",
+    "text" : "Exit",
+    "keybind" : "x"
 }
 {
     "label" : "logout",

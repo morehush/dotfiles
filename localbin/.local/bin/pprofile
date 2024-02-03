@@ -2,6 +2,6 @@
 
 profiles="performance\nbalanced\npower-saver"
 
-selected=$(echo -e $profiles|wofi --dmenu --cache-file /dev/null)
+selected=$(echo -e $profiles|wofi --dmenu)
 
 powerprofilesctl set $selected
