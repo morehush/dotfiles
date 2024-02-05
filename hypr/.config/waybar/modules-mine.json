@@ -3,16 +3,14 @@
     "group/system1": {
         "orientation": "horizontal",
         "modules": [
-            "cpu",
-            "memory",
-            "network"
+            "hyprland/workspaces"
          ]
     },
 
     "group/system2": {
         "orientation": "horizontal",
         "modules": [
-            "hyprland/workspaces"
+            "clock"
          ]
     },
 
@@ -20,11 +18,13 @@
     "group/system3": {
         "orientation": "horizontal",
         "modules": [
+            "cpu",
+            "memory",
+            "network",
             "tray",
             "pulseaudio",
             "backlight",
-            "battery",
-            "clock"
+            "battery"
          ]
     },
 
