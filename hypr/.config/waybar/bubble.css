@@ -29,7 +29,7 @@ window#waybar {
 .modules-right {
   border-radius: 8px;
   margin: 2px 20px 2px 0px;
-  padding: 0px 15px;
+  padding: 0px 15px 0px 0px;
   background-color: @background;
   font-size: 14px;
 }
@@ -54,11 +54,16 @@ window#waybar {
   color: @background;
 }
 
+#tray {
+  border-radius: 8px;
+  background-color: @color8;
+  margin: 0px 10px 0px 0px;
+  padding: 0px 10px;
+}
 
 #taskbar,
 #clock,
 #battery,
-#tray,
 #mpd,
 #custom-weather,
 #cpu, 
