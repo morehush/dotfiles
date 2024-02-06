@@ -1,7 +1,7 @@
 * {
   font-family: JetBrainsMono NF;
-  font-size: 14px;
-  font-weight: normal;
+  /* font-size: 14px; */
+  font-weight: bolder;
   min-height: 0;
 }
 
@@ -11,27 +11,55 @@ window#waybar {
 }
 
 #workspaces{
-  margin-top: 3px;
-  margin-bottom: 2px;
-  margin-right: 10px;
-  margin-left: 25px;
+  border-radius: 8px 0px 0px 8px;
+  margin: 2px 0px 2px 20px;
+  padding: 2px 0px 2px 15px;
+  background-color: @background;
 }
 
 #workspaces button{
-  border-radius: 15px;
-  margin-right: 8px;
-  padding: 1px 8px;
-  font-weight: bolder;
+  border-radius: 8px;
+  margin: 0px 8px 0px 0px;
+  padding: 2px 8px;
   background-color: @color8;
+  font-size: 12px;
+  font-weight: normal;
 }
 
 #workspaces button.active, #workspaces button.focused{
-  padding: 0 22px;
+  padding: 2px 22px;
   background: @highlight;
   color: @background;
 }
 
-#tray,
+#window {
+  background-color: @background;
+  border-radius: 0px 8px 8px 0px;
+  margin: 2px 0px 2px 0px;
+  padding: 2px 20px 2px 18px;
+}
+
+#clock {
+  background-color: @background;
+  border-radius: 8px;
+  margin: 1px 0px 1px 0px;
+  padding: 2px 15px;
+} 
+
+#battery {
+  background-color: @background;
+  border-radius: 0px 8px 8px 0px;
+  margin: 1px 18px 1px 0px;
+  padding: 1px 8px;
+}
+
+#tray {
+  background-color: @background;
+  border-radius: 8px 0px 0px 8px;
+  margin: 1px 0px 1px 0px;
+  padding: 1px 8px 1px 15px;
+}
+
 #mpd,
 #custom-weather,
 #cpu, 
@@ -44,27 +72,15 @@ window#waybar {
 #disk,
 #custom-recorder,
 #custom-audiorec,
-#battery, 
-#clock, 
 #network {
-  border-radius: 15px;
-  margin: 1px 10px;
-  padding: 1px 10px;
-  font-weight: bolder;
-  background-color: @background;
-}
-
-#system1,
-#system2,
-#system3 {
-  border-radius: 15px;
-  margin: 1px 5px;
-  padding: 1px 10px;
+  /* border-radius: 15px; */
+  margin: 1px 0px 1px 0px;
+  padding: 1px 8px;
   background-color: @background;
 }
 
 tooltip {
-    background: @color8;
+    background: @background;
     color: @foreground;
     border-radius: 7px;
     border-width: 0px;

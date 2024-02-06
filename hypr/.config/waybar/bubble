@@ -4,11 +4,12 @@
 "height": 10,
 "margin-bottom":0,
 "margin-top":0,
+"spacing": 0,
 
     // Load Modules
     "include": ["~/.config/waybar/modules-mine.json"],
 
-"modules-left": ["hyprland/workspaces"],
+"modules-left": ["hyprland/workspaces","hyprland/window"],
 "modules-center": ["clock"],
-"modules-right":  ["cpu","memory","network","tray","pulseaudio","backlight","battery"],
+"modules-right":  ["tray","cpu","memory","network","pulseaudio","backlight","battery"],
 }
