@@ -49,17 +49,11 @@ window#waybar {
 }
 
 #workspaces button.active, #workspaces button.focused{
-  padding: 2px 20px;
+  padding: 2px 15px;
   background: @highlight;
   color: @background;
 }
 
-#window {
-  background-color: @background;
-  border-radius: 0px 8px 8px 0px;
-  margin: 2px 0px 2px 0px;
-  padding: 2px 20px 2px 18px;
-}
 
 #taskbar,
 #clock,
@@ -78,7 +72,7 @@ window#waybar {
 #custom-recorder,
 #custom-audiorec,
 #network {
-  margin: 0px 8px;
+  margin: 2px 8px;
   padding: 0px;
 }
 
