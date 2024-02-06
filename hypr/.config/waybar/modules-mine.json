@@ -1,4 +1,16 @@
 {
+	"wlr/taskbar": {
+		"format": "{icon}",
+		"icon-size": {},
+		"icon-theme": "${i_theme}",
+        "spacing": 0,
+		"tooltip-format": "{title}",
+		"on-click": "activate",
+		"on-click-middle": "close",
+		"on-click-right": "fullscreen",
+		}
+	},
+
 "battery": {
   "states": {
   "warning": 30,

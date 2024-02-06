@@ -37,7 +37,6 @@ window#waybar {
 #workspaces{
   margin: 0px;
   padding: 0px;
-  background-color: @background;
 }
 
 #workspaces button{
@@ -62,6 +61,7 @@ window#waybar {
   padding: 2px 20px 2px 18px;
 }
 
+#taskbar,
 #clock,
 #battery,
 #tray,
