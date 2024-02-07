@@ -161,7 +161,7 @@ up() {
 # arch wiki search from terminal
 wiki() {
 	search_term=$(echo $@ | sed 's/ /+/g')
-	firefox https://wiki.archlinux.org/index.php?search=${search_term}
+	chromium https://wiki.archlinux.org/index.php?search=${search_term}
 }
 
 # wtf is?
