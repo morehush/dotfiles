@@ -4,7 +4,6 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 export TERMINAL="kitty"
 export TERM="xterm-256color"
-export BROWSER="chromium"
 
 ### PATH
 if [ -d "$HOME/.local/bin" ] ;
