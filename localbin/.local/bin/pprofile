@@ -1,7 +1,7 @@
 #!/bin/bash
 
-profiles="performance\nbalanced\npower-saver"
+profiles="󰓅 Performance\n󰾅 Balanced\n󰾆 Power-Saver"
 
-selected=$(echo -e $profiles|wofi --dmenu)
+selected=$(echo -e $profiles|wofi --dmenu --cache-file /dev/null | awk '{print tolower($2)}')
 
 powerprofilesctl set $selected
