@@ -46,7 +46,7 @@
 "cpu": {
   "format": " {usage}%",
   "tooltip": false,
-  "on-click": "kitty -e 'htop'"
+  "on-click": "kitty -e 'btop'"
 },
 
 "memory": {
