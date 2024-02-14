@@ -14,4 +14,4 @@ fi
 export MANPAGER="less -R --use-color -Dd+r -Du+b"
 
 # zoxide
-eval "$(zoxide init zsh)"
+eval "$(zoxide init --cmd cd zsh)"
