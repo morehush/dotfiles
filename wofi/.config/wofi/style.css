@@ -3,6 +3,7 @@ window {
     border: 3px solid #;
     background-color: #1a1b26;
     border-radius: 8px;
+    font: JetBrainsMono NF 16;
 }
 
 #input {

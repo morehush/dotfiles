@@ -2,6 +2,6 @@
 
 profiles="󰓅 Performance\n󰾅 Balanced\n󰾆 Power-Saver"
 
-selected=$(echo -e $profiles|wofi --dmenu --cache-file /dev/null | awk '{print tolower($2)}')
+selected=$(echo -e $profiles|fuzzel --dmenu | awk '{print tolower($2)}')
 
 powerprofilesctl set $selected

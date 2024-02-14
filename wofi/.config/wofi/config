@@ -1,6 +1,6 @@
 location=center
 width=400
-height=250
+height=300
 mode=run
 allow_images=true
 halign=fill
