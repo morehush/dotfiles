@@ -1,3 +1,0 @@
-#!/bin/bash
-
-yt-dlp -a batchlist.txt -f bestaudio --embed-thumbnail --add-metadata --ignore-config

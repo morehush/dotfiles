@@ -1,4 +1,0 @@
-#!/bin/bash
-
-yt-dlp -a download.txt --dateafter now-7days --download-archive complete.list --playlist-reverse
-
