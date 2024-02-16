@@ -84,6 +84,30 @@ window#waybar {
   padding: 0px;
 }
 
+#puslseaudio-slider slider {
+  min-height: 0px;
+  min-width: 0px;
+  opacity: 0;
+  margin: 0px;
+  padding: 0px;
+  background-image: none;
+  border: none;
+  box-shadow: none;
+}
+
+#pulseaudio-slider trough {
+  min-height: 10px;
+  min-width: 120px;
+  border-radius: 8px;
+  background-color: @color8;
+}
+
+#pulseaudio-slider highlight {
+  min-width: 0px;
+  border-radius: 8px;
+  background-color: @foreground;
+}
+
 tooltip {
     background: @background;
     color: @foreground;

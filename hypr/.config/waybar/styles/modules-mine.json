@@ -107,6 +107,12 @@
   "on-click": "pavucontrol"
 },
 
+"pulseaudio/slider": {
+  "min": 0,
+  "max": 100,
+  "orientation": "horizontal"
+},
+
 "custom/recorder": {
   "format": " Rec",
   "format-disabled": " Off-air", //An empty format will hide the module.
