@@ -1,0 +1,92 @@
+* {
+  font-family: JetBrainsMono NF;
+  /* font-size: 14px; */
+  font-weight: bolder;
+  min-height: 0;
+}
+
+window#waybar {
+  background-color: @background; 
+  color: @foreground;
+  border-radius: 8px;
+  margin: 0px 20px 0px 20px;
+  padding: 0px;
+}
+
+.modules-left {
+  border-radius: 8px;
+  margin: 0px;
+  padding: 0px 15px;
+  background-color: @background;
+  font-size: 14px;
+}
+
+.modules-center {
+  border-radius: 8px;
+  margin: 0px;
+  padding: 0px;
+  background-color: @background;
+  font-size: 14px;
+}
+
+.modules-right {
+  border-radius: 8px;
+  margin: 0px;
+  padding: 0px 10px 0px 0px;
+  background-color: @background;
+  font-size: 14px;
+}
+
+#workspaces{
+  margin: 0px;
+  padding: 0px;
+}
+
+#workspaces button{
+  border-radius: 6px;
+  margin: 4px 8px 4px 0px;
+  padding: 0px 8px;
+  background-color: @color8;
+  font-size: 10px;
+  font-weight: normal;
+}
+
+#workspaces button.active, #workspaces button.focused{
+  padding: 2px 15px;
+  background: @highlight;
+  color: @background;
+}
+
+#tray {
+  border-radius: 8px;
+  background-color: @color8;
+  margin: 0px 10px 0px 0px;
+  padding: 0px 10px;
+}
+
+#taskbar,
+#clock,
+#battery,
+#mpris,
+#custom-weather,
+#cpu, 
+#temperature, 
+#memory,
+#sway-mode,
+#backlight, 
+#pulseaudio, 
+#custom-vpn,
+#disk,
+#custom-recorder,
+#custom-audiorec,
+#network {
+  margin: 2px 8px;
+  padding: 0px;
+}
+
+tooltip {
+    background: @background;
+    color: @foreground;
+    border-radius: 8px;
+    border-width: 0px;
+}

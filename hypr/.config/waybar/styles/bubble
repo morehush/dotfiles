@@ -7,7 +7,7 @@
 "spacing": 0,
 
     // Load Modules
-    "include": ["~/.config/waybar/modules-mine.json"],
+    "include": ["~/.config/waybar/styles/modules-mine.json"],
 
 "modules-left": ["hyprland/workspaces","wlr/taskbar"],
 "modules-center": ["clock"],
