@@ -8,7 +8,7 @@ case $selected in
   exit)
     killhypr;;
   lock)
-    swaylock;;
+    hyprlock;;
   logout)
     pkill -u $USER;;
   suspend)
