@@ -6,9 +6,8 @@ alias vim='nvim'
 alias wf='nmcli device wifi'
 alias wificonnect='sudo nmcli dev wifi connect'     #use with SSID password 'mypassword'
 alias myip='curl http://ipecho.net/plain; echo'
-alias sxiv='sxiv -a'
 alias imv='imv -r'
-alias walls='sxiv -r ~/Pictures/wallpaper/'
+alias walls='imv -r ~/Pictures/wallpaper/'
 alias mimempv='cat $HOME/.config/mimeapps.list | grep ^video/ | cut -d\t -f1 | xargs xdg-mime default mpv.desktop'
 alias batstat='upower -i /org/freedesktop/UPower/devices/battery_BAT0'
 alias omv='ssh morehush@h.morehush.com'
@@ -43,8 +42,6 @@ alias gitpkg='pacman -Q | grep -i "\-git" | wc -l'			# List amount of -git packa
 # pacman and paru
 alias yeet='paru -Rcs'
 alias pacsyu='sudo pacman -Syyu'                 # update only standard pkgs
-alias parsua='paru -Sua --noconfirm'             # update only AUR pkgs (paru)
-alias parsyu='paru -Syu --noconfirm'             # update standard pkgs and AUR pkgs (paru)
 alias unlock='sudo rm /var/lib/pacman/db.lck'    # remove pacman lock
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'  # remove orphaned packages
 
