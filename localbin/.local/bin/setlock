@@ -1,0 +1,3 @@
+#!/bin/bash
+
+magick $1 ~/.config/hypr/lockscreen.png & disown
