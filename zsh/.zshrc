@@ -11,7 +11,6 @@ plug "zsh-users/zsh-syntax-highlighting"
 plug "zap-zsh/fzf"
 # plug "Aloxaf/fzf-tab"
 plug "zap-zsh/sudo"
-plug "spaceship-prompt/spaceship-prompt"
 
 source "$HOME/.config/zsh/alias.zsh"
 source "$HOME/.config/zsh/exports.zsh"
@@ -22,3 +21,5 @@ HISTFILE=~/.zsh_history
 ### SET VI MODE ###
 # Comment this line out to enable default emacs-like bindings
 bindkey -v
+
+eval "$(starship init zsh)"

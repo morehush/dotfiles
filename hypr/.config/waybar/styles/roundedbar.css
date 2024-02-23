@@ -6,7 +6,7 @@
 }
 
 window#waybar {
-  background-color: @background; 
+  background-color: rgba(0, 0, 0, 0.5); 
   color: @foreground;
   border-radius: 8px;
   margin: 0px 20px 0px 20px;
@@ -25,7 +25,6 @@ window#waybar {
   border-radius: 8px;
   margin: 0px;
   padding: 0px;
-  background-color: @background;
   font-size: 14px;
 }
 
