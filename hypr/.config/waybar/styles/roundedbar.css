@@ -8,31 +8,25 @@
 window#waybar {
   background-color: rgba(0, 0, 0, 0.5); 
   color: @foreground;
-  border-radius: 8px;
   margin: 0px 20px 0px 20px;
   padding: 0px;
 }
 
 .modules-left {
-  border-radius: 8px;
   margin: 0px;
   padding: 0px 15px;
-  background-color: @background;
   font-size: 14px;
 }
 
 .modules-center {
-  border-radius: 8px;
   margin: 0px;
   padding: 0px;
   font-size: 14px;
 }
 
 .modules-right {
-  border-radius: 8px;
   margin: 0px;
   padding: 0px 10px 0px 0px;
-  background-color: @background;
   font-size: 14px;
 }
 
