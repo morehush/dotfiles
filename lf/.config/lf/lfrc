@@ -8,6 +8,7 @@ set icons true
 set ignorecase true
 
 # Custom Functions
+cmd setlockscreen %setlock "$f"
 cmd setwallpaper %setbg "$f"
 #cmd setwallpaper %gsettings set org.gnome.desktop.background picture-uri-dark file://"$f"
 
@@ -108,6 +109,7 @@ map md mkdir
 map ms $mkscript
 map ch chmod
 map bg setwallpaper
+map bl setlockscreen
 map o open_config
 map br $hx $fx
 map r rename

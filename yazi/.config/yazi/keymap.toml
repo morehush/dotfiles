@@ -8,6 +8,7 @@ keymap = [
 
   # Set Wallpaper 
 	{ on = [ "b", "g" ], exec = "shell 'setbg $1'",    desc = "Set wallpaper" },
+  { on = [ "b", "l" ], exec = "shell 'setlock $1'",  desc = "Set Lockscreen background"},
 
 	{ on = [ "<Esc>" ], exec = "escape",             desc = "Exit visual mode, clear selected, or cancel search" },
 	{ on = [ "q" ],     exec = "quit",               desc = "Exit the process" },
