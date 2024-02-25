@@ -21,6 +21,6 @@ enable = true
 [keys.normal]
 esc = ["collapse_selection", "keep_primary_selection"]
 
-# [keys.normal.space]
-# w = ":write"
-# q = ":quit"
+[keys.normal.space]
+w = ":write"
+q = ":quit"

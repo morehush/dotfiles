@@ -1,7 +1,6 @@
 #!/bin/sh
 
 alias archbox='distrobox enter arch'
-alias hx='helix'
 alias vim='nvim'
 alias wf='nmcli device wifi'
 alias wificonnect='sudo nmcli dev wifi connect'     #use with SSID password 'mypassword'
