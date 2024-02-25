@@ -39,8 +39,8 @@
 
 "clock": {
   "locale": "C", 
-  "format": "{:%I:%M %p %B %d}",
-  "format-alt": " {:%a,%b %d}" // Icon: calendar-alt
+  "format": "{:%I:%M %p %b %d}",
+  // "format-alt": " {:%a,%b %d}" // Icon: calendar-alt
 },
 
 "cpu": {
