@@ -6,7 +6,7 @@ cd ~
 export HYPRLND_LOG_WLR=1
 
 # Tell XWayland to use a cursor theme
-export XCURSOR_THEME=Qogir-dark
+export XCURSOR_THEME=Qogir-white
 
 # Set a cursor size
 export XCURSOR_SIZE=24
