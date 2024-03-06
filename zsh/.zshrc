@@ -22,4 +22,5 @@ HISTFILE=~/.zsh_history
 # Comment this line out to enable default emacs-like bindings
 bindkey -v
 
+eval "$(zoxide init --cmd cd zsh)"
 eval "$(starship init zsh)"
