@@ -13,5 +13,3 @@ fi
 ### "bat" as manpager
 export MANPAGER="less -R --use-color -Dd+r -Du+b"
 
-# zoxide
-eval "$(zoxide init --cmd cd zsh)"
