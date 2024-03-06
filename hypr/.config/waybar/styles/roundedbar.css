@@ -102,8 +102,8 @@ window#waybar {
 }
 
 tooltip {
-    background: @background;
-    color: @foreground;
-    border-radius: 8px;
-    border-width: 0px;
+  background: @background;
+  color: @foreground;
+  border-radius: 8px;
+  border-width: 0px;
 }

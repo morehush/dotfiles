@@ -2,16 +2,16 @@
 "layer": "top",
 "position": "top",
 "height": 10,
-"margin-bottom":0,
-"margin-top":0,
-"margin-left":0,
-"margin-right":0,
+"margin-bottom": 0,
+"margin-top": 0,
+"margin-left": 0,
+"margin-right": 0,
 "spacing": 0,
 
     // Load Modules
     "include": ["~/.config/waybar/styles/modules-mine.json"],
 
-"modules-left": ["hyprland/workspaces","wlr/taskbar"],
-"modules-center": ["clock"],
-"modules-right":  ["cpu","memory","network","pulseaudio","backlight","tray","battery"],
+"modules-left":   ["cpu","memory","network","pulseaudio","backlight"],
+"modules-center": ["hyprland/workspaces"],
+"modules-right":  ["tray","battery","clock"],
 }
