@@ -63,3 +63,11 @@ up () {
     echo "Couldn't go up $limit dirs.";
   fi
 }
+
+cdi() {
+  cd "$(find -type d | fzf)"
+}
+
+open() {
+  xdg-open "$(find -type f | fzf)"
+}
