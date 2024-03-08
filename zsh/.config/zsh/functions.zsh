@@ -64,10 +64,6 @@ up () {
   fi
 }
 
-cdi() {
-  cd "$(find -type d | fzf)"
-}
-
 open() {
   xdg-open "$(find -type f | fzf)"
 }
