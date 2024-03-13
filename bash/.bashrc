@@ -84,9 +84,11 @@ alias myip='curl http://ipecho.net/plain; echo'
 alias batstat='upower -i /org/freedesktop/UPower/devices/battery_BAT0'
 alias omv='ssh morehush@h.morehush.com'
 
-# wireguard
-alias wgup='wg-quick up wg0'
-alias wgd='wg-quick down wg0'
+# tailscale
+alias tsvpn='tailscale up --exit-node=omv --exit-node-allow-lan-access=true --accept-routes'
+alias tsup='tailscale up --accept-routes --operator=$USER'
+alias tssrv='sudo tailscale up --ssh --advertise-routes=192.168.2.0/24 --advertise-exit-node'
+alias tsd='tailscale down'
 
 # systemctl
 alias sc='sudo systemctl'
