@@ -1,5 +1,5 @@
 #!/bin/sh
 
 docker exec postgres \
-    psql -U piped -d piped -qtAc "SELECT DISTINCT(channel) FROM users_subscribed" | \
-    parallel -j 10 curl -sk -o /dev/null "https://pipedapi.h.morehush.com/channel/{}"
+	psql -U piped -d piped -qtAc "SELECT DISTINCT(channel) FROM users_subscribed" |
+	parallel -j 12 curl -sk -o /dev/null "https://pipedapi.h.morehush.com/channel/{}"
