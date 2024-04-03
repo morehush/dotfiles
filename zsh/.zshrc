@@ -9,8 +9,11 @@ plug "zsh-users/zsh-autosuggestions"
 plug "zap-zsh/supercharge"
 plug "zsh-users/zsh-syntax-highlighting"
 plug "zap-zsh/fzf"
-# plug "Aloxaf/fzf-tab"
 plug "zap-zsh/sudo"
+# plug "Aloxaf/fzf-tab"
+# plug "wintermi/zsh-starship"
+plug "zap-zsh/atmachine-prompt"
+# plug "zettlrobert/simple-prompt"
 
 source "$HOME/.config/zsh/alias.zsh"
 source "$HOME/.config/zsh/exports.zsh"
@@ -23,4 +26,3 @@ HISTFILE=~/.zsh_history
 bindkey -v
 
 eval "$(zoxide init --cmd cd zsh)"
-eval "$(starship init zsh)"

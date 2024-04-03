@@ -7,8 +7,8 @@
 keymap = [
 
   # Set Wallpaper 
-  { on = [ "b", "g" ], run = "shell 'gsettings set org.gnome.desktop.background picture-uri-dark file://$1'", desc = "Set wallpaper" },
-  #{ on = [ "b", "g" ], run = "shell 'setbg $1'",    desc = "Set wallpaper" },
+  #{ on = [ "b", "g" ], run = "shell 'gsettings set org.gnome.desktop.background picture-uri-dark file://$1'", desc = "Set wallpaper" },
+  { on = [ "b", "g" ], run = "shell 'setbg $1'",    desc = "Set wallpaper" },
   #{ on = [ "b", "l" ], run = "shell 'setlock $1'",  desc = "Set Lockscreen background"},
 
 	{ on = [ "<Esc>" ], run = "escape",             desc = "Exit visual mode, clear selected, or cancel search" },

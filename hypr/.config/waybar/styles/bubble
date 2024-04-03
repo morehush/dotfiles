@@ -11,5 +11,5 @@
 
 "modules-left": ["hyprland/workspaces","wlr/taskbar"],
 "modules-center": ["clock"],
-"modules-right":  ["tray","cpu","memory","network","pulseaudio","backlight","battery"],
+"modules-right":  ["cpu","memory","network","pulseaudio","backlight","battery","tray"],
 }
