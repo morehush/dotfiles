@@ -4,330 +4,371 @@
 // | |  | | (_) | (_| | |_| | |  __/\__ \
 // |_|  |_|\___/ \__,_|\__,_|_|\___||___/
 //
-
-
+//
+// by Stephan Raabe (2023)
+// -----------------------------------------------------
+//
 {
-
-    // Group Quicklinks
-    "group/quicklinks": {
-        "orientation": "horizontal",
-        "modules": [
-            "custom/filemanager",
-            "custom/browser",
-            "custom/terminal",
-            "custom/editor"
-         ]
+  // Workspaces
+  "hyprland/workspaces": {
+    "on-click": "activate",
+    "active-only": false,
+    "all-outputs": true,
+    "format": "{}",
+    "format-icons": {
+      "urgent": "",
+      "active": "",
+      "default": ""
     },
-
-    // Group Time
-    "group/time": {
-        "orientation": "horizontal",
-        "modules": [
-            "custom/timer"
-         ]
-    },
-
-        // Group Devices
-    "group/devices": {
-        "orientation": "horizontal",
-        "modules": [
-            "pulseaudio",
-            "bluetooth",
-            "custom/ddc_brightness",
-            "network"
-         ]
-    },
-
-        // Group System
-    "group/system": {
-        "orientation": "horizontal",
-        "modules": [
-            "custom/updates",
-            "idle_inhibitor",
-            "custom/mako",
-            "custom/cliphist",
-            "custom/power"
-         ]
-    },
-
-    "bluetooth": {
-        "format": "",
-        "format-disabled": "", // an empty format will hide the module
-        "format-connected": " {num_connections}",
-        "on-click": "blueman-manager",
-        "on-click-right": "blueman-manager",
-        "tooltip-format": " {device_alias}",
-        "tooltip-format-connected": "{device_enumerate}",
-        "tooltip-format-enumerate-connected": " {device_alias}"
-    },
-
-    "custom/cliphist": {
-        "format": "󰅍{}",
-        "exec": "echo ; echo clipboard",
-        "on-click": "sleep 0.1 && ~/.config/hypr/scripts/cliphist.sh c",
-        "on-click-right": "sleep 0.1 && ~/.config/hypr/scripts/cliphist.sh d",
-        "on-click-middle": "sleep 0.1 && ~/.config/hypr/scripts/cliphist.sh w",
-        "interval" : 86400, // once every day
-        "tooltip": true,
-        "on-scroll-up": "dunstctl close",
-        "on-scroll-down": "dunstctl history-pop"
-    },
-
-    "include": ["~/.config/waybar/dcol_modules/clock.json"],
-
-    "custom/timer": {
-        "align": 0,
-        "tooltip": false,
-        "exec": "$HOME/.config/hypr/scripts/waybar-timer.sh",
-        "on-click": "date --date='30 minutes' +%s > /var/tmp/waybar_timer",
-        "on-click-right": "echo READY > /var/tmp/waybar_timer",
-        "on-click-middle": "date --date='45 minute' +%s > /var/tmp/waybar_timer",
-        "on-scroll-up": "$HOME/.config/hypr/scripts/waybar-timer-steps.sh up",
-        "on-scroll-down": "$HOME/.config/hypr/scripts/waybar-timer-steps.sh down",
-        "interval": 1
-    },
-
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
-        }
-    },
-
-    "cpu": {
-        "interval": 10,
-        "format": "󰍛 {usage}%",
-        "format-alt": "{icon0}{icon1}{icon2}{icon3}",
-        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
-    },
-
-    "custom/padd": {
-        "format": "",
-        "interval" : "once",
-        "tooltip": false
-    },
-
-    "custom/gpuinfo": {
-        "exec": " ~/.config/hypr/scripts/gpuinfo.sh",
-        "return-type": "json",
-        "format": " {}",
-        "interval": 5, // once every 5 seconds
-        "tooltip": true,
-        "max-length": 1000
-    },
-
-    "custom/filemanager": {
-        "format": " ",
-        "on-click": "dolphin",
-        "tooltip": false
-    },
-
-     "custom/terminal": {
-        "format": " ",
-        "on-click": "alacritty",
-        "tooltip": false
-    },
-
-    "custom/editor": {
-        "format": "",
-        "on-click": "geany",
-        "tooltip": false
-    },
-
-    "custom/browser": {
-        "format": " ",
-        "on-click": "firefox",
-        "tooltip": false
-    },
-
-    "custom/appmenu": {
-        "format": "APPS",
-        "on-click": "~/.config/nwg-panel/nwg_menu_launcher.sh",
-        "on-click-right": "rofi -show drun -replace",
-        "tooltip": false
-    },
-
-    "memory": {
-        "interval": 30,
-        "format": "󰾆 {percentage}%",
-        "format-alt": "󰾅 {used}GB",
-        "max-length": 10,
-        "tooltip": true,
-        "tooltip-format": " {used:0.1f}GB/{total:0.1f}GB"
-    },
-
-    "mpris": {
-        "format": "{player_icon} {dynamic}",
-        "format-paused": "{status_icon} <i>{dynamic}</i>",
-        "player-icons": {
-            "default": "▶",
-            "mpv": "🎵"
-        },
-        "status-icons": {
-            "paused": "⏸"
-        },
-        // "ignored-players": ["firefox"]
-        "max-length": 1000,
-        "interval": 1
-    },
-
-    "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "󰤨 {signalStrength}%",
-        "format-ethernet": "󱘖 Wired",
-        "tooltip-format": "󱘖 {ipaddr}  {bandwidthUpBytes}  {bandwidthDownBytes}",
-        "format-linked": "󱘖 {ifname} (No IP)",
-        "format-disconnected": " Disconnected",
-        "format-alt": "󰤨 {essid}",
-        "interval": 5
-    },
-
-    "custom/power": {
-        "format": "{}",
-        "exec": "echo ; echo  logout",
-        "on-click": "~/.config/hypr/scripts/logoutlaunch.sh 2",
-        "interval" : 86400, // once every day
-        "tooltip": true
-    },
-
-    "pulseaudio": {
-        "format": "{icon} {volume}",
-        "format-muted": "婢",
-        "on-click": "pavucontrol -t 3",
-        "on-click-right": "pavucontrol -t 3",
-        "on-click-middle": "~/.config/hypr/scripts/volumecontrol.sh -o m",
-        "on-scroll-up": "~/.config/hypr/scripts/volumecontrol.sh -o i",
-        "on-scroll-down": "~/.config/hypr/scripts/volumecontrol.sh -o d",
-        "tooltip-format": "{icon} {desc} // {volume}%",
-        "scroll-step": 5,
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
-        }
-    },
-
-    "pulseaudio#microphone": {
-        "format": "{format_source}",
-        "format-source": "",
-        "format-source-muted": "",
-        "on-click": "pavucontrol -t 4",
-        "on-click-middle": "~/.config/hypr/scripts/volumecontrol.sh -i m",
-        "on-scroll-up": "~/.config/hypr/scripts/volumecontrol.sh -i i",
-        "on-scroll-down": "~/.config/hypr/scripts/volumecontrol.sh -i d",
-        "tooltip-format": "{format_source} {source_desc} // {source_volume}%",
-        "scroll-step": 5
-    },
-
-    "custom/spotify": {
-        "exec": "/usr/bin/python3 $HOME/.config/waybar/modules/mediaplayer.py --player spotify",
-        "format": " {}",
-        "return-type": "json",
-        "on-click": "playerctl play-pause --player spotify",
-        "on-click-right": "playerctl next --player spotify",
-        "on-click-middle": "playerctl previous --player spotify",
-        "on-scroll-up": "~/.config/hypr/scripts/spotifyvolumecontrol.sh up",
-        "on-scroll-down": "~/.config/hypr/scripts/spotifyvolumecontrol.sh down",
-        "max-length": 25,
-        "escape": true,
-        "tooltip": true
-    },
-
-	"wlr/taskbar": {
-		"format": "{icon}",
-		"icon-size": {},
-		"icon-theme": "${i_theme}",
-        "spacing": 0,
-		"tooltip-format": "{title}",
-		"on-click": "activate",
-		"on-click-middle": "close",
-		"on-click-right": "fullscreen",
-		"ignore-list": [
-			"alacritty-dropterm",
-            "feathernotes",
-            "ranger",
-            "org.keepassxc.KeePassXC"
-		],
-		"app_ids-mapping": {
-			"firefoxdeveloperedition": "firefox-developer-edition"
-		}
-	},
-
-    "tray": {
-        "icon-size": {},
-        "spacing": 5
-    },
-
-    "custom/ddcutil": {
-        "format": "{percentage}% {icon}",
-        "interval": 1,
-        "format-icons": ["", "", ""],
-        "exec": "~/.config/hypr/scripts/waybar-ddcutil.py",
-        "return-type": "json"
-    },
-
-    "custom/ddc_brightness": {
-        "format": "{icon} {percentage}%",
-        "format-icons": [""],
-        "exec": "~/.config/hypr/scripts/waybar-ddc-module.sh",
-        "return-type": "json",
-        "on-scroll-up": "echo '+' > /tmp/waybar-ddc-module-rx",
-        "on-scroll-down": "echo '-' > /tmp/waybar-ddc-module-rx",
-        "on-click": "echo 'min' > /tmp/waybar-ddc-module-rx",
-        "on-click-right": "echo 'max' > /tmp/waybar-ddc-module-rx",
-        "tooltip": false,
-    },
-
-    "custom/mako": {
-        "exec": "~/.config/hypr/scripts/mako.sh",
-        "on-click": "~/.config/hypr/scripts/mako.sh toggle_mode",
-        "interval": 1,
-        "on-scroll-up": "makoctl dismiss",
-        "on-scroll-down": "makoctl restore"
-    },
-
-    "custom/updates": {
-        "format": "  {}",
-        "exec": "~/.config/hypr/scripts/updates.sh",
-        "restart-interval": 60,
-        "return-type": "json",
-        "escape": true,
-        "on-click": "~/.config/hypr/scripts/updates.sh up",
-        "tooltip-format": "{}",
-        "tooltip": true
-    },
-
-    "hyprland/window": {
-        "format": "  {}",
-        "separate-outputs": true,
-        "rewrite": {
-            "${USER}@${set_sysname}:(.*)": "$1 ",
-            "(.*) — Mozilla Firefox": "$1 󰈹",
-            "(.*)Mozilla Firefox": "Firefox 󰈹",
-            "(.*) - Visual Studio Code": "$1 󰨞",
-            "(.*)Visual Studio Code": "Code 󰨞",
-            "(.*) — Dolphin": "$1 󰉋",
-            "(.*)Spotify": "Spotify 󰓇",
-            "(.*)Steam": "Steam 󰓓"
-        },
-        "max-length": 1000
-    },
-
-    "hyprland/workspaces": {
-        "on-scroll-up": "hyprctl dispatch workspace -1",
-        "on-scroll-down": "hyprctl dispatch workspace +1",
-        "all-outputs": true,
-        "active-only": false,
-        "on-click": "activate",
-        "persistent-workspaces": {
-            // START WORKSPACES
-    "*": 5
-            // END WORKSPACES
-        }
+    "persistent-workspaces": {
+      // START WORKSPACES
+            "*": 5
+      // END WORKSPACES
     }
+  },
+
+  // Taskbar
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 18,
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "ignore-list": ["Alacritty"],
+    "app_ids-mapping": {
+      "firefoxdeveloperedition": "firefox-developer-edition"
+    },
+    "rewrite": {
+      "Firefox Web Browser": "Firefox",
+      "Foot Server": "Terminal"
+    }
+  },
+
+  // Hyprland Window
+  "hyprland/window": {
+    "rewrite": {
+      "(.*) - Brave": "$1",
+      "(.*) - Chromium": "$1",
+      "(.*) - Brave Search": "$1",
+      "(.*) - Outlook": "$1",
+      "(.*) Microsoft Teams": "$1"
+    },
+    "separate-outputs": true
+  },
+
+  // ML4W Welcome App
+  "custom/ml4w-welcome": {
+    "on-click": "~/dotfiles/apps/ML4W_Welcome-x86_64.AppImage",
+    "format": " ",
+    "tooltip": false
+  },
+
+  // Empty
+  "custom/empty": {
+    "format": ""
+  },
+
+  // Youtube Subscriber Count
+  "custom/youtube": {
+    "format": " {}",
+    "exec": "python ~/private/youtube.py",
+    "restart-interval": 600,
+    "on-click": "chromium https://studio.youtube.com",
+    "tooltip": false
+  },
+
+  // Cliphist
+  "custom/cliphist": {
+    "format": " ",
+    "on-click": "sleep 0.1 && ~/dotfiles/scripts/cliphist.sh",
+    "on-click-right": "sleep 0.1 && ~/dotfiles/scripts/cliphist.sh d",
+    "on-click-middle": "sleep 0.1 && ~/dotfiles/scripts/cliphist.sh w",
+    "tooltip": false
+  },
+
+  // Updates Count
+  "custom/updates": {
+    "format": "  {}",
+    "tooltip-format": "{}",
+    "escape": true,
+    "return-type": "json",
+    "exec": "~/dotfiles/scripts/updates.sh",
+    "restart-interval": 60,
+    "on-click": "alacritty --class dotfiles-floating -e ~/dotfiles/scripts/installupdates.sh",
+    "on-click-right": "~/dotfiles/.settings/software.sh",
+    "tooltip": false
+  },
+
+  // Wallpaper
+  "custom/wallpaper": {
+    "format": "",
+    "on-click": "~/dotfiles/hypr/scripts/wallpaper.sh select",
+    "on-click-right": "~/dotfiles/hypr/scripts/wallpaper.sh",
+    "tooltip": false
+  },
+
+  // Waybar Themes
+  "custom/waybarthemes": {
+    "format": "",
+    "on-click": "~/dotfiles/waybar/themeswitcher.sh",
+    "tooltip": false
+  },
+
+  // Settings
+  "custom/settings": {
+    "format": "",
+    "on-click": "~/dotfiles/apps/ML4W_Dotfiles_Settings-x86_64.AppImage",
+    "tooltip": false
+  },
+
+  // Keybindings
+  "custom/keybindings": {
+    "format": "",
+    "on-click": "~/dotfiles/hypr/scripts/keybindings.sh",
+    "tooltip": false
+  },
+
+  // Filemanager Launcher
+  "custom/filemanager": {
+    "format": "",
+    "on-click": "~/dotfiles/.settings/filemanager.sh",
+    "tooltip": false
+  },
+
+  // Outlook Launcher
+  "custom/outlook": {
+    "format": "",
+    "on-click": "chromium --app=https://outlook.office.com/mail/",
+    "tooltip": false
+  },
+
+  // Teams Launcher
+  "custom/teams": {
+    "format": "",
+    "on-click": "chromium --app=https://teams.microsoft.com/go",
+    "tooltip": false
+  },
+
+  // Browser Launcher
+  "custom/browser": {
+    "format": "",
+    "on-click": "~/dotfiles/.settings/browser.sh",
+    "tooltip": false
+  },
+
+  // ChatGPT Launcher
+  "custom/chatgpt": {
+    "format": " ",
+    "on-click": "chromium --app=https://chat.openai.com",
+    "tooltip": false
+  },
+
+  // Calculator
+  "custom/calculator": {
+    "format": "",
+    "on-click": "qalculate-gtk",
+    "tooltip": false
+  },
+
+  // Windows VM
+  "custom/windowsvm": {
+    "format": "",
+    "on-click": "~/dotfiles/scripts/launchvm.sh",
+    "tooltip": false
+  },
+
+  // Rofi Application Launcher
+  "custom/appmenu": {
+    // START APPS LABEL
+    "format": "       ",
+    // END APPS LABEL
+    "on-click": "rofi -show drun -replace",
+    "on-click-right": "~/dotfiles/hypr/scripts/keybindings.sh",
+    "tooltip": false
+  },
+
+  // Rofi Application Launcher
+  "custom/appmenuicon": {
+    "format": "       ",
+    "on-click": "rofi -show drun -replace",
+    "on-click-right": "~/dotfiles/hypr/scripts/keybindings.sh",
+    "tooltip": false
+  },
+
+  // Power Menu
+  "custom/exit": {
+    "format": "",
+    "on-click": "powermenu",
+    "tooltip": false
+  },
+
+  // Keyboard State
+  "keyboard-state": {
+    "numlock": true,
+    "capslock": true,
+    "format": "{name} {icon}",
+    "format-icons": {
+      "locked": "",
+      "unlocked": ""
+    }
+  },
+
+  // System tray
+  "tray": {
+    "icon-size": 21,
+    "spacing": 10
+  },
+
+  // Clock
+  "clock": {
+    // TIMEDATEFORMAT
+        "locale": "C", 
+        "format": "{:%I:%M %p %b %d}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    // START CLOCK FORMAT
+    "format-alt": "{:%Y-%m-%d}"
+    // END CLOCK FORMAT
+  },
+
+  // System2
+  "custom/system": {
+    "format": " ",
+    "on-click": "kitty -e btop",
+    "tooltip": false
+  },
+
+  // CPU
+  "cpu": {
+    "format": " {usage}% ",
+    "on-click": "kitty -e btop"
+  },
+
+  // Memory
+  "memory": {
+    "format": " {}%",
+    "on-click": "kitty -e btop"
+  },
+
+"backlight": {
+  // "device": "acpi_video1",
+  "format": "{icon} {percent}%",
+  "format-icons": ["", "", "", "", "", "", "", "", ""],
+  "on-scroll-down": "brightnessctl -c backlight set 1%-",
+  "on-scroll-up": "brightnessctl -c backlight set +1%"
+},
+
+  // Harddisc space used
+  "disk": {
+    "interval": 30,
+    "format": "D {percentage_used}% ",
+    "path": "/",
+    "on-click": "alacritty -e btop"
+  },
+  // Group Hardware
+  "group/hardware": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "children-class": "not-memory",
+      "transition-left-to-right": false
+    },
+    "modules": ["custom/system", "disk", "cpu", "memory", "hyprland/language"]
+  },
+
+  // Group Settings
+  "group/settings": {
+    "orientation": "horizontal",
+    "modules": [
+      // START CHATGPT TOOGLE
+      "custom/chatgpt",
+      // END CHATGPT TOOGLE
+      "custom/settings",
+      "custom/waybarthemes",
+      "custom/wallpaper"
+    ]
+  },
+
+  // Group Quicklinks
+  "group/quicklinks": {
+    "orientation": "horizontal",
+    "modules": ["custom/browser", "custom/filemanager"]
+  },
+
+  // Network
+  "network": {
+    "format": "{ifname}",
+    "format-wifi": "  {signalStrength}%",
+    "format-ethernet": "󰈀 {ifname}",
+    "format-disconnected": " Disconnected",
+    "tooltip-format": "{ifname} via {gwaddri}",
+    "tooltip-format-wifi": "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
+    "tooltip-format-ethernet": "󰈀 {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50,
+   // "on-click": "~/dotfiles/.settings/networkmanager.sh"
+  },
+
+  // Battery
+  "battery": {
+    "states": {
+      // "good": 95,
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-alt": "{icon} {time}",
+    // "format-good": "", // An empty format will hide the module
+    // "format-full": "",
+    "format-icons": [" ", " ", " ", " ", " "]
+  },
+
+  // Pulseaudio
+  "pulseaudio": {
+    // "scroll-step": 1, // %, can be a float
+    "format": "{icon} {volume}%",
+    "format-bluetooth": "{icon} {volume}%",
+    "format-bluetooth-muted": " {icon}",
+    "format-muted": "  {format_source}",
+    "format-source": "{volume}% ",
+    "format-source-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", " ", " "]
+    },
+    "on-click": "pavucontrol"
+  },
+
+  // Bluetooth
+  "bluetooth": {
+    "format": " {status}",
+    "format-disabled": "",
+    "format-off": "",
+    "interval": 30,
+    "on-click": "blueman-manager"
+  },
+
+  // Other
+  "user": {
+    "format": "{user}",
+    "interval": 60,
+    "icon": false
+  },
+
+  // Idle Inhibator
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "tooltip": true,
+    "format-icons": {
+      "activated": "",
+      "deactivated": ""
+    },
+    "on-click-right": "hyprlock"
+  }
 }

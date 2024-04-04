@@ -1,0 +1,100 @@
+@define-color foreground #ffffff;
+@define-color background #000000;
+@define-color tooltipbg #1a1a1a;
+@define-color tooltip #aaaaaa;
+@define-color workspacesbg #1a1a1a;
+@define-color workspacebuttonbg #0a0a0a;
+@define-color workspacesactivebg #3a3a3a;
+@define-color workspacesactivefg #fafafa;
+@define-color traybg #1a1a1a;
+@define-color tray #aaaaaa;
+
+* {
+  font-family: JetBrainsMono NF;
+  /* font-size: 14px; */
+  font-weight: bolder;
+  min-height: 0;
+}
+
+window#waybar {
+  background-color: @background; 
+  color: @foreground;
+}
+
+.modules-left {
+  border-radius: 8px;
+  margin: 0px 0px 0px 4px;
+  padding: 0px 15px;
+}
+
+.modules-center {
+  border-radius: 8px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.modules-right {
+  border-radius: 8px;
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+#workspaces{
+  border-radius: 6px;
+  margin: 1px;
+  padding: 0px 4px 0px 4px;
+  background-color: @workspacesbg;
+}
+
+#workspaces button{
+  border-radius: 6px;
+  margin: 1px;
+  padding: 0px 1px;
+  background-color: @workspacebuttonbg;
+  font-size: 10px;
+  font-weight: normal;
+}
+
+#workspaces button.active, #workspaces button.focused{
+  padding: 0px 8px;
+  background-color: @workspacesactivebg;
+  color: @workspacesactivefg;
+}
+
+#tray {
+  border-radius: 6px;
+  background-color: @traybg;
+  margin: 0px 0px 0px 15px;
+  padding: 0px 10px;
+}
+
+#taskbar,
+#clock,
+#battery,
+#mpris,
+#custom-weather,
+#cpu, 
+#temperature, 
+#memory,
+#sway-mode,
+#backlight, 
+#pulseaudio, 
+#custom-vpn,
+#disk,
+#custom-recorder,
+#custom-audiorec,
+#network {
+  margin: 2px 8px;
+  padding: 0px;
+}
+
+tooltip {
+    background: @tooltipbg;
+    color: @foreground;
+    border-radius: 8px;
+    border-width: 0px;
+    font-weight: normal;
+    font-size: 14px;
+}
