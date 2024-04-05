@@ -20,20 +20,17 @@ window#waybar {
 }
 
 .modules-left {
-  border-radius: 8px;
-  margin: 0px 0px 0px 4px;
-  padding: 0px 15px;
+  margin: 0px 0px 0px 20px;
+  padding: 0px;
 }
 
 .modules-center {
-  border-radius: 8px;
   margin: 0px;
   padding: 0px;
 }
 
 .modules-right {
-  border-radius: 8px;
-  margin: 0px;
+  margin: 0px 20px 0px 0px;
   padding: 0px;
   font-size: 14px;
   font-weight: normal;
