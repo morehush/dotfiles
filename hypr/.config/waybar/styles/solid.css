@@ -30,7 +30,7 @@ window#waybar {
 }
 
 .modules-right {
-  margin: 0px 20px 0px 0px;
+  margin: 0px 30px 0px 0px;
   padding: 0px;
   font-size: 14px;
   font-weight: normal;
@@ -38,8 +38,8 @@ window#waybar {
 
 #workspaces{
   border-radius: 6px;
-  margin: 1px;
-  padding: 0px 4px 0px 4px;
+  margin: 4px;
+  padding: 0px 6px 0px 6px;
   background-color: @workspacesbg;
 }
 

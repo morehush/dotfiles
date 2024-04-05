@@ -56,25 +56,9 @@
     "separate-outputs": true
   },
 
-  // ML4W Welcome App
-  "custom/ml4w-welcome": {
-    "on-click": "~/dotfiles/apps/ML4W_Welcome-x86_64.AppImage",
-    "format": " ",
-    "tooltip": false
-  },
-
   // Empty
   "custom/empty": {
     "format": ""
-  },
-
-  // Youtube Subscriber Count
-  "custom/youtube": {
-    "format": " {}",
-    "exec": "python ~/private/youtube.py",
-    "restart-interval": 600,
-    "on-click": "chromium https://studio.youtube.com",
-    "tooltip": false
   },
 
   // Cliphist
@@ -88,7 +72,7 @@
 
   // Updates Count
   "custom/updates": {
-    "format": "  {}",
+    "format": " {}",
     "tooltip-format": "{}",
     "escape": true,
     "return-type": "json",
@@ -99,81 +83,10 @@
     "tooltip": false
   },
 
-  // Wallpaper
-  "custom/wallpaper": {
-    "format": "",
-    "on-click": "~/dotfiles/hypr/scripts/wallpaper.sh select",
-    "on-click-right": "~/dotfiles/hypr/scripts/wallpaper.sh",
-    "tooltip": false
-  },
-
-  // Waybar Themes
-  "custom/waybarthemes": {
-    "format": "",
-    "on-click": "~/dotfiles/waybar/themeswitcher.sh",
-    "tooltip": false
-  },
-
-  // Settings
-  "custom/settings": {
-    "format": "",
-    "on-click": "~/dotfiles/apps/ML4W_Dotfiles_Settings-x86_64.AppImage",
-    "tooltip": false
-  },
-
   // Keybindings
   "custom/keybindings": {
     "format": "",
     "on-click": "~/dotfiles/hypr/scripts/keybindings.sh",
-    "tooltip": false
-  },
-
-  // Filemanager Launcher
-  "custom/filemanager": {
-    "format": "",
-    "on-click": "~/dotfiles/.settings/filemanager.sh",
-    "tooltip": false
-  },
-
-  // Outlook Launcher
-  "custom/outlook": {
-    "format": "",
-    "on-click": "chromium --app=https://outlook.office.com/mail/",
-    "tooltip": false
-  },
-
-  // Teams Launcher
-  "custom/teams": {
-    "format": "",
-    "on-click": "chromium --app=https://teams.microsoft.com/go",
-    "tooltip": false
-  },
-
-  // Browser Launcher
-  "custom/browser": {
-    "format": "",
-    "on-click": "~/dotfiles/.settings/browser.sh",
-    "tooltip": false
-  },
-
-  // ChatGPT Launcher
-  "custom/chatgpt": {
-    "format": " ",
-    "on-click": "chromium --app=https://chat.openai.com",
-    "tooltip": false
-  },
-
-  // Calculator
-  "custom/calculator": {
-    "format": "",
-    "on-click": "qalculate-gtk",
-    "tooltip": false
-  },
-
-  // Windows VM
-  "custom/windowsvm": {
-    "format": "",
-    "on-click": "~/dotfiles/scripts/launchvm.sh",
     "tooltip": false
   },
 
@@ -197,8 +110,8 @@
 
   // Power Menu
   "custom/exit": {
-    "format": "",
-    "on-click": "powermenu",
+    "format": "  ",
+    "on-click": "~/.local/bin/powermenu",
     "tooltip": false
   },
 
@@ -215,7 +128,7 @@
 
   // System tray
   "tray": {
-    "icon-size": 21,
+    "icon-size": 20,
     "spacing": 10
   },
 
@@ -224,7 +137,7 @@
     // TIMEDATEFORMAT
         "locale": "C", 
         "format": "{:%I:%M %p %b %d}",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
     // START CLOCK FORMAT
     "format-alt": "{:%Y-%m-%d}"
     // END CLOCK FORMAT
@@ -246,7 +159,7 @@
   // Memory
   "memory": {
     "format": " {}%",
-    "on-click": "kitty -e btop"
+    //"on-click": "kitty -e btop"
   },
 
 "backlight": {
@@ -297,13 +210,13 @@
   // Network
   "network": {
     "format": "{ifname}",
-    "format-wifi": "  {signalStrength}%",
+    "format-wifi": " {signalStrength}%",
     "format-ethernet": "󰈀 {ifname}",
     "format-disconnected": " Disconnected",
     "tooltip-format": "{ifname} via {gwaddri}",
-    "tooltip-format-wifi": "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
+    "tooltip-format-wifi": " {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
     "tooltip-format-ethernet": "󰈀 {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
-    "tooltip-format-disconnected": "Disconnected",
+    "tooltip-format-disconnected": " Disconnected",
     "max-length": 50,
    // "on-click": "~/dotfiles/.settings/networkmanager.sh"
   },
