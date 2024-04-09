@@ -137,7 +137,7 @@
     // TIMEDATEFORMAT
         "locale": "C", 
         "format": "{:%I:%M %p %b %d}",
-    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "tooltip-format": "<tt>{calendar}</tt>",
     // START CLOCK FORMAT
     "format-alt": "{:%Y-%m-%d}"
     // END CLOCK FORMAT

@@ -10,7 +10,7 @@ set ignorecase true
 # Custom Functions
 #cmd setlockscreen %setlock "$f"
 cmd setwallpaper %setbg "$f"
-#cmd setwallpaper %gsettings set org.gnome.desktop.background picture-uri-dark file://"$f"
+cmd setgnomepaper %gsettings set org.gnome.desktop.background picture-uri-dark file://"$f"
 
 cmd fzf_jump ${{
   res="$(find . -maxdepth 3 | fzf --reverse --header='Jump to location')"
@@ -109,6 +109,7 @@ map md mkdir
 map ms $mkscript
 map ch chmod
 map bg setwallpaper
+map bp setgnomepaper
 map bl setlockscreen
 map o open_config
 map br $hx $fx
