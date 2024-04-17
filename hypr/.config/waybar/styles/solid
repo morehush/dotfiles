@@ -9,7 +9,7 @@
     // Load Modules
     "include": ["~/.config/waybar/styles/modules.json"],
 
-"modules-left": ["hyprland/workspaces","hyprland/window"],
+"modules-left": ["hyprland/workspaces"],
 "modules-center": ["clock"],
 "modules-right":  ["cpu","memory","network","pulseaudio","backlight","battery","tray"],
 }
