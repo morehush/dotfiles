@@ -82,7 +82,6 @@ alias archbox='distrobox enter arch'
 alias vim='nvim'
 alias myip='curl http://ipecho.net/plain; echo'
 alias batstat='upower -i /org/freedesktop/UPower/devices/battery_BAT0'
-alias omv='ssh morehush@h.morehush.com'
 
 # tailscale
 alias tsvpn='tailscale up --exit-node=omv --exit-node-allow-lan-access=true --accept-routes'
