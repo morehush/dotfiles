@@ -1,10 +1,10 @@
 font=JetBrainsMono NF 10
-background-color=#1a1b26
-text-color=#c0caf5
+background-color=#1a1a1a
+text-color=#cacaca
 width=350
 height=200
 border-size=1
-border-color=#7aa2f7
+border-color=#cacaca
 border-radius=8
 padding=20
 icons=1
