@@ -20,11 +20,11 @@
       "active": "",
       "default": ""
     },
-    "persistent-workspaces": {
+   // "persistent-workspaces": {
       // START WORKSPACES
-            "*": 5
+    //        "*": 5
       // END WORKSPACES
-    }
+   // }
   },
 
   // Taskbar
@@ -137,9 +137,9 @@
     // TIMEDATEFORMAT
         "locale": "C", 
         "format": "{:%I:%M %p %b %d}",
-    "tooltip-format": "<tt>{calendar}</tt>",
+    // "tooltip-format": "<tt>{calendar}</tt>",
     // START CLOCK FORMAT
-    "format-alt": "{:%Y-%m-%d}"
+    // "format-alt": "{:%Y-%m-%d}"
     // END CLOCK FORMAT
   },
 
@@ -153,7 +153,7 @@
   // CPU
   "cpu": {
     "format": " {usage}% ",
-    "on-click": "kitty -e btop"
+    //"on-click": "kitty -e btop"
   },
 
   // Memory
@@ -166,8 +166,8 @@
   // "device": "acpi_video1",
   "format": "{icon} {percent}%",
   "format-icons": ["", "", "", "", "", "", "", "", ""],
-  "on-scroll-down": "brightnessctl -c backlight set 1%-",
-  "on-scroll-up": "brightnessctl -c backlight set +1%"
+  //"on-scroll-down": "brightnessctl -c backlight set 1%-",
+  //"on-scroll-up": "brightnessctl -c backlight set +1%"
 },
 
   // Harddisc space used
