@@ -1,6 +1,0 @@
-require("user.options")
-require("user.lazy")
-require("user.keymaps")
-require("user.highlight_yank")
-require("user.edit_text")
-require("user.copy_file_path_to_clipboard")
