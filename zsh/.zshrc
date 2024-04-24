@@ -13,7 +13,7 @@ plug "zap-zsh/sudo"
 # plug "Aloxaf/fzf-tab"
 # plug "zap-zsh/atmachine-prompt"
 # plug "zettlrobert/simple-prompt"
-plug "spaceship-prompt/spaceship-prompt"
+# plug "spaceship-prompt/spaceship-prompt"
 
 source "$HOME/.config/zsh/alias.zsh"
 source "$HOME/.config/zsh/exports.zsh"
@@ -26,3 +26,4 @@ HISTFILE=~/.zsh_history
 bindkey -v
 
 eval "$(zoxide init --cmd cd zsh)"
+eval "$(starship init zsh)"
