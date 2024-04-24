@@ -7,12 +7,12 @@ selected=$(echo -e $entries|fuzzel --dmenu | awk '{print tolower($2)}')
 case $selected in
   exit)
     killhypr;;
+  suspend)
+    exec systemctl suspend;;
   lock)
     hyprlock;;
   logout)
     pkill -u $USER;;
-  suspend)
-    exec systemctl suspend;;
   reboot)
     exec systemctl reboot;;
   shutdown)
