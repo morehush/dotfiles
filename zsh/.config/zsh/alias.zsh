@@ -2,6 +2,7 @@
 
 alias archbox='distrobox enter arch'
 alias vim='nvim'
+alias v='nvim'
 alias wf='nmcli device wifi'
 alias wificonnect='sudo nmcli dev wifi connect'     #use with SSID password 'mypassword'
 alias myip='curl http://ipecho.net/plain; echo'
