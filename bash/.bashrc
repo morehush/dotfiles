@@ -83,12 +83,6 @@ alias vim='nvim'
 alias myip='curl http://ipecho.net/plain; echo'
 alias batstat='upower -i /org/freedesktop/UPower/devices/battery_BAT0'
 
-# tailscale
-alias tsvpn='tailscale up --exit-node=omv --exit-node-allow-lan-access=true --accept-routes'
-alias tsup='tailscale up --accept-routes --operator=$USER'
-alias tssrv='sudo tailscale up --ssh --advertise-routes=192.168.2.0/24 --advertise-exit-node'
-alias tsd='tailscale down'
-
 # systemctl
 alias sc='sudo systemctl'
 alias uc='systemctl --user'
@@ -113,13 +107,6 @@ alias pacsyu='sudo pacman -Syyu'                 # update only standard pkgs
 alias unlock='sudo rm /var/lib/pacman/db.lck'    # remove pacman lock
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages
 
-# Get fastest mirrors
-alias ratem="rate-mirrors arch | sudo tee /etc/pacman.d/mirrorlist"
-alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
-alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
-alias mirrors="sudo reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"
-alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pacman.d/mirrorlist"
-
 # Get the error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
 
@@ -133,7 +120,6 @@ alias reload='source ~/.bashrc'
 alias tarnow='tar -acf '
 alias untar='tar -zxvf '
 alias wget='wget -c '
-# alias bat=batcat
 
 # cd shorteners
 alias ..='cd ..'
@@ -155,7 +141,7 @@ alias now='date +"%I:%M %d-%m-%Y"'
 alias ports='netstat -tulanp'
 alias gh='history|grep'
 alias adl='aria2c -x 16 -s 16 -k 1M'
-alias genkey='ssh-keygen -t rsa -b 4096 -C t@morehush.com'
+alias genkey='ssh-keygen -t rsa -b 4096'
 
 # yt-dlp
 alias ytd='yt-dlp'
