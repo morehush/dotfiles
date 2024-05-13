@@ -92,7 +92,7 @@ alias now='date +"%I:%M %d-%m-%Y"'
 alias ports='netstat -tulanp'
 alias gh='history|grep'
 alias adl='aria2c -x 16 -s 16 -k 1M'
-alias genkey='ssh-keygen -t rsa -b 4096 -C t@morehush.com'
+alias genkey='ssh-keygen -t rsa -b 4096'
 
 # yt-dlp
 alias ytd='yt-dlp'
