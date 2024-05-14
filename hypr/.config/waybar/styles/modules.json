@@ -158,7 +158,7 @@
 
   // Memory
   "memory": {
-    "format": " {}%",
+    "format": " {}%",
     //"on-click": "kitty -e btop"
   },
 
