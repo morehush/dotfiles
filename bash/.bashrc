@@ -6,6 +6,7 @@
 export EDITOR="nvim"
 export VISUAL="nvim"
 export TERM="xterm-256color"
+export ELECTRON_OZONE_PLATFORM_HINT="auto"
 
 # If not running interactively, don't do anything
 case $- in
