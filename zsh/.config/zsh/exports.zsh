@@ -4,6 +4,7 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 export TERMINAL="kitty"
 export TERM="xterm-256color"
+export ELECTRON_OZONE_PLATFORM_HINT="auto"
 
 ### PATH
 if [ -d "$HOME/.local/bin" ] ;
