@@ -20,7 +20,6 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
-zinit light zap-zsh/supercharge
 # Load pure theme
 zinit ice pick"async.zsh" src"pure.zsh" # with zsh-async library that's bundled with it.
 zinit light sindresorhus/pure
@@ -33,6 +32,13 @@ zinit snippet OMZP::command-not-found
 autoload -Uz compinit && compinit
 
 zinit cdreplay -q
+
+# Completion styling
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+zstyle ':completion:*' menu no
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
+zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # History
 HISTSIZE=5000
@@ -47,12 +53,6 @@ setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
 
-# Completion styling
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
-zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
-zstyle ':completion:*' menu no
-zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
-zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 ### SET VI MODE ###
 # Comment this line out to enable default emacs-like bindings
