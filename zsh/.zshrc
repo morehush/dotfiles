@@ -53,9 +53,14 @@ setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
 
+# Options
+unsetopt BEEP
+setopt AUTO_CD
+setopt GLOB_DOTS
+bindkey -s '^x' '^usource .zshrc\n'
+bindkey '^H' backward-kill-word # Ctrl + Backspace to delete a whole word.
 
 ### SET VI MODE ###
-# Comment this line out to enable default emacs-like bindings
 bindkey -v
 
 source "$HOME/.config/zsh/alias.zsh"
