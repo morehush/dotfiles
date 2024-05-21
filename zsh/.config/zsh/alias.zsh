@@ -1,6 +1,7 @@
 #!/bin/sh
 
 alias archbox='distrobox enter arch'
+alias ff='fastfetch'
 alias vim='nvim'
 alias v='nvim'
 alias wf='nmcli device wifi'
