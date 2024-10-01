@@ -46,7 +46,7 @@ alias gitpkg='pacman -Q | grep -i "\-git" | wc -l'			# List amount of -git packa
 
 
 # pacman and paru
-alias yeet='yay -Rcs'
+alias yeet='paru -Rcs'
 alias pacsyu='sudo pacman -Syyu'                 # update only standard pkgs
 alias unlock='sudo rm /var/lib/pacman/db.lck'    # remove pacman lock
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'  # remove orphaned packages
