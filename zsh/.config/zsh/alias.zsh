@@ -13,6 +13,11 @@ alias mimempv='cat $HOME/.config/mimeapps.list | grep ^video/ | cut -d\t -f1 | x
 alias batstat='upower -i /org/freedesktop/UPower/devices/battery_BAT0'
 alias grubfix='sudo grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=EndeavourOS-grub'
 alias grubmk='sudo grub-mkconfig -o /boot/grub/grub.cfg'
+alias hmmm='paru -Sy &> /dev/null && paru -Qu'
+alias error='journalctl -b -p err'
+alias unm='fusermount3 -u ~/remote1 && fusermount3 -u ~/remote2'
+alias fuck='sudo !!'
+alias catt='tail -n +1'
 
 # wireguard
 alias wgup='wg-quick up wg0'
