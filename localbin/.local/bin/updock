@@ -3,7 +3,7 @@
 tkmedia=$HOME/docker/tkmedia
 
 rsync -turPh $HOME/ssd/Sync/dockersrv/tkmedia/.env $tkmedia/
-rsync -turPh $HOME/ssd/Sync/dockersrv/tkmedia/docker-compose.yml $tkmedia/
+rsync -turPh $HOME/ssd/Sync/dockersrv/tkmedia/compose.yml $tkmedia/
 
 cd $tkmedia
 docker compose pull
