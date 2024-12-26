@@ -18,7 +18,7 @@ return {
         win_options = {
           wrap = true,
         }
-      )}
+      })
     end,
   },
 }
