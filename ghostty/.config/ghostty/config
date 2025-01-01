@@ -1,4 +1,5 @@
 theme = tokyonight
-font-family = "JetBrainsMono Nerd Font"
+# font-family = CaskaydiaCove Nerd Font
 font-size = 11
 mouse-hide-while-typing = true
+window-padding-balance = true
