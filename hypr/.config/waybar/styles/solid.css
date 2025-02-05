@@ -1,16 +1,16 @@
 @define-color foreground #cacaca;
 @define-color background #000000;
-@define-color tooltipbg #1a1a1a;
+@define-color tooltipbg #0a0a0a;
 @define-color workspacesbg #1a1a1a;
 @define-color workspacebuttonbg #1a1a1a;
 @define-color workspacesactivebg #cacaca;
 @define-color workspacesactivefg #0a0a0a;
-@define-color traybg #2a2a2a;
+@define-color traybg #1a1a1a;
 
 * {
   font-family: JetBrainsMono NF;
   /* font-size: 14px; */
-  font-weight: bolder;
+  font-weight: bold;
   min-height: 0;
 }
 
