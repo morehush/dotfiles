@@ -18,6 +18,7 @@ alias error='journalctl -b -p err'
 alias unm='fusermount3 -u ~/remote1 && fusermount3 -u ~/remote2'
 alias fuck='sudo !!'
 alias catt='tail -n +1'
+alias checkdns='curl -v https://dns.nextdns.io/info'
 
 # wireguard
 alias wgup='wg-quick up wg0'
