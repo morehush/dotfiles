@@ -3,4 +3,4 @@ theme = tokyonight
 font-size = 11
 mouse-hide-while-typing = true
 window-padding-balance = true
-window-decoration = false
+# window-decoration = false
