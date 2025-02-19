@@ -4,5 +4,3 @@ font-size = 11
 mouse-hide-while-typing = true
 window-padding-balance = true
 # window-decoration = false
-window-width = 900
-window-height = 600
