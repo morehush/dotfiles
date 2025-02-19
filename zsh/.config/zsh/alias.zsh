@@ -24,10 +24,10 @@ alias wgup='wg-quick up wg0'
 alias wgd='wg-quick down wg0'
 
 # tailscale
-# alias tsvpn='tailscale up --operator=$USER --exit-node=omv --exit-node-allow-lan-access=true --accept-routes'
-# alias tsup='tailscale up --operator=$USER --accept-routes'
-# alias tssrv='sudo tailscale up --ssh --advertise-routes=192.168.2.0/24 --advertise-exit-node'
-# alias tsd='tailscale down'
+alias tsvpn='sudo tailscale up --exit-node=omv --exit-node-allow-lan-access=true --accept-routes'
+alias tsup='sudo tailscale up --accept-routes'
+alias tssrv='sudo tailscale up --ssh --advertise-routes=192.168.2.0/24 --advertise-exit-node'
+alias tsd='sudo tailscale down'
 
 # systemctl
 alias sc='sudo systemctl'
