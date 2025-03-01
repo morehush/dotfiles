@@ -5,6 +5,7 @@ export VISUAL="nvim"
 export TERMINAL="kitty"
 export TERM="xterm-256color"
 export ELECTRON_OZONE_PLATFORM_HINT="auto"
+export MAKEFLAGS="--jobs=$(nproc)"
 
 ### PATH
 if [ -d "$HOME/.local/bin" ] ;
