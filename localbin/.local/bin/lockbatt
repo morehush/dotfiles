@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Path to your battery status file
+BATTERY_PATH="/sys/class/power_supply/BAT0/capacity"
+
+# Read the battery level
+BATTERY_LEVEL=$(cat $BATTERY_PATH)
+
+# Define icons for different battery levels
+if [ $BATTERY_LEVEL -ge 80 ]; then
+  ICON=""  # Full battery
+elif [ $BATTERY_LEVEL -ge 60 ]; then
+  ICON=""  # Three-quarters battery
+elif [ $BATTERY_LEVEL -ge 40 ]; then
+  ICON=""  # Half battery
+elif [ $BATTERY_LEVEL -ge 20 ]; then
+  ICON=""  # Quarter battery
+else
+  ICON=""  # Low battery
+fi
+
+# Output the icon and battery level
+echo "$ICON  // $BATTERY_LEVEL%"
