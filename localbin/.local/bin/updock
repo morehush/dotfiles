@@ -1,12 +1,15 @@
 #!/bin/bash
 
 tkmedia=$HOME/docker/tkmedia
+dockdir=$HOME/docker
+syncdir=$HOME/ssd/Sync/dockersrv
 
-rsync -turPh $HOME/ssd/Sync/dockersrv/tkmedia/.env $tkmedia/
-rsync -turPh $HOME/ssd/Sync/dockersrv/tkmedia/compose.yml $tkmedia/
-
-cd $tkmedia
-docker compose pull
-docker compose up -d --remove-orphans
-# docker ps --format '{{.Names}}'
-docker image prune -af
+rsync -turPh $syncdir/tkmedia/.env $tkmedia/
+rsync -turPh $syncdir/tkmedia/compose.yml $tkmedia/
+rsync -turPh $syncdir/cloudflared/ $dockdir/cloudflared/
+rsync -turPh $syncdir/godoxy/ $dockdir/godoxy/
+rsync -turPh $syncdir/hoarder/ $dockdir/hoarder/
+rsync -turPh $syncdir/plex/ $dockdir/plex/
+rsync -turPh $syncdir/portainer/ $dockdir/portainer/
+rsync -turPh $syncdir/syncthing/ $dockdir/syncthing/
+rsync -turPh $syncdir/valserv/ $dockdir/valserv/
