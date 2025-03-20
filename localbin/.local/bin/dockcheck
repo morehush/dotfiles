@@ -14,7 +14,7 @@ LatestRelease="$(curl -s -r 0-50 $RawUrl | sed -n "/VERSION/s/VERSION=//p" | tr 
 LatestChanges="$(curl -s -r 0-200 $RawUrl | sed -n "/ChangeNotes/s/# ChangeNotes: //p")"
 
 # User customizable defaults
-MaxAsync=1
+MaxAsync=12
 Timeout=10
 
 # Help Function
