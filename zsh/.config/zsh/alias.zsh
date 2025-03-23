@@ -19,6 +19,7 @@ alias fuck='sudo !!'
 alias catt='tail -n +1'
 alias checkdns='curl -v https://dns.nextdns.io/info'
 alias archbox='distrobox enter archbox -- /usr/bin/zsh'
+alias dcupdate='~/dockcheck/dockcheck.sh -e archbox'
 
 # wireguard
 alias wgup='wg-quick up wg0'
