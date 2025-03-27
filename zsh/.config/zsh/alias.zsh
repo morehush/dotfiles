@@ -1,7 +1,6 @@
 #!/bin/sh
 
 alias ff='fastfetch'
-alias vim='nvim'
 alias v='nvim'
 alias wf='nmcli device wifi'
 alias wificonnect='sudo nmcli dev wifi connect'     #use with SSID password 'mypassword'
@@ -19,7 +18,7 @@ alias fuck='sudo !!'
 alias catt='tail -n +1'
 alias checkdns='curl -v https://dns.nextdns.io/info'
 alias archbox='distrobox enter archbox -- /usr/bin/zsh'
-alias dcupdate='~/dockcheck/dockcheck.sh -e archbox'
+alias dupdate='~/dockcheck/dockcheck.sh -ap -x 12 -e archbox'
 
 # wireguard
 alias wgup='wg-quick up wg0'
