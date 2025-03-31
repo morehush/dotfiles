@@ -9,8 +9,8 @@ rsync -turPh $syncdir/tkmedia/.env $tkmedia/
 rsync -turPh $syncdir/tkmedia/compose.yml $tkmedia/
 echo "cloudflared "
 rsync -turPh $syncdir/cloudflared/ $dockdir/cloudflared/
-echo "godoxy "
-rsync -turPh $syncdir/godoxy/ $dockdir/godoxy/
+echo "traefik "
+rsync -turPh $syncdir/traefik/ $dockdir/traefik/
 echo "hoarder "
 rsync -turPh $syncdir/hoarder/ $dockdir/hoarder/
 echo "plex "
