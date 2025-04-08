@@ -11,8 +11,8 @@ echo "cloudflared "
 rsync -turPh $syncdir/cloudflared/ $dockdir/cloudflared/
 echo "traefik "
 rsync -turPh $syncdir/traefik/ $dockdir/traefik/
-echo "hoarder "
-rsync -turPh $syncdir/hoarder/ $dockdir/hoarder/
+echo "karakeep "
+rsync -turPh $syncdir/karakeep/ $dockdir/karakeep/
 echo "plex "
 rsync -turPh $syncdir/plex/ $dockdir/plex/
 echo "portainer "
