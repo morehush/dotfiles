@@ -15,8 +15,8 @@ echo "linkwarden "
 rsync -turPh $syncdir/linkwarden/ $dockdir/linkwarden/
 echo "plex "
 rsync -turPh $syncdir/plex/ $dockdir/plex/
-echo "portainer "
-rsync -turPh $syncdir/portainer/ $dockdir/portainer/
+echo "komodo "
+rsync -turPh $syncdir/komodo/ $dockdir/komodo/
 echo "syncthing "
 rsync -turPh $syncdir/syncthing/ $dockdir/syncthing/
 echo "valserver "
