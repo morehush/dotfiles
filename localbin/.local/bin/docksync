@@ -25,3 +25,5 @@ echo "jellystat "
 rsync -turPh $syncdir/jellystat/ $dockdir/jellystat/
 echo "qbittorrent "
 rsync -turPh $syncdir/qbittorrent/ $dockdir/qbittorrent/
+echo "omnitools "
+rsync -turPh $syncdir/omnitools/ $dockdir/omnitools/
