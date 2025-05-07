@@ -32,6 +32,7 @@ if [ $? -eq 0 ]; then
   stow flags
   stow git
   stow imv
+  stow kitty
   stow mpv
   stow tmux
   stow yazi
