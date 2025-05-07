@@ -1,13 +1,13 @@
 [/]
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/']
 next=['AudioNext']
 play=['AudioPlay']
 previous=['AudioPrev']
 
 [custom-keybindings/custom0]
 binding='<Super>Return'
-command='kitty'
-name='kitty'
+command='ghostty'
+name='ghostty'
 
 [custom-keybindings/custom1]
 binding='<Alt><Super>b'
@@ -24,6 +24,11 @@ binding='<Alt><Super>n'
 command='brave --incognito'
 name='priv'
 
+[custom-keybindings/custom4]
+binding='<Alt><Super>backslash'
+command='1password'
+name='1password'
+
 [custom-keybindings/custom5]
 binding='<Alt><Super>o'
 command='obsidian --ozone-platform=wayland'
@@ -31,5 +36,5 @@ name='obsidian'
 
 [custom-keybindings/custom6]
 binding='<Alt><Super>y'
-command='kitty -e yazi'
+command='ghostty -e yazi'
 name='yazi'
