@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
-gsettings set org.gnome.desktop.background picture-uri-dark file://"$1"
+# gsettings set org.gnome.desktop.background picture-uri-dark file://"$1"
 
 #### hyprland
-# cp -f "$1" ~/.cache/wallpaper
-# pkill hyprpaper
-# hyprctl hyprpaper preload "~/.cache/wallpaper" &>/dev/null
-# hyprctl hyprpaper wallpaper ",~/.cache/wallpaper" &>/dev/null
-# hyprpaper &>/dev/null &
-# disown
+cp -f "$1" ~/.cache/wallpaper
+pkill hyprpaper
+hyprctl hyprpaper preload "~/.cache/wallpaper" &>/dev/null
+hyprctl hyprpaper wallpaper ",~/.cache/wallpaper" &>/dev/null
+hyprpaper &>/dev/null &
+disown
