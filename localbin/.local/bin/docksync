@@ -11,8 +11,8 @@ echo "pangolin "
 rsync -turPh $syncdir/pangolin/ $dockdir/pangolin/
 echo "traefik "
 rsync -turPh $syncdir/traefik/ $dockdir/traefik/
-echo "linkwarden "
-rsync -turPh $syncdir/linkwarden/ $dockdir/linkwarden/
+echo "karakeep "
+rsync -turPh $syncdir/karakeep/ $dockdir/karakeep/
 echo "plex "
 rsync -turPh $syncdir/plex/ $dockdir/plex/
 echo "portainer "
