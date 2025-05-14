@@ -1,12 +1,12 @@
 #!/bin/bash
 
-entries="󰂯 Bluetooth\n󰗼 Exit\n Lock\n⇠ Logout\n⏾ Suspend\n⭮ Reboot\n⏻ Shutdown"
+entries="󰂯 bluetooth\n󰗼 exit\n lock\n⇠ logout\n⏾ suspend\n⭮ reboot\n⏻ shutdown"
 
 selected=$(echo -e $entries | fuzzel --dmenu | awk '{print tolower($2)}')
 
 case $selected in
 bluetooth)
-  rfkill toggle bluetooh
+  exec rfkill toggle bluetooth
   ;;
 exit)
   killhypr
