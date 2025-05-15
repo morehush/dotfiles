@@ -1,8 +1,8 @@
 -- Pull in the wezterm API
 local wezterm = require("wezterm")
 
-local act = wezterm.action
 -- Efficient keybinding helper function
+local act = wezterm.action
 local function key_binding(key_table)
 	local result = {}
 	for i, binding in ipairs(key_table) do
