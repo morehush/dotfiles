@@ -30,13 +30,14 @@ config = {
 	color_scheme = "Tokyo Night",
 
 	-- Appearance
-	hide_tab_bar_if_only_one_tab = true,
+	-- hide_tab_bar_if_only_one_tab = true,
 	window_background_opacity = 0.8,
+	use_fancy_tab_bar = false,
 
 	window_padding = {
 		left = 2,
 		right = 2,
-		top = 25,
+		top = 0,
 		bottom = 0,
 	},
 }
