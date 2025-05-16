@@ -17,6 +17,8 @@ config = {
 	font_size = 11,
 	color_scheme = "Tokyo Night",
 	-- color_scheme = "nordfox",
+	-- color_scheme = "Kanagawa (Gogh)",
+	-- color_scheme = "Kanagawa Dragon (Gogh)",
 
 	-- Appearance
 	-- hide_tab_bar_if_only_one_tab = true,
