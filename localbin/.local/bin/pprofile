@@ -1,7 +1,7 @@
 #!/bin/bash
 
-profiles="󰓅 Performance\n󰾅 Balanced\n󰾆 Power-Saver"
+profiles="󰾅 Balanced\n󰓅 Performance\n󰾆 Power-Saver"
 
-selected=$(echo -e $profiles|fuzzel --dmenu | awk '{print tolower($2)}')
+selected=$(echo -e $profiles | fuzzel --dmenu | awk '{print tolower($2)}')
 
 powerprofilesctl set $selected
