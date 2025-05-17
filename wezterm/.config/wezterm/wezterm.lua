@@ -16,9 +16,13 @@ config = {
 	font = wezterm.font("JetBrainsMono Nerd Font"),
 	font_size = 11,
 	color_scheme = "Tokyo Night",
+	-- color_scheme = "One Dark (Gogh)",
+	-- color_scheme = "Ayu Mirage",
+	-- color_scheme = "Catppuccin Mocha",
 	-- color_scheme = "nordfox",
 	-- color_scheme = "Kanagawa (Gogh)",
 	-- color_scheme = "Kanagawa Dragon (Gogh)",
+	-- color_scheme = "Everblush",
 
 	-- Appearance
 	-- hide_tab_bar_if_only_one_tab = true,
