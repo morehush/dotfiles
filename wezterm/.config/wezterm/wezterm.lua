@@ -13,7 +13,7 @@ config = {
 	-- initial_rows = 28,
 
 	-- Font, font size, and color scheme
-	font = wezterm.font("JetBrainsMono Nerd Font"),
+	-- font = wezterm.font("CaskaydiaCove NF"),
 	font_size = 11,
 	color_scheme = "Tokyo Night",
 	-- color_scheme = "One Dark (Gogh)",
