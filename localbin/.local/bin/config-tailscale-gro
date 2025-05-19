@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# Determine the network device name
+NETDEV=$(ip -o route get 8.8.8.8 | cut -f 5 -d " ")
+
+# Configure UDP GRO settings
+sudo ethtool -K $NETDEV rx-udp-gro-forwarding on rx-gro-list off
+
+# Check if networkd-dispatcher is enabled
+if systemctl is-enabled networkd-dispatcher &>/dev/null; then
+    echo "networkd-dispatcher is enabled."
+else
+    echo "networkd-dispatcher is not enabled or not installed."
+    exit 1
+fi
+
+# Create a script to make the configuration persistent across reboots
+sudo tee /etc/networkd-dispatcher/routable.d/50-tailscale > /dev/null <<EOF
+#!/bin/sh
+
+ethtool -K $NETDEV rx-udp-gro-forwarding on rx-gro-list off
+EOF
+
+# Make the script executable
+sudo chmod 755 /etc/networkd-dispatcher/routable.d/50-tailscale
+
+# Test the script
+sudo /etc/networkd-dispatcher/routable.d/50-tailscale
+if [ $? -eq 0 ]; then
+    echo "Configuration applied successfully."
+else
+    echo "An error occurred while applying the configuration."
+fi
