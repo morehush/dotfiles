@@ -7,8 +7,8 @@ syncdir=$HOME/ssd/Sync/dockersrv
 echo "tkmedia "
 rsync -turPh $syncdir/tkmedia/.env $tkmedia/
 rsync -turPh $syncdir/tkmedia/compose.yml $tkmedia/
-echo "pangolin "
-rsync -turPh $syncdir/pangolin/ $dockdir/pangolin/
+echo "cloudflare "
+rsync -turPh $syncdir/cloudflare/ $dockdir/cloudflare/
 echo "traefik "
 rsync -turPh $syncdir/traefik/ $dockdir/traefik/
 echo "karakeep "
