@@ -1,27 +1,6 @@
 #!/bin/bash
 
-tkmedia=$HOME/docker/tkmedia
-dockdir=$HOME/docker
 syncdir=$HOME/ssd/Sync/dockersrv
+dockdir=$HOME/docker
 
-echo "tkmedia "
-rsync -turPh $syncdir/tkmedia/.env $tkmedia/
-rsync -turPh $syncdir/tkmedia/compose.yml $tkmedia/
-echo "pangolin "
-rsync -turPh $syncdir/pangolin/ $dockdir/pangolin/
-echo "traefik "
-rsync -turPh $syncdir/traefik/ $dockdir/traefik/
-echo "karakeep "
-rsync -turPh $syncdir/karakeep/ $dockdir/karakeep/
-echo "plex "
-rsync -turPh $syncdir/plex/ $dockdir/plex/
-echo "portainer "
-rsync -turPh $syncdir/portainer/ $dockdir/portainer/
-echo "syncthing "
-rsync -turPh $syncdir/syncthing/ $dockdir/syncthing/
-echo "valserver "
-rsync -turPh $syncdir/valserv/ $dockdir/valserv/
-echo "restic "
-rsync -turPh $syncdir/restic/ $dockdir/restic/
-echo "beszel "
-rsync -turPh $syncdir/beszel/ $dockdir/beszel/
+rsync -turPh --exclude '*.git' $syncdir/ $dockdir/
