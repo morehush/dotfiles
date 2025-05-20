@@ -1,3 +1,5 @@
 [user]
 	email = t@morehush.com
 	name = morehush
+[alias]
+	yolo = !git commit -m \"$(curl -s https://whatthecommit.com/index.txt)\"
