@@ -7,8 +7,8 @@ syncdir=$HOME/ssd/Sync/dockersrv
 echo "tkmedia "
 rsync -turPh $syncdir/tkmedia/.env $tkmedia/
 rsync -turPh $syncdir/tkmedia/compose.yml $tkmedia/
-echo "cloudflare "
-rsync -turPh $syncdir/cloudflare/ $dockdir/cloudflare/
+echo "pangolin "
+rsync -turPh $syncdir/pangolin/ $dockdir/pangolin/
 echo "traefik "
 rsync -turPh $syncdir/traefik/ $dockdir/traefik/
 echo "karakeep "
@@ -21,9 +21,7 @@ echo "syncthing "
 rsync -turPh $syncdir/syncthing/ $dockdir/syncthing/
 echo "valserver "
 rsync -turPh $syncdir/valserv/ $dockdir/valserv/
-echo "qbittorrent "
-rsync -turPh $syncdir/qbittorrent/ $dockdir/qbittorrent/
-echo "omnitools "
-rsync -turPh $syncdir/omnitools/ $dockdir/omnitools/
+echo "restic "
+rsync -turPh $syncdir/restic/ $dockdir/restic/
 echo "beszel "
 rsync -turPh $syncdir/beszel/ $dockdir/beszel/
