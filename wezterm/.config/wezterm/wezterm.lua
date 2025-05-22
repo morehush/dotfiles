@@ -26,7 +26,7 @@ config = {
 
 	-- Appearance
 	hide_tab_bar_if_only_one_tab = true,
-	window_background_opacity = 0.8,
+	-- window_background_opacity = 0.8,
 	use_fancy_tab_bar = false,
 	-- window_padding = {
 	-- 	left = 0,
