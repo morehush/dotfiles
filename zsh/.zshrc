@@ -69,4 +69,4 @@ source "$HOME/.config/zsh/functions.zsh"
 
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
-eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/pure.json)"
+eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/amro.omp.json)"
