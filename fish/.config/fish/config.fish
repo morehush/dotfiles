@@ -21,8 +21,10 @@ set MAKEFLAGS --jobs=$(nproc)
 ### SET FZF DEFAULTS
 set FZF_DEFAULT_OPTS "--layout=reverse --exact --border=bold --border=rounded --margin=3% --color=dark"
 
+### "less" as manpager
+set -x MANPAGER less
 ### "nvim" as manpager
-set -x MANPAGER "nvim +Man!"
+#set -x MANPAGER "nvim +Man!"
 
 ### SET EITHER DEFAULT EMACS MODE OR VI MODE ###
 function fish_user_key_bindings
