@@ -6,7 +6,7 @@ local act = wezterm.action
 local config = wezterm.config_builder()
 
 config = {
-	term = "xterm256color",
+	-- term = "xterm256color",
 	enable_kitty_graphics = true,
 	max_fps = 120,
 	-- initial_cols = 120,
