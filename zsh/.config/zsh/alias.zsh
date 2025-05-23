@@ -17,7 +17,7 @@ alias unm='fusermount3 -u ~/remote1 && fusermount3 -u ~/remote2'
 alias fuck='sudo !!'
 alias catt='tail -n +1'
 alias checkdns='curl -v https://dns.nextdns.io/info'
-alias archbox='distrobox enter archbox -- /usr/bin/zsh'
+alias archbox='distrobox enter archbox -- /usr/sbin/fish'
 alias updock='~/dockcheck/dockcheck.sh -apu -x 12 -e archbox'
 
 # wireguard
