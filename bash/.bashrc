@@ -74,21 +74,6 @@ if [ -x /usr/bin/dircolors ]; then
   alias egrep='egrep --color=auto'
 fi
 
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
-source ~/.config/zsh/alias.zsh
-
-alias l='ls -l --group-directories-first'
-alias la='ls --all --group-directories-first'
-alias ll='ls -al --group-directories-first'
-alias lt='ls -T --level=2 --group-directories-first'
-alias llt='ls -lT --level=2 --group-directories-first'
-alias lT='ls -T --level=4 --group-directories-first'
-alias l.='ls -a | grep -E "^\."'
-
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -170,3 +155,71 @@ up() {
     echo "Couldn't go up $limit dirs."
   fi
 }
+
+#aliases
+alias l='ls -l --group-directories-first'
+alias la='ls --all --group-directories-first'
+alias ll='ls -al --group-directories-first'
+alias lt='ls -T --level=2 --group-directories-first'
+alias llt='ls -lT --level=2 --group-directories-first'
+alias lT='ls -T --level=4 --group-directories-first'
+alias l.='ls -a | grep -E "^\."'
+
+alias error='journalctl -b -p err'
+alias fuck='sudo !!'
+alias catt='tail -n +1'
+alias checkdns='curl -v https://dns.nextdns.io/info'
+alias updock='~/dockcheck/dockcheck.sh -apu -x 12 -e archbox'
+
+# wireguard
+alias wgup='wg-quick up wg0'
+alias wgd='wg-quick down wg0'
+
+# tailscale
+alias tsvpn='sudo tailscale up --exit-node=omv --exit-node-allow-lan-access=true --accept-routes'
+alias tsup='sudo tailscale up --accept-routes'
+alias tssrv='sudo tailscale up --ssh --advertise-routes=192.168.2.0/24 --advertise-exit-node'
+alias tsd='sudo tailscale down'
+
+# systemctl
+alias sc='sudo systemctl'
+alias uc='systemctl --user'
+alias sj='journalctl --all --follow --unit'
+alias uj='journalctl --all --follow --user-unit'
+
+# Get the error messages from journalctl
+alias jctl="journalctl -p 3 -xb"
+
+alias update='sudo apt update && sudo apt upgrade'
+alias df='df -h'
+alias top=htop
+alias tarnow='tar -acf '
+alias untar='tar -zxvf '
+alias wget='wget -c '
+alias bat=batcat
+
+# cd shorteners
+alias ..='cd ..'
+alias ...='cd ../..'
+alias .3='cd ../../..'
+alias .4='cd ../../../..'
+
+# confirm before overwriting something
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'
+alias ip='ip -c'
+
+alias diff='colordiff'
+alias mount='mount |column -t'
+alias jobs='jobs -l'
+alias path='echo -e ${PATH//:/\\n}'
+alias now='date +"%I:%M %d-%m-%Y"'
+alias ports='netstat -tulanp'
+alias gh='history|grep'
+alias adl='aria2c -x 16 -s 16 -k 1M'
+
+# docker compose
+alias dcp='docker compose pull'
+alias dcu='docker compose up -d'
+alias dcd='docker compose down'
