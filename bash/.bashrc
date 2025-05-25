@@ -219,6 +219,10 @@ alias ports='netstat -tulanp'
 alias gh='history|grep'
 alias adl='aria2c -x 16 -s 16 -k 1M'
 
+# yt-dlp
+alias ytd='yt-dlp'
+alias ytf='yt-dlp --ignore-config --downloader aria2c -N 4 -a files'
+
 # docker compose
 alias dcp='docker compose pull'
 alias dcu='docker compose up -d'
