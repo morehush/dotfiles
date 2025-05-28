@@ -41,6 +41,7 @@ if [ $? -eq 0 ]; then
   stow vim
   stow yay
   stow paru
+  stow wezterm
 else
   echo "Failed to clone the repository."
   exit 1
