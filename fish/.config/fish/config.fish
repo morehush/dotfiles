@@ -13,7 +13,7 @@ set fish_greeting # Supresses fish's intro message
 set TERM xterm-256color # Sets the terminal type
 set EDITOR nvim
 set VISUAL nvim
-set XDG_CURRENT_DESKTOP Wayland
+set XDG_CURRENT_DESKTOP GNOME
 set TERMINAL wezterm
 set ELECTRON_OZONE_PLATFORM_HINT auto
 set MAKEFLAGS --jobs=$(nproc)
