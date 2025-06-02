@@ -1,4 +1,5 @@
 theme = tokyonight_night
+# background-opacity = 0.8
 # theme = catppuccin-macchiato
 # font-family = CaskaydiaCove Nerd Font
 font-size = 11
@@ -6,5 +7,14 @@ mouse-hide-while-typing = true
 window-padding-balance = true
 # window-decoration = false
 
-keybind = ctrl+shift+[=goto_split:left
-keybind = ctrl+shift+]=goto_split:right
+keybind = alt+h=goto_split:left
+keybind = alt+l=goto_split:right
+keybind = alt+j=goto_split:down
+keybind = alt+k=goto_split:up
+keybind = alt+enter=new_split:right
+keybind = alt+\=new_split:down
+keybind = alt+w=close_surface
+
+keybind = alt+t=new_tab
+keybind = alt+]=next_tab
+keybind = alt+[=previous_tab
