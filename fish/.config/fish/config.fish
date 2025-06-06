@@ -11,8 +11,8 @@ source $HOME/.config/fish/conf.d/abbr.fish
 ### EXPORT ###
 set fish_greeting # Supresses fish's intro message
 set TERM xterm-256color # Sets the terminal type
-set EDITOR nvim
-set VISUAL nvim
+set -x EDITOR nvim
+set -x VISUAL nvim
 set XDG_CURRENT_DESKTOP GNOME
 set TERMINAL wezterm
 set ELECTRON_OZONE_PLATFORM_HINT auto
