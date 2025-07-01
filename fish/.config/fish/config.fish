@@ -26,6 +26,10 @@ set -x MANPAGER less
 ### "nvim" as manpager
 #set -x MANPAGER "nvim +Man!"
 
+function fzfyay
+    yay -Slq | fzf -m --preview 'bat <(yay -Si {1}) <(yay -Fl {1} | awk "{print \$2}")' | xargs -ro yay -S
+end
+
 ### SET EITHER DEFAULT EMACS MODE OR VI MODE ###
 function fish_user_key_bindings
     # fish_default_key_bindings

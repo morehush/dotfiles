@@ -14,7 +14,7 @@ alias mimempv 'cat $HOME/.config/mimeapps.list | grep ^video/ | cut -d\t -f1 | x
 alias batstat 'upower -i /org/freedesktop/UPower/devices/battery_BAT0'
 alias grubfix 'sudo grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=EndeavourOS-grub'
 alias grubmk 'sudo grub-mkconfig -o /boot/grub/grub.cfg'
-alias hmmm 'paru -Sy &> /dev/null && paru -Qu'
+alias hmmm 'yay -Sy &> /dev/null && yay -Qu'
 alias error 'journalctl -b -p err'
 alias unm 'fusermount3 -u ~/remote1 && fusermount3 -u ~/remote2'
 alias fuck 'sudo !!'
@@ -53,7 +53,8 @@ alias big 'expac -H M "%m\t%n" | sort -h | nl' # Sort installed packages accordi
 alias gitpkg 'pacman -Q | grep -i "\-git" | wc -l' # List amount of -git packages
 
 # pacman and yay
-alias yeet 'paru -Rcs'
+alias fy fzfyay
+alias yeet 'yay -Rcs'
 alias pacsyu 'sudo pacman -Syyu' # update only standard pkgs
 alias unlock 'sudo rm /var/lib/pacman/db.lck' # remove pacman lock
 abbr cleanup 'sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages
