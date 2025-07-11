@@ -13,7 +13,7 @@ keybind = alt+j=goto_split:down
 keybind = alt+k=goto_split:up
 keybind = alt+enter=new_split:right
 keybind = alt+\=new_split:down
-keybind = alt+q=close_surface
+keybind = alt+w=close_surface
 
 keybind = alt+t=new_tab
 keybind = alt+]=next_tab
