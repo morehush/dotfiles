@@ -280,9 +280,16 @@
     "format": "{icon}",
     "tooltip": true,
     "format-icons": {
-      "activated": "",
+      "activated": "",
       "deactivated": ""
     },
     "on-click-right": "hyprlock"
+  },
+
+  // notifications
+  "custom/notifications": {
+    "format": " 󰎟 ",
+    "tooltip": false,
+    "on-click": "swaync-client -t"
   }
 }
