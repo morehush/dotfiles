@@ -14,7 +14,9 @@ config = {
 
 	-- Font, font size, and color scheme
 	-- font = wezterm.font("CaskaydiaCove NF"),
+	-- font = wezterm.font("JetBrainsMono NF"),
 	font_size = 11,
+	warn_about_missing_glyphs = false,
 	color_scheme = "Tokyo Night",
 	-- color_scheme = "One Dark (Gogh)",
 	-- color_scheme = "Ayu Mirage",
