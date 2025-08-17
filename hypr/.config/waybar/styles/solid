@@ -11,5 +11,5 @@
 
 "modules-left": ["hyprland/workspaces"],
 "modules-center": ["clock"],
-"modules-right":  ["pulseaudio","cpu","memory","network","backlight","battery","tray"],
+"modules-right":  ["pulseaudio","cpu","memory","network","backlight","battery","tray","custom/notifications"],
 }
