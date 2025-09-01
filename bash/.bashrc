@@ -169,7 +169,7 @@ alias error='journalctl -b -p err'
 alias fuck='sudo !!'
 alias catt='tail -n +1'
 alias checkdns='curl -v https://dns.nextdns.io/info'
-alias updock='~/dockcheck/dockcheck.sh -apu -x 12 -e archbox'
+alias updock='~/dockcheck/dockcheck.sh'
 alias archbox='distrobox enter archbox -- /usr/sbin/fish'
 
 # wireguard
@@ -228,4 +228,3 @@ alias ytf='yt-dlp --ignore-config --downloader aria2c -N 4 -a files'
 alias dcp='docker compose pull'
 alias dcu='docker compose up -d'
 alias dcd='docker compose down'
-
