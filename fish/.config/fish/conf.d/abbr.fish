@@ -21,7 +21,7 @@ alias fuck 'sudo !!'
 alias catt 'tail -n +1'
 alias checkdns 'curl -v https://dns.nextdns.io/info'
 alias archbox 'distrobox enter archbox -- /usr/bin/zsh'
-alias updock '~/dockcheck/dockcheck.sh -apu -x 12 -e archbox'
+alias updock '~/dockcheck/dockcheck.sh'
 
 # wireguard
 abbr wgup 'wg-quick up wg0'
@@ -103,6 +103,7 @@ alias genkey 'ssh-keygen -t rsa -b 4096'
 
 # yt-dlp
 abbr ytd yt-dlp
+abbr ytc 'yt-dlp --downloader aria2c -N 4 -a files --cookies=cookies.txt'
 abbr ytf 'yt-dlp --ignore-config --downloader aria2c -N 4 -a files'
 abbr yta-aac 'yt-dlp --extract-audio --audio-format aac '
 abbr yta-best 'yt-dlp --extract-audio --audio-format best '
