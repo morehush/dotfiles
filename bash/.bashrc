@@ -170,7 +170,7 @@ alias fuck='sudo !!'
 alias catt='tail -n +1'
 alias checkdns='curl -v https://dns.nextdns.io/info'
 alias updock='~/dockcheck/dockcheck.sh'
-alias archbox='distrobox enter archbox -- /usr/sbin/fish'
+alias archbox='distrobox enter archbox -- /usr/bin/zsh'
 
 # wireguard
 alias wgup='wg-quick up wg0'
