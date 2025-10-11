@@ -103,7 +103,7 @@ alias genkey='ssh-keygen -t rsa -b 4096'
 # yt-dlp
 alias ytd='yt-dlp'
 alias ytf='yt-dlp --ignore-config --downloader aria2c -N 4 -a files'
-alias ytaria='yt-dlp --downloader aria2c -N 4 -a files'
+alias ytaria='yt-dlp --downloader aria2c -N 4'
 alias ytv-best='yt-dlp -f bestvideo+bestaudio '
 
 # docker compose
