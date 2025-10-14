@@ -92,7 +92,7 @@ window#waybar {
 
 #workspaces button.active, button.focused {
     color: @workspaces-focused-fg;
-    border-bottom: 1px solid @workspaces-focused-fg;
+    border-bottom: 2px solid @workspaces-focused-fg;
 }
 
 #workspaces button.urgent {
