@@ -14,17 +14,15 @@
     "on-click": "activate",
     "active-only": false,
     "all-outputs": true,
-    "format": "{}",
+    "format": "{name}:{icon}",
     "format-icons": {
-      "urgent": "",
-      "active": "",
-      "default": ""
+      "urgent": "",
+      "active": "",
+      "default": ""
     },
-   // "persistent-workspaces": {
-      // START WORKSPACES
-    //        "*": 5
-      // END WORKSPACES
-   // }
+    "persistent-workspaces": {
+      "*": 5,
+    }
   },
 
   // Taskbar
@@ -280,7 +278,7 @@
     "format": "{icon}",
     "tooltip": true,
     "format-icons": {
-      "activated": "",
+    "activated": "",
       "deactivated": ""
     },
     "on-click-right": "hyprlock"
