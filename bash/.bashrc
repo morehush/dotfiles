@@ -165,6 +165,8 @@ alias llt='ls -lT --level=2 --group-directories-first'
 alias lT='ls -T --level=4 --group-directories-first'
 alias l.='ls -a | grep -E "^\."'
 
+alias v='nvim'
+
 alias error='journalctl -b -p err'
 alias fuck='sudo !!'
 alias catt='tail -n +1'
@@ -228,3 +230,4 @@ alias ytf='yt-dlp --ignore-config --downloader aria2c -N 4 -a files'
 alias dcp='docker compose pull'
 alias dcu='docker compose up -d'
 alias dcd='docker compose down'
+. "$HOME/.cargo/env"
