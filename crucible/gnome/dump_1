@@ -1,5 +1,5 @@
 [/]
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/']
 next=['AudioNext']
 play=['AudioPlay']
 previous=['AudioPrev']
@@ -30,11 +30,6 @@ binding='<Alt><Super>backslash'
 command='1password --ozone-platform-hint=auto'
 name='1password'
 
-[custom-keybindings/custom5]
-binding='<Alt><Super>o'
-command='obsidian --ozone-platform=wayland'
-name='obsidian'
-
 [custom-keybindings/custom6]
 binding='<Alt><Super>y'
 command='ghostty -e yazi'
@@ -42,10 +37,10 @@ name='yazi'
 
 [custom-keybindings/custom7]
 binding='<Alt><Super>d'
-command='brave --app="https://discord.com/channels/@me"'
+command='brave --app=https://discord.com/channels/@me'
 name='discord'
 
 [custom-keybindings/custom8]
 binding='<Alt><Super>s'
-command='brave --app="https://open.spotify.com"'
+command='brave --app=https://open.spotify.com'
 name='spotify'
