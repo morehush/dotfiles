@@ -25,6 +25,7 @@ fi
 # Check if the clone was successful
 if [ $? -eq 0 ]; then
   cd "$REPO_NAME"
+  stow atuin
   stow zsh
   stow ghostty
   stow neovim
@@ -37,11 +38,10 @@ if [ $? -eq 0 ]; then
   stow tmux
   stow yazi
   stow yt-dlp
-  stow lf
   stow vim
   stow yay
   stow paru
-  stow wezterm
+  stow hypr
 else
   echo "Failed to clone the repository."
   exit 1
