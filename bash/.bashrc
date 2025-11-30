@@ -181,7 +181,7 @@ alias wgd='wg-quick down wg0'
 # tailscale
 alias tsvpn='sudo tailscale up --exit-node=omv --exit-node-allow-lan-access=true --accept-routes'
 alias tsup='sudo tailscale up --accept-routes'
-alias tssrv='sudo tailscale up --advertise-routes=192.168.2.0/24 --advertise-exit-node'
+alias tssrv='sudo tailscale up --ssh --advertise-routes=192.168.2.0/24 --advertise-exit-node'
 alias tsd='sudo tailscale down'
 
 # systemctl
