@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-gsettings set org.gnome.desktop.background picture-uri-dark file://"$1"
+dms ipc call wallpaper set $1
+
+# gsettings set org.gnome.desktop.background picture-uri-dark file://"$1"
 
 #### hyprland
 # cp -f "$1" ~/.cache/wallpaper
