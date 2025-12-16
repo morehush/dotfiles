@@ -269,7 +269,6 @@ layout {
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
 // spawn-at-startup "qs" "-c" "noctalia-shell"
-spawn-at-startup "dms" "run"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
@@ -385,6 +384,13 @@ binds {
     Mod+Alt+Backslash { spawn-sh "1password --ozone-platform-hint=auto"; }
     
     Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn-sh "dms ipc call lock lock"; }
+    Super+Alt+Delete hotkey-overlay-title="Suspend" { spawn-sh "systemctl suspend"; }
+
+    Mod+Tab repeat=false { toggle-overview; }
+    Mod+P hotkey-overlay-title="Clipboard Manager" { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
+    Mod+Space hotkey-overlay-title="App Launcher" { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
+    Mod+Alt+I hotkey-overlay-title="Notifications" { spawn "dms" "ipc" "call" "notifications" "toggle"; }
+
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
