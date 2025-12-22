@@ -359,7 +359,8 @@ binds {
     Mod+Alt+B { spawn "brave"; }
     Mod+Alt+N { spawn-sh "brave --incognito"; }
     Mod+Alt+Y { spawn-sh "ghostty -e yazi"; }
-    Mod+Alt+D { spawn-sh "brave --app='https://discord.com/channels/@me'"; }
+    Mod+Alt+D { spawn-sh "flatpak run com.discordapp.Discord --ozone-platform-hint=auto"; }
+    Mod+Alt+S { spawn-sh "flatpak run com.spotify.Client"; }
     Mod+Alt+Backslash { spawn-sh "1password --ozone-platform-hint=auto"; }
     
     Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn-sh "dms ipc call lock lock"; }
