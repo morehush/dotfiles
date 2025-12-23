@@ -1,5 +1,5 @@
 # Set theme
---theme="base16"
+--theme="tokyonight_night"
 
 # Show line numbers, Git modifications and file header (but no grid)
 --style="numbers,changes,header"
