@@ -12,6 +12,5 @@ if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
 fi
 
-### "bat" as manpager
-export MANPAGER="less -R --use-color -Dd+r -Du+b"
+export MANPAGER="nvim +Man!"
 
