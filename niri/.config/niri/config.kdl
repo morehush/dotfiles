@@ -16,7 +16,7 @@ prefer-no-csd
 input {
     keyboard {
           repeat-rate 35
-          repeat-delay 200
+          repeat-delay 300
         xkb {
           layout "us,en"
             // You can set rules, model, layout, variant and options.
@@ -365,7 +365,7 @@ binds {
     Mod+Alt+B { spawn "brave"; }
     Mod+Alt+N { spawn-sh "brave --incognito"; }
     Mod+Alt+Y { spawn-sh "ghostty -e yazi"; }
-    Mod+Alt+D { spawn-sh "flatpak run com.discordapp.Discord --ozone-platform-hint=auto"; }
+    Mod+Alt+D { spawn-sh "flatpak run com.discordapp.Discord"; }
     Mod+Alt+S { spawn-sh "flatpak run com.spotify.Client"; }
     Mod+Alt+Backslash { spawn-sh "1password --ozone-platform-hint=auto"; }
     
