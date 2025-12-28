@@ -67,6 +67,8 @@ source "$HOME/.config/zsh/alias.zsh"
 source "$HOME/.config/zsh/exports.zsh"
 source "$HOME/.config/zsh/functions.zsh"
 
+fastfetch --config examples/13
+
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 eval "$(atuin init zsh)"
