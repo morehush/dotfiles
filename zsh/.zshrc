@@ -57,8 +57,6 @@ setopt hist_find_no_dups
 unsetopt BEEP
 setopt AUTO_CD
 setopt GLOB_DOTS
-bindkey -s '^x' '^usource .zshrc\n'
-bindkey '^H' backward-kill-word # Ctrl + Backspace to delete a whole word.
 
 # Open buffer line in editor
 autoload -Uz edit-command-line
