@@ -37,6 +37,7 @@ alias sj='journalctl --all --follow --unit'
 alias uj='journalctl --all --follow --user-unit'
 
 # Changing 'ls' to 'eza'
+alias ls='ls --color'
 alias l='eza -l --group-directories-first'
 alias la='eza --all --group-directories-first'
 alias ll='eza -al --group-directories-first'
