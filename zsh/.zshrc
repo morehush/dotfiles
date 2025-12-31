@@ -60,6 +60,11 @@ setopt GLOB_DOTS
 bindkey -s '^x' '^usource .zshrc\n'
 bindkey '^H' backward-kill-word # Ctrl + Backspace to delete a whole word.
 
+# Open buffer line in editor
+autoload -Uz edit-command-line
+zle -N edit-command-line
+bindkey -M vicmd ' ' edit-command-line
+
 ### SET VI MODE ###
 bindkey -v
 
