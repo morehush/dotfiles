@@ -192,7 +192,7 @@ window-rule {
 }
 
 window-rule {
-  match app-id=r#"1password$"#
+  match app-id=r#"proton-pass$"#
   open-floating true
 }
 
@@ -240,7 +240,7 @@ binds {
     Mod+Alt+Y { spawn-sh "ghostty -e yazi"; }
     Mod+Alt+D { spawn-sh "flatpak run com.discordapp.Discord"; }
     Mod+Alt+S { spawn-sh "flatpak run com.spotify.Client"; }
-    Mod+Alt+Backslash { spawn-sh "1password --ozone-platform-hint=auto"; }
+    Mod+Alt+Backslash { spawn-sh "proton-pass"; }
     
     Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn-sh "dms ipc call lock lock"; }
     Super+Alt+Delete hotkey-overlay-title="Suspend" { spawn-sh "systemctl suspend"; }
