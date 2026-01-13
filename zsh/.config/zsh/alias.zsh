@@ -1,6 +1,7 @@
 #!/bin/sh
 
 alias ff='fastfetch'
+alias fff='fastfetch --config examples/13'
 alias v='nvim'
 alias wf='nmcli device wifi'
 alias wificonnect='sudo nmcli dev wifi connect'     #use with SSID password 'mypassword'
