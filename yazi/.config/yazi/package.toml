@@ -10,3 +10,8 @@ hash = "d9da921c3bd37ba32ee27a8a7a40461f"
 use = "kalidyasin/yazi-flavors:tokyonight-night"
 rev = "fa19b40"
 hash = "fd99189fe362330c683de88d7189b44"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-mocha"
+rev = "4a1802a"
+hash = "b951d27afe197d154f6da9683b46c5f8"

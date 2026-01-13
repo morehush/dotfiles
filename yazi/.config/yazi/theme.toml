@@ -1,4 +1,7 @@
+# [flavor]
+# use = "tokyonight-night"
+# # For Yazi 0.4 and above
+# dark = "tokyonight-night"
 [flavor]
-use = "tokyonight-night"
-# For Yazi 0.4 and above
-dark = "tokyonight-night"
+dark = "catppuccin-mocha"
+light = "catppuccin-mocha"   
