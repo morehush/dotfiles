@@ -162,7 +162,7 @@ layout {
 // See the binds section below for more spawn examples.
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
-spawn-at-startup "qs" "-c" "noctalia-shell"
+// spawn-at-startup "qs" "-c" "noctalia-shell"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
@@ -232,8 +232,6 @@ binds {
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return hotkey-overlay-title="Terminal" { spawn "ghostty"; }
-    Alt+Space hotkey-overlay-title="Launcher" { spawn-sh "fuzzel --filter-desktop"; }
-    Mod+Alt+R hotkey-overlay-title="Run" { spawn "fuzzel"; }
     Mod+Alt+F hotkey-overlay-title="File Browswer" { spawn "nautilus"; }
     Mod+Alt+B { spawn "brave"; }
     Mod+Alt+N { spawn-sh "brave --incognito"; }
@@ -245,9 +243,9 @@ binds {
     Super+Alt+Delete hotkey-overlay-title="Suspend" { spawn-sh "systemctl suspend"; }
 
     Mod+Tab repeat=false { toggle-overview; }
-    Mod+P hotkey-overlay-title="Clipboard Manager" { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
-    Mod+Space hotkey-overlay-title="App Launcher" { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
-    Mod+Alt+I hotkey-overlay-title="Notifications" { spawn "dms" "ipc" "call" "notifications" "toggle"; }
+    Mod+P hotkey-overlay-title="Clipboard Manager" { spawn-sh "dms ipc call clipboard toggle"; }
+    Alt+Space hotkey-overlay-title="App Launcher" { spawn-sh "dms ipc call spotlight toggle"; }
+    Mod+Alt+I hotkey-overlay-title="Notifications" { spawn-sh "dms ipc call notifications toggle"; }
 
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
