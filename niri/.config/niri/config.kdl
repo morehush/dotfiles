@@ -135,11 +135,11 @@ layout {
     gaps 4
 
     border {
-      width 2
+      width 1
     }
 
     focus-ring {
-      width 2
+      width 1
     }
 
     center-focused-column "never"
@@ -198,10 +198,10 @@ debug {
 }
 
 // Set the overview wallpaper on the backdrop.
-layer-rule {
-  match namespace="^noctalia-overview*"
-  place-within-backdrop true
-}
+// layer-rule {
+//   match namespace="^noctalia-overview*"
+//   place-within-backdrop true
+// }
 
 window-rule {
     // This regular expression is intentionally made as specific as possible,
