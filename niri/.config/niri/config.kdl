@@ -7,10 +7,10 @@
 // Find the full list of options on the wiki:
 // https://yalter.github.io/niri/Configuration:-Input
 
-// include "dms/alttab.kdl"
-// include "dms/colors.kdl"
-// include "dms/layout.kdl"
-// include "dms/wpblur.kdl"
+include "dms/alttab.kdl"
+include "dms/colors.kdl"
+include "dms/layout.kdl"
+include "dms/wpblur.kdl"
 // include "dms/binds.kdl"
 
 environment {
@@ -132,15 +132,15 @@ output "eDP-1" {
 // Find more information on the wiki:
 // https://yalter.github.io/niri/Configuration:-Layout
 layout {
-    gaps 4
-
-    border {
-      width 1
-    }
-
-    focus-ring {
-      width 1
-    }
+    // gaps 4
+    //
+    // border {
+    //   width 1
+    // }
+    //
+    // focus-ring {
+    //   width 1
+    // }
 
     center-focused-column "never"
 
@@ -184,18 +184,18 @@ hotkey-overlay {
 
 screenshot-path "~/Pictures/Screenshots/Screenshot_%Y%m%d_%H-%M-%S.png"
 
-window-rule {
-  // Rounded corners for a modern look.
-  geometry-corner-radius 8
-
-  // Clips window contents to the rounded corner boundaries.
-  clip-to-geometry true
-}
-
-debug {
-  // Allows notification actions and window activation from Noctalia.
-  honor-xdg-activation-with-invalid-serial
-}
+// window-rule {
+//   // Rounded corners for a modern look.
+//   geometry-corner-radius 8
+//
+//   // Clips window contents to the rounded corner boundaries.
+//   clip-to-geometry true
+// }
+//
+// debug {
+//   // Allows notification actions and window activation from Noctalia.
+//   honor-xdg-activation-with-invalid-serial
+// }
 
 // Set the overview wallpaper on the backdrop.
 // layer-rule {
@@ -237,6 +237,11 @@ window-rule {
   // default-column-width { proportion 1.0; }
 }
 
+window-rule {
+  match app-id=r#"com.discordapp.Discord$"#
+  open-maximized true
+}
+
 // Example: block out two password managers from screen capture.
 // (This example rule is commented out with a "/-" in front.)
 /-window-rule {
@@ -273,20 +278,20 @@ binds {
     Mod+Alt+D { spawn-sh "flatpak run com.discordapp.Discord"; }
     Mod+Alt+Backslash { spawn-sh "proton-pass"; }
     
-    // Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn-sh "dms ipc call lock lock"; }
-    // Super+Alt+Delete hotkey-overlay-title="Suspend" { spawn-sh "systemctl suspend"; }
-    Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; }
-    Super+Alt+Delete hotkey-overlay-title="Suspend" { spawn-sh "qs -c noctalia-shell ipc call sessionMenu lockAndSuspend"; }
+    Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn-sh "dms ipc call lock lock"; }
+    Super+Alt+Delete hotkey-overlay-title="Suspend" { spawn-sh "systemctl suspend"; }
+    // Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; }
+    // Super+Alt+Delete hotkey-overlay-title="Suspend" { spawn-sh "qs -c noctalia-shell ipc call sessionMenu lockAndSuspend"; }
 
     Mod+Tab repeat=false { toggle-overview; }
 
-    // Mod+P hotkey-overlay-title="Clipboard Manager" { spawn-sh "dms ipc call clipboard toggle"; }
-    // Alt+Space hotkey-overlay-title="App Launcher" { spawn-sh "dms ipc call spotlight toggle"; }
-    // Mod+Alt+I hotkey-overlay-title="Notifications" { spawn-sh "dms ipc call notifications toggle"; }
+    Mod+P hotkey-overlay-title="Clipboard Manager" { spawn-sh "dms ipc call clipboard toggle"; }
+    Alt+Space hotkey-overlay-title="App Launcher" { spawn-sh "dms ipc call spotlight toggle"; }
+    Mod+Alt+I hotkey-overlay-title="Notifications" { spawn-sh "dms ipc call notifications toggle"; }
 
-    Mod+P hotkey-overlay-title="Clipboard Manager" { spawn-sh "qs -c noctalia-shell ipc call launcher clipboard"; }
-    Alt+Space hotkey-overlay-title="App Launcher" { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
-    Mod+Alt+I hotkey-overlay-title="Notifications" { spawn-sh "qs -c noctalia-shell ipc call notifications toggleHistory"; }
+    // Mod+P hotkey-overlay-title="Clipboard Manager" { spawn-sh "qs -c noctalia-shell ipc call launcher clipboard"; }
+    // Alt+Space hotkey-overlay-title="App Launcher" { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
+    // Mod+Alt+I hotkey-overlay-title="Notifications" { spawn-sh "qs -c noctalia-shell ipc call notifications toggleHistory"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
@@ -545,5 +550,5 @@ binds {
 
 include "dms/cursor.kdl"
 
-include "./noctalia.kdl"
+// include "./noctalia.kdl"
 

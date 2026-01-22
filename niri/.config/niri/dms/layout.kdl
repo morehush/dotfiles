@@ -7,15 +7,15 @@
         gaps 4
 
         border {
-        width 1
+        width 2
         }
 
         focus-ring {
-        width 1
+        width 2
         }
         }
         window-rule {
-        geometry-corner-radius 8
+        geometry-corner-radius 6
         clip-to-geometry true
         tiled-state true
         draw-border-with-background false
