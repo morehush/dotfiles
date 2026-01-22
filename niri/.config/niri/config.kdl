@@ -203,6 +203,11 @@ debug {
 //   place-within-backdrop true
 // }
 
+overview {
+  // Choose your favorite color.
+  backdrop-color "#1a1a1a"
+}
+
 window-rule {
     // This regular expression is intentionally made as specific as possible,
     // since this is the default config, and we want no false positives.
@@ -274,6 +279,7 @@ binds {
     Super+Alt+Delete hotkey-overlay-title="Suspend" { spawn-sh "qs -c noctalia-shell ipc call sessionMenu lockAndSuspend"; }
 
     Mod+Tab repeat=false { toggle-overview; }
+
     // Mod+P hotkey-overlay-title="Clipboard Manager" { spawn-sh "dms ipc call clipboard toggle"; }
     // Alt+Space hotkey-overlay-title="App Launcher" { spawn-sh "dms ipc call spotlight toggle"; }
     // Mod+Alt+I hotkey-overlay-title="Notifications" { spawn-sh "dms ipc call notifications toggle"; }
@@ -537,7 +543,7 @@ binds {
     Mod+Shift+P { power-off-monitors; }
 }
 
-// include "dms/cursor.kdl"
+include "dms/cursor.kdl"
 
 include "./noctalia.kdl"
 
