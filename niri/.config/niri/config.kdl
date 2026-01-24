@@ -270,11 +270,11 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
-    Mod+Return hotkey-overlay-title="Terminal" { spawn "ghostty"; }
+    Mod+Return hotkey-overlay-title="Terminal" { spawn "foot"; }
     Mod+Alt+F hotkey-overlay-title="File Browswer" { spawn "nautilus"; }
     Mod+Alt+B { spawn "brave"; }
     Mod+Alt+N { spawn-sh "brave --incognito"; }
-    Mod+Alt+Y { spawn-sh "ghostty -e yazi"; }
+    Mod+Alt+Y { spawn-sh "foot -e yazi"; }
     Mod+Alt+D { spawn-sh "flatpak run com.discordapp.Discord"; }
     Mod+Alt+Backslash { spawn-sh "proton-pass"; }
     
