@@ -233,8 +233,8 @@ window-rule {
 
 window-rule {
   match app-id=r#"brave-browser$"#
-  open-maximized true
-  // open-maximized-to-edges true
+  // open-maximized true
+  open-maximized-to-edges true
   // default-column-width { proportion 1.0; }
 }
 
@@ -549,6 +549,5 @@ binds {
     Mod+Shift+P { power-off-monitors; }
 }
 
-// include "dms/cursor.kdl"
-
+include "dms/cursor.kdl"
 include "./noctalia.kdl"

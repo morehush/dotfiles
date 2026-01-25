@@ -1,10 +1,10 @@
 {
     "appLauncher": {
         "autoPasteClipboard": false,
-        "clipboardWrapText": true,
+        "clipboardWrapText": false,
         "customLaunchPrefix": "",
         "customLaunchPrefixEnabled": false,
-        "enableClipPreview": true,
+        "enableClipPreview": false,
         "enableClipboardHistory": true,
         "enableSettingsSearch": true,
         "iconMode": "tabler",
@@ -242,9 +242,6 @@
                 },
                 {
                     "id": "WallpaperSelector"
-                },
-                {
-                    "id": "NoctaliaPerformance"
                 }
             ],
             "right": [
@@ -252,13 +249,10 @@
                     "id": "Notifications"
                 },
                 {
-                    "id": "PowerProfile"
-                },
-                {
                     "id": "KeepAwake"
                 },
                 {
-                    "id": "NightLight"
+                    "id": "NoctaliaPerformance"
                 }
             ]
         }
