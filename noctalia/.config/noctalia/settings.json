@@ -170,9 +170,6 @@
                 },
                 {
                     "id": "plugin:dns-switcher"
-                },
-                {
-                    "id": "plugin:tailscale"
                 }
             ]
         }
@@ -206,7 +203,7 @@
         "monitorForColors": "",
         "predefinedScheme": "Tokyo Night",
         "schedulingMode": "off",
-        "useWallpaperColors": false
+        "useWallpaperColors": true
     },
     "controlCenter": {
         "cards": [
@@ -493,7 +490,7 @@
         "panelBackgroundOpacity": 0.93,
         "panelsAttachedToBar": true,
         "settingsPanelMode": "attached",
-        "tooltipsEnabled": false,
+        "tooltipsEnabled": true,
         "wifiDetailsViewMode": "grid"
     },
     "wallpaper": {
@@ -517,7 +514,7 @@
         "transitionType": "random",
         "useSolidColor": false,
         "useWallhaven": false,
-        "viewMode": "single",
+        "viewMode": "recursive",
         "wallhavenApiKey": "",
         "wallhavenCategories": "111",
         "wallhavenOrder": "desc",
