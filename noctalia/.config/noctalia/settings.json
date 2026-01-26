@@ -237,18 +237,18 @@
         "shortcuts": {
             "left": [
                 {
+                    "id": "PowerProfile"
+                },
+                {
                     "id": "Network"
                 },
                 {
                     "id": "Bluetooth"
-                },
-                {
-                    "id": "WallpaperSelector"
                 }
             ],
             "right": [
                 {
-                    "id": "Notifications"
+                    "id": "WallpaperSelector"
                 },
                 {
                     "id": "KeepAwake"
