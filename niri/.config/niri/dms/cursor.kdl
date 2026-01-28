@@ -4,7 +4,7 @@
 // ! PLACE YOUR CUSTOM CONFIGURATION ELSEWHERE !
 
 cursor {
-    xcursor-theme "Adwaita"
+    xcursor-theme "Qogir"
     xcursor-size 24
     hide-when-typing
 }
