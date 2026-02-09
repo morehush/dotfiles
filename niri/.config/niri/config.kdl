@@ -7,10 +7,10 @@
 // Find the full list of options on the wiki:
 // https://yalter.github.io/niri/Configuration:-Input
 
-include "dms/alttab.kdl"
-include "dms/colors.kdl"
-include "dms/layout.kdl"
-include "dms/wpblur.kdl"
+// include "dms/alttab.kdl"
+// include "dms/colors.kdl"
+// include "dms/layout.kdl"
+// include "dms/wpblur.kdl"
 include "dms/cursor.kdl"
 // include "dms/binds.kdl"
 
@@ -133,15 +133,15 @@ output "eDP-1" {
 // Find more information on the wiki:
 // https://yalter.github.io/niri/Configuration:-Layout
 layout {
-    // gaps 4
-    //
-    // border {
-    //   width 1
-    // }
-    //
-    // focus-ring {
-    //   width 1
-    // }
+    gaps 4
+
+    border {
+      width 1
+    }
+
+    focus-ring {
+      width 1
+    }
 
     center-focused-column "never"
 
@@ -177,6 +177,7 @@ layout {
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
+spawn-sh-at-startup "systemctl --user start hyprpolkitagent"
 
 hotkey-overlay {
     // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
@@ -185,10 +186,23 @@ hotkey-overlay {
 
 screenshot-path "~/Pictures/Screenshots/Screenshot_%Y%m%d_%H-%M-%S.png"
 
-// overview {
-//   // Choose your favorite color.
-//   backdrop-color "#1a1a1a"
-// }
+window-rule {
+  // Rounded corners for a modern look.
+  geometry-corner-radius 8
+
+  // Clips window contents to the rounded corner boundaries.
+  clip-to-geometry true
+}
+
+debug {
+  // Allows notification actions and window activation from Noctalia.
+  honor-xdg-activation-with-invalid-serial
+}
+
+overview {
+  // Choose your favorite color.
+  backdrop-color "#1a1a1a"
+}
 
 window-rule {
     // This regular expression is intentionally made as specific as possible,
@@ -260,15 +274,21 @@ binds {
     Mod+Alt+D { spawn-sh "flatpak run com.discordapp.Discord"; }
     Mod+Alt+Backslash { spawn-sh "proton-pass"; }
     
-    Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn-sh "dms ipc call lock lock"; }
-    Super+Alt+Delete hotkey-overlay-title="Suspend" { spawn-sh "systemctl suspend"; }
+    // Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn-sh "dms ipc call lock lock"; }
+    // Super+Alt+Delete hotkey-overlay-title="Suspend" { spawn-sh "systemctl suspend"; }
 
+    Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; }
+    Super+Alt+Delete hotkey-overlay-title="Suspend" { spawn-sh "qs -c noctalia-shell ipc call sessionMenu lockAndSuspend"; }
+    
     Mod+Tab repeat=false { toggle-overview; }
 
-    Mod+P hotkey-overlay-title="Clipboard Manager" { spawn-sh "dms ipc call clipboard toggle"; }
-    Alt+Space hotkey-overlay-title="App Launcher" { spawn-sh "dms ipc call spotlight toggle"; }
-    Mod+Alt+I hotkey-overlay-title="Notifications" { spawn-sh "dms ipc call notifications toggle"; }
+    // Mod+P hotkey-overlay-title="Clipboard Manager" { spawn-sh "dms ipc call clipboard toggle"; }
+    // Alt+Space hotkey-overlay-title="App Launcher" { spawn-sh "dms ipc call spotlight toggle"; }
+    // Mod+Alt+I hotkey-overlay-title="Notifications" { spawn-sh "dms ipc call notifications toggle"; }
 
+    Mod+P hotkey-overlay-title="Clipboard Manager" { spawn-sh "qs -c noctalia-shell ipc call launcher clipboard"; }
+    Alt+Space hotkey-overlay-title="App Launcher" { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
+    Mod+Alt+I hotkey-overlay-title="Notifications" { spawn-sh "qs -c noctalia-shell ipc call notifications toggleHistory"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
@@ -524,3 +544,5 @@ binds {
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
 }
+
+include "./noctalia.kdl"
