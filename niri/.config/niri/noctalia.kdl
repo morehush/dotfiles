@@ -1,30 +1,20 @@
 layout {
+  
+  gaps 4
 
-    focus-ring {
-        active-color   "#7aa2f7"
-        inactive-color "#1a1b26"
-        urgent-color   "#f7768e"
-    }
+  border {
+  width 2
+  }
 
-    border {
-        active-color   "#7aa2f7"
-        inactive-color "#1a1b26"
-        urgent-color   "#f7768e"
-    }
-
-    shadow {
-        color "#15161e70"
-    }
-
-    tab-indicator {
-        active-color   "#7aa2f7"
-        inactive-color "#003dbe"
-        urgent-color   "#f7768e"
-    }
-
-    insert-hint {
-        color "#7aa2f780"
-    }
+  focus-ring {
+  width 2
+  }
+}
+window-rule {
+  geometry-corner-radius 6
+  clip-to-geometry true
+  tiled-state true
+  draw-border-with-background false
 }
 
 recent-windows {
@@ -32,4 +22,10 @@ recent-windows {
         active-color "#7aa2f7"
         urgent-color "#f7768e"
     }
+}
+
+cursor {
+    xcursor-theme "Qogir"
+    xcursor-size 24
+    hide-when-typing
 }
