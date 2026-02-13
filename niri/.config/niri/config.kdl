@@ -177,11 +177,6 @@ hotkey-overlay {
 
 screenshot-path "~/Pictures/Screenshots/Screenshot_%Y%m%d_%H-%M-%S.png"
 
-overview {
-  // Choose your favorite color.
-  backdrop-color "#1a1a1a"
-}
-
 window-rule {
     // This regular expression is intentionally made as specific as possible,
     // since this is the default config, and we want no false positives.
@@ -526,3 +521,4 @@ binds {
 }
 
 include "./noctalia.kdl"
+include "./noctalia2.kdl"

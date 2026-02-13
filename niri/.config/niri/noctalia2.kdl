@@ -1,0 +1,42 @@
+
+layout {
+gaps 4
+
+border {
+width 2
+}
+
+focus-ring {
+width 2
+}
+}
+window-rule {
+geometry-corner-radius 6
+clip-to-geometry true
+tiled-state true
+draw-border-with-background false
+}
+
+cursor {
+    xcursor-theme "Qogir"
+    xcursor-size 24
+    hide-when-typing
+}
+
+window-rule {
+  // Rounded corners for a modern look.
+  geometry-corner-radius 20
+
+  // Clips window contents to the rounded corner boundaries.
+  clip-to-geometry true
+}
+
+debug {
+  // Allows notification actions and window activation from Noctalia.
+  honor-xdg-activation-with-invalid-serial
+}
+
+overview {
+  // Choose your favorite color.
+  backdrop-color "#26233a"
+}
