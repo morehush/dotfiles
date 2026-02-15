@@ -248,6 +248,7 @@ binds {
     Mod+Alt+Backslash { spawn-sh "proton-pass"; }
     Mod+Alt+M { spawn-sh "~/.local/bin/pprofile"; }
     Mod+Alt+R { spawn-sh "fuzzel"; }
+    Mod+Alt+Delete { spawn-sh "~/.local/bin/powermenu"; }
     
     Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn-sh "dms ipc call lock lock"; }
     Super+Alt+Delete hotkey-overlay-title="Suspend" { spawn-sh "systemctl suspend"; }
