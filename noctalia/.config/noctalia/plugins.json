@@ -7,10 +7,10 @@
         }
     ],
     "states": {
-        "dns-switcher": {
+        "polkit-agent": {
             "enabled": true,
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         }
     },
-    "version": 1
+    "version": 2
 }
