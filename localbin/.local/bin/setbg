@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-dms ipc call wallpaper set $1
+qs -c noctalia-shell ipc call wallpaper set $1 ""
 
 # gsettings set org.gnome.desktop.background picture-uri-dark file://"$1"
 
