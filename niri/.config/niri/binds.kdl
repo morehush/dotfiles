@@ -22,6 +22,7 @@ binds {
     Mod+Alt+D { spawn-sh "flatpak run com.discordapp.Discord"; }
     Mod+Alt+Backslash { spawn-sh "proton-pass"; }
     Mod+Alt+M { spawn-sh "qs -c noctalia-shell ipc call powerProfile cycle"; }
+    Mod+Alt+Z { spawn "zen-browser"; }
     
     // Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn-sh "dms ipc call lock lock"; }
     // Super+Alt+Delete hotkey-overlay-title="Suspend" { spawn-sh "systemctl suspend"; }
