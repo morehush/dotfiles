@@ -29,7 +29,7 @@ window-rule {
 
 window-rule {
   match app-id=r#"brave-browser$"#
-  match app-id=r#"com.discordapp.Discord$"#
+  match app-id=r#"discord$"#
   match app-id=r#"chromium$"#
   match app-id=r#"firefox$"#
   open-maximized true

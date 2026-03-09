@@ -19,7 +19,7 @@ binds {
     Mod+Alt+B { spawn "brave"; }
     Mod+Alt+N { spawn-sh "brave --incognito"; }
     Mod+Alt+Y { spawn-sh "ghostty -e yazi"; }
-    Mod+Alt+D { spawn-sh "flatpak run com.discordapp.Discord"; }
+    Mod+Alt+D { spawn-sh "discord"; }
     Mod+Alt+Backslash { spawn-sh "proton-pass"; }
     Mod+Alt+M { spawn-sh "qs -c noctalia-shell ipc call powerProfile cycle"; }
     Mod+Alt+Z { spawn "zen-browser"; }
