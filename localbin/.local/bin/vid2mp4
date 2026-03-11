@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for file in *.avi; do
+  [ ! -e "$file" ] && continue
+  ffmpeg -i "$file" -c:v libx264 -crf 19 -c:a aac -b:a 128k "${file%.avi}.mp4"
+done
