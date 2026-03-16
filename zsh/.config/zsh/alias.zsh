@@ -14,12 +14,13 @@ alias grubfix='sudo grub-install --target=x86_64-efi --efi-directory=/boot/efi -
 alias grubmk='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias hmmm='paru -Sy &> /dev/null && paru -Qu'
 alias error='journalctl -b -p err'
-alias unm='fusermount3 -u ~/remote1 && fusermount3 -u ~/remote2'
+alias unm='fusermount3 -u ~/remote1 && fusermount3 -u ~/remote2 && fusermount3 -u ~/remote3'
 alias fuck='sudo !!'
 alias catt='tail -n +1'
 alias checkdns='curl -v https://dns.nextdns.io/info'
 alias archbox='distrobox enter archbox -- /usr/sbin/fish'
 alias updock='~/dockcheck/dockcheck.sh -apu -x 12 -e archbox'
+alias img='swiv -ar'
 
 # wireguard
 alias wgup='wg-quick up wg0'
