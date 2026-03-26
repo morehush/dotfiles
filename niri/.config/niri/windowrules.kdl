@@ -3,7 +3,6 @@ geometry-corner-radius 6
 clip-to-geometry true
 tiled-state true
 draw-border-with-background false
-open-maximized true
 }
 
 window-rule {
@@ -21,6 +20,17 @@ window-rule {
     // - Flatpak Firefox (app-id is "org.mozilla.firefox")
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
     open-floating true
+}
+
+window-rule {
+  match app-id=r#"brave-browser$"#
+  match app-id=r#"discord$"#
+  match app-id=r#"chromium$"#
+  match app-id=r#"firefox$"#
+  match app-id=r#"zen$"#
+  open-maximized true
+  // open-maximized-to-edges true
+  // default-column-width { proportion 1.0; }
 }
 
 // Example: block out two password managers from screen capture.
