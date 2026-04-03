@@ -7,7 +7,7 @@
 keymap = [
 
 	# Set Wallpaper 
-	{ on = [ "b", "g" ], run = "shell 'setbg \"$1\"' --confirm",    desc = "Set wallpaper" },
+	{ on = [ "b", "g" ], run = "shell 'setbg $1' --confirm",    desc = "Set wallpaper" },
 
 	{ on = [ "<Esc>" ], run = "escape",             desc = "Exit visual mode, clear selected, or cancel search" },
 	{ on = [ "q" ],     run = "quit",               desc = "Exit the process" },
