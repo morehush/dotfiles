@@ -32,38 +32,22 @@ binds {
     XF86AudioPrev        allow-when-locked=true { spawn-sh "playerctl previous"; }
     XF86AudioNext        allow-when-locked=true { spawn-sh "playerctl next"; }
 
-    // DMS binds
-    Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn-sh "dms ipc call lock lock"; }
-    Super+Alt+Delete hotkey-overlay-title="Suspend" { spawn-sh "systemctl suspend"; }
+    Mod+Alt+M { spawn-sh "qs -c noctalia-shell ipc call powerProfile cycle"; }
+    Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; }
+    Super+Alt+Delete hotkey-overlay-title="Suspend" { spawn-sh "qs -c noctalia-shell ipc call sessionMenu lockAndSuspend"; }
 
-    Mod+P hotkey-overlay-title="Clipboard Manager" { spawn-sh "dms ipc call clipboard toggle"; }
-    Alt+Space hotkey-overlay-title="App Launcher" { spawn-sh "dms ipc call spotlight toggle"; }
-    Mod+Alt+I hotkey-overlay-title="Notifications" { spawn-sh "dms ipc call notifications toggle"; }
+    Mod+P hotkey-overlay-title="Clipboard Manager" { spawn-sh "qs -c noctalia-shell ipc call launcher clipboard"; }
+    Alt+Space hotkey-overlay-title="App Launcher" { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
+    Mod+Alt+I hotkey-overlay-title="Notifications" { spawn-sh "qs -c noctalia-shell ipc call notifications toggleHistory"; }
+    Mod+Alt+J hotkey-overlay-title="Control Center" { spawn-sh "qs -c noctalia-shell ipc call controlCenter toggle"; }
 
-    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "dms ipc call audio increment 5"; }
-    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "dms ipc call audio decrement 5"; }
-    XF86AudioMute        allow-when-locked=true { spawn-sh "dms ipc call audio mute"; }
+    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0"; }
+    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
+    XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
+    XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
 
-    XF86MonBrightnessUp allow-when-locked=true { spawn-sh "dms ipc call brightness increment 5 backlight:intel_backlight"; }
-    XF86MonBrightnessDown allow-when-locked=true { spawn-sh "dms ipc call brightness decrement 5 backlight:intel_backlight"; }
-
-    // Noctalia binds
-    // Mod+Alt+M { spawn-sh "qs -c noctalia-shell ipc call powerProfile cycle"; }
-    // Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; }
-    // Super+Alt+Delete hotkey-overlay-title="Suspend" { spawn-sh "qs -c noctalia-shell ipc call sessionMenu lockAndSuspend"; }
-    //
-    // Mod+P hotkey-overlay-title="Clipboard Manager" { spawn-sh "qs -c noctalia-shell ipc call launcher clipboard"; }
-    // Alt+Space hotkey-overlay-title="App Launcher" { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
-    // Mod+Alt+I hotkey-overlay-title="Notifications" { spawn-sh "qs -c noctalia-shell ipc call notifications toggleHistory"; }
-    // Mod+Alt+J hotkey-overlay-title="Control Center" { spawn-sh "qs -c noctalia-shell ipc call controlCenter toggle"; }
-    //
-    // XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0"; }
-    // XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
-    // XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
-    // XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
-    //
-    // XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
-    // XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
+    XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
+    XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
 
     // Open/close the Overview: a zoomed-out view of workspaces and windows.
     // You can also move the mouse into the top-left hot corner,

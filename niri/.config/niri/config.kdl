@@ -7,11 +7,20 @@
 // Find the full list of options on the wiki:
 // https://yalter.github.io/niri/Configuration:-Input
 
+// DMS includes
 include "dms/alttab.kdl"
 include "dms/colors.kdl"
 include "dms/layout.kdl"
 include "dms/wpblur.kdl"
 include "dms/cursor.kdl"
+include "dms/binds.kdl"
+
+// Noctalia includes
+// include "./noctalia.kdl"
+// include "./noctalia2.kdl"
+// include "./binds.kdl"
+// include "./windowrules.kdl"
+// include "./layout.kdl"
 
 environment {
     ELECTRON_OZONE_PLATFORM_HINT "auto"
@@ -150,8 +159,3 @@ hotkey-overlay {
 
 screenshot-path "~/Pictures/Screenshots/Screenshot_%Y%m%d_%H-%M-%S.png"
 
-include "./binds.kdl"
-include "./windowrules.kdl"
-// include "./layout.kdl"
-// include "./noctalia.kdl"
-// include "./noctalia2.kdl"
