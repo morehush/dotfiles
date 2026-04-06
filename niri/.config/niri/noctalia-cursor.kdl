@@ -1,0 +1,5 @@
+cursor {
+    xcursor-theme "Qogir"
+    xcursor-size 24
+    hide-when-typing
+}
