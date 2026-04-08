@@ -644,7 +644,7 @@
     },
     "wallpaper": {
         "automationEnabled": false,
-        "directory": "/home/morehush/Pictures/Wallpapers",
+        "directory": "/home/morehush/Pictures/wallpaper",
         "enableMultiMonitorDirectories": false,
         "enabled": true,
         "favorites": [
