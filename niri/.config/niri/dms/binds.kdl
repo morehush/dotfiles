@@ -122,8 +122,7 @@ binds {
     Super+Alt+D allow-inhibiting=false hotkey-overlay-title="Open Discord" { spawn "discord"; }
     Super+Alt+F allow-inhibiting=false hotkey-overlay-title="Open File Browser" { spawn "nautilus"; }
     Super+Alt+N allow-inhibiting=false hotkey-overlay-title="Open Private Browser" { spawn "brave" "--incognito"; }
-    Super+Alt+Z hotkey-overlay-title="Open Zen" allow-inhibiting=false { spawn "zen-browser"; }
-    Super+Return allow-inhibiting=false hotkey-overlay-title="Open Terminal" { spawn "ghostty"; }
+    Super+Return allow-inhibiting=false hotkey-overlay-title="Open Terminal" { spawn "foot"; }
     Mod+D repeat=false { toggle-overview; }
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
     Mod+Shift+Slash { show-hotkey-overlay; }
