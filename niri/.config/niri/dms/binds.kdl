@@ -120,9 +120,9 @@ binds {
     Super+Alt+B allow-inhibiting=false hotkey-overlay-title="Open Brave" { spawn "brave"; }
     Super+Alt+Backslash allow-inhibiting=false hotkey-overlay-title="Open Proton Pass" { spawn "proton-pass"; }
     Super+Alt+D allow-inhibiting=false hotkey-overlay-title="Open Discord" { spawn "discord"; }
-    Super+Alt+F allow-inhibiting=false hotkey-overlay-title="Open File Browser" { spawn "nautilus"; }
-    Super+Alt+N allow-inhibiting=false hotkey-overlay-title="Open Private Browser" { spawn "brave" "--incognito"; }
-    Super+Return allow-inhibiting=false hotkey-overlay-title="Open Terminal" { spawn "foot"; }
+    Super+Alt+F hotkey-overlay-title="Open File Browser" allow-inhibiting=false { spawn "nautilus"; }
+    Super+Alt+N hotkey-overlay-title="Open Private Browser" allow-inhibiting=false { spawn "brave" "--incognito"; }
+    Super+Return allow-inhibiting=false hotkey-overlay-title="Open Terminal" { spawn "ghostty"; }
     Mod+D repeat=false { toggle-overview; }
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
     Mod+Shift+Slash { show-hotkey-overlay; }

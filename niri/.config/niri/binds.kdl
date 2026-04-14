@@ -22,8 +22,6 @@ binds {
     Mod+Alt+Y { spawn-sh "ghostty -e yazi"; }
     Mod+Alt+D { spawn-sh "discord"; }
     Mod+Alt+Backslash { spawn-sh "proton-pass"; }
-    Mod+Alt+Z { spawn "zen-browser"; }
-    
 
     Mod+Tab repeat=false { toggle-overview; }
 
