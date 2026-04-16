@@ -13,4 +13,3 @@ if [ -d "$HOME/.local/bin" ] ;
 fi
 
 export MANPAGER="nvim +Man!"
-
