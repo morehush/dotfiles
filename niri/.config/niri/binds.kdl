@@ -22,6 +22,8 @@ binds {
     Mod+Alt+Y { spawn-sh "ghostty -e yazi"; }
     Mod+Alt+D { spawn-sh "discord"; }
     Mod+Alt+Backslash { spawn-sh "proton-pass"; }
+    Alt+Space hotkey-overlay-title="App Launcher" { spawn-sh "fuzzel --filter-desktop"; }
+    Mod+Alt+M { spawn-sh "~/.local/bin/pprofile"; }
 
     Mod+Tab repeat=false { toggle-overview; }
 
@@ -30,12 +32,11 @@ binds {
     XF86AudioPrev        allow-when-locked=true { spawn-sh "playerctl previous"; }
     XF86AudioNext        allow-when-locked=true { spawn-sh "playerctl next"; }
 
-    Mod+Alt+M { spawn-sh "qs -c noctalia-shell ipc call powerProfile cycle"; }
+    // Mod+Alt+M { spawn-sh "qs -c noctalia-shell ipc call powerProfile cycle"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; }
     Super+Alt+Delete hotkey-overlay-title="Suspend" { spawn-sh "qs -c noctalia-shell ipc call sessionMenu lockAndSuspend"; }
 
     Mod+P hotkey-overlay-title="Clipboard Manager" { spawn-sh "qs -c noctalia-shell ipc call launcher clipboard"; }
-    Alt+Space hotkey-overlay-title="App Launcher" { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
     Mod+Alt+I hotkey-overlay-title="Notifications" { spawn-sh "qs -c noctalia-shell ipc call notifications toggleHistory"; }
     Mod+Alt+J hotkey-overlay-title="Control Center" { spawn-sh "qs -c noctalia-shell ipc call controlCenter toggle"; }
 

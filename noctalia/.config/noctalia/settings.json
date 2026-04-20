@@ -626,6 +626,10 @@
             {
                 "enabled": true,
                 "id": "hyprland"
+            },
+            {
+                "enabled": true,
+                "id": "mango"
             }
         ],
         "enableUserTheming": false
