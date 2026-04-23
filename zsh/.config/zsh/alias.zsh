@@ -20,7 +20,6 @@ alias catt='tail -n +1'
 alias checkdns='curl -v https://dns.nextdns.io/info'
 alias archbox='distrobox enter archbox -- /usr/sbin/fish'
 alias updock='~/dockcheck/dockcheck.sh -apu -x 12 -e archbox'
-alias img='swiv -ar'
 
 # wireguard
 alias wgup='wg-quick up wg0'
