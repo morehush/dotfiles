@@ -1,5 +1,4 @@
 binds {
-    Alt+space hotkey-overlay-title="Application Launcher" { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
     Ctrl+Alt+Delete hotkey-overlay-title="Task Manager" { spawn "dms" "ipc" "call" "processlist" "focusOrToggle"; }
     Mod+Alt+L hotkey-overlay-title="Lock Screen" { spawn "dms" "ipc" "call" "lock" "lock"; }
     Mod+Comma hotkey-overlay-title="Settings" { spawn "dms" "ipc" "call" "settings" "focusOrToggle"; }
@@ -117,11 +116,13 @@ binds {
     Print { screenshot; }
     XF86Launch1 { screenshot; }
     Mod+Shift+E { quit; }
+    Alt+space hotkey-overlay-title="Application Launcher" { spawn "fuzzel --filter-desktop"; }
     Super+Alt+B allow-inhibiting=false hotkey-overlay-title="Open Brave" { spawn "brave"; }
     Super+Alt+Backslash allow-inhibiting=false hotkey-overlay-title="Open Proton Pass" { spawn "proton-pass"; }
     Super+Alt+D allow-inhibiting=false hotkey-overlay-title="Open Discord" { spawn "discord"; }
-    Super+Alt+F hotkey-overlay-title="Open File Browser" allow-inhibiting=false { spawn "nautilus"; }
-    Super+Alt+N hotkey-overlay-title="Open Private Browser" allow-inhibiting=false { spawn "brave" "--incognito"; }
+    Super+Alt+F allow-inhibiting=false hotkey-overlay-title="Open File Browser" { spawn "nautilus"; }
+    Super+Alt+N allow-inhibiting=false hotkey-overlay-title="Open Private Browser" { spawn "brave" "--incognito"; }
+    Super+Alt+Y repeat=false hotkey-overlay-title="Launch Yazi" { spawn "ghostty" "-e" "yazi"; }
     Super+Return allow-inhibiting=false hotkey-overlay-title="Open Terminal" { spawn "ghostty"; }
     Mod+D repeat=false { toggle-overview; }
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
