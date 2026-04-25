@@ -5,8 +5,8 @@ binds {
     Mod+M hotkey-overlay-title="Task Manager" { spawn "dms" "ipc" "call" "processlist" "focusOrToggle"; }
     Mod+N hotkey-overlay-title="Notification Center" { spawn "dms" "ipc" "call" "notifications" "toggle"; }
     Mod+Shift+N hotkey-overlay-title="Notepad" { spawn "dms" "ipc" "call" "notepad" "toggle"; }
-    Mod+V hotkey-overlay-title="Clipboard Manager" { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
     Mod+Y hotkey-overlay-title="Browse Wallpapers" { spawn "dms" "ipc" "call" "dankdash" "wallpaper"; }
+    Super+P hotkey-overlay-title="Clipboard Manager" { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn "dms" "ipc" "call" "audio" "decrement" "3"; }
     XF86AudioMicMute allow-when-locked=true { spawn "dms" "ipc" "call" "audio" "micmute"; }
     XF86AudioMute allow-when-locked=true { spawn "dms" "ipc" "call" "audio" "mute"; }
@@ -118,12 +118,16 @@ binds {
     Mod+Shift+E { quit; }
     Alt+space hotkey-overlay-title="Application Launcher" { spawn "fuzzel --filter-desktop"; }
     Super+Alt+B allow-inhibiting=false hotkey-overlay-title="Open Brave" { spawn "brave"; }
-    Super+Alt+Backslash allow-inhibiting=false hotkey-overlay-title="Open Proton Pass" { spawn "proton-pass"; }
+    Super+Alt+Backslash hotkey-overlay-title="Open Proton Pass" allow-inhibiting=false { spawn "proton-pass"; }
     Super+Alt+D allow-inhibiting=false hotkey-overlay-title="Open Discord" { spawn "discord"; }
     Super+Alt+F allow-inhibiting=false hotkey-overlay-title="Open File Browser" { spawn "nautilus"; }
     Super+Alt+N allow-inhibiting=false hotkey-overlay-title="Open Private Browser" { spawn "brave" "--incognito"; }
     Super+Alt+Y repeat=false hotkey-overlay-title="Launch Yazi" { spawn "ghostty" "-e" "yazi"; }
     Super+Return allow-inhibiting=false hotkey-overlay-title="Open Terminal" { spawn "ghostty"; }
+    XF86AudioNext allow-when-locked=true { spawn-sh "playerctl next"; }
+    XF86AudioPlay allow-when-locked=true { spawn-sh "playerctl play-pause"; }
+    XF86AudioPrev allow-when-locked=true { spawn-sh "playerctl previous"; }
+    XF86AudioStop allow-when-locked=true { spawn-sh "playerctl stop"; }
     Mod+D repeat=false { toggle-overview; }
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
     Mod+Shift+Slash { show-hotkey-overlay; }
