@@ -116,11 +116,12 @@ binds {
     Print { screenshot; }
     XF86Launch1 { screenshot; }
     Mod+Shift+E { quit; }
-    Alt+space hotkey-overlay-title="Application Launcher" { spawn "fuzzel --filter-desktop"; }
+    Alt+space repeat=false allow-inhibiting=false hotkey-overlay-title="Application Launcher" { spawn "fuzzel" "--filter-desktop"; }
     Super+Alt+B allow-inhibiting=false hotkey-overlay-title="Open Brave" { spawn "brave"; }
-    Super+Alt+Backslash hotkey-overlay-title="Open Proton Pass" allow-inhibiting=false { spawn "proton-pass"; }
-    Super+Alt+D allow-inhibiting=false hotkey-overlay-title="Open Discord" { spawn "discord"; }
+    Super+Alt+Backslash allow-inhibiting=false hotkey-overlay-title="Open Proton Pass" { spawn "proton-pass"; }
+    Super+Alt+D hotkey-overlay-title="Open Discord" allow-inhibiting=false { spawn "discord"; }
     Super+Alt+F allow-inhibiting=false hotkey-overlay-title="Open File Browser" { spawn "nautilus"; }
+    Super+Alt+M hotkey-overlay-title="Change Power Profile" { spawn "~/.local/bin/pprofile"; }
     Super+Alt+N allow-inhibiting=false hotkey-overlay-title="Open Private Browser" { spawn "brave" "--incognito"; }
     Super+Alt+Y repeat=false hotkey-overlay-title="Launch Yazi" { spawn "ghostty" "-e" "yazi"; }
     Super+Return allow-inhibiting=false hotkey-overlay-title="Open Terminal" { spawn "ghostty"; }
