@@ -8,21 +8,21 @@
 // https://yalter.github.io/niri/Configuration:-Input
 
 // DMS includes
-include "dms/alttab.kdl"
-include "dms/colors.kdl"
-include "dms/layout.kdl"
-include "dms/wpblur.kdl"
-include "dms/cursor.kdl"
-include "dms/binds.kdl"
-include "dms/windowrules.kdl"
+// include "dms/alttab.kdl"
+// include "dms/colors.kdl"
+// include "dms/layout.kdl"
+// include "dms/wpblur.kdl"
+// include "dms/cursor.kdl"
+// include "dms/binds.kdl"
+// include "dms/windowrules.kdl"
 
 // Noctalia includes
-// include "./noctalia.kdl"
-// include "./noctalia2.kdl"
-// include "./noctalia-cursor.kdl"
-// include "./binds.kdl"
-// include "./windowrules.kdl"
-// include "./layout.kdl"
+include "./noctalia.kdl"
+include "./noctalia2.kdl"
+include "./noctalia-cursor.kdl"
+include "./binds.kdl"
+include "./windowrules.kdl"
+include "./layout.kdl"
 
 environment {
     ELECTRON_OZONE_PLATFORM_HINT "auto"
@@ -146,8 +146,8 @@ output "eDP-1" {
 // See the binds section below for more spawn examples.
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
-// spawn-sh-at-startup "qs -c noctalia-shell"
-spawn-sh-at-startup "dms run"
+spawn-sh-at-startup "qs -c noctalia-shell"
+// spawn-sh-at-startup "dms run"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
