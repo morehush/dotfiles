@@ -630,6 +630,10 @@
             {
                 "enabled": true,
                 "id": "mango"
+            },
+            {
+                "enabled": true,
+                "id": "fuzzel"
             }
         ],
         "enableUserTheming": false
