@@ -18,9 +18,7 @@ binds {
     Mod+Return hotkey-overlay-title="Terminal" { spawn "ghostty"; }
     Mod+Alt+F hotkey-overlay-title="File Browswer" { spawn "nautilus"; }
     Mod+Alt+B { spawn "brave"; }
-    // Mod+Alt+B { spawn "zen-browser"; }
     Mod+Alt+N { spawn-sh "brave --incognito"; }
-    // Mod+Alt+N { spawn-sh "zen-browser --private-window"; }
     Mod+Alt+Y { spawn-sh "ghostty -e yazi"; }
     Mod+Alt+D { spawn-sh "discord"; }
     Mod+Alt+Backslash { spawn-sh "proton-pass"; }
