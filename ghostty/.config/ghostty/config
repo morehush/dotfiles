@@ -1,4 +1,4 @@
-theme = TokyoNight
+# theme = TokyoNight
 # theme = Kanagawabones
 # theme = Kanagawa Dragon
 # theme = Catppuccin Mocha
@@ -26,3 +26,4 @@ keybind = alt+w=close_surface
 keybind = alt+t=new_tab
 keybind = alt+]=next_tab
 keybind = alt+[=previous_tab
+theme = noctalia
