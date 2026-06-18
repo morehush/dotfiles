@@ -618,10 +618,6 @@
             {
                 "enabled": true,
                 "id": "fuzzel"
-            },
-            {
-                "enabled": true,
-                "id": "ghostty"
             }
         ],
         "enableUserTheming": false
