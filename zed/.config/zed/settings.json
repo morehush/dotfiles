@@ -42,7 +42,7 @@
   "session": {
     "trust_all_worktrees": true,
   },
-  "theme": "Tokyo Night Storm",
+  "theme": "Kanagawa",
 	"edit_predictions": {
 		"provider": "zed",
   "disabled_globs": [
