@@ -1,8 +1,11 @@
-theme = TokyoNight
+# theme = TokyoNight
 # theme = Kanagawabones
 # theme = Kanagawa Dragon
-# theme = Catppuccin Mocha
+theme = Catppuccin Mocha
 # theme = Rose Pine
+# theme = Iceberg Dark
+# theme = Ayu
+# theme = Nordfox
 # background-opacity = 0.8
 # theme = catppuccin-macchiato
 # font-family = CaskaydiaCove Nerd Font
