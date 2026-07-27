@@ -165,6 +165,12 @@
                     "unreadBadgeColor": "primary"
                 },
                 {
+                    "displayMode": "onhover",
+                    "iconColor": "none",
+                    "id": "Network",
+                    "textColor": "none"
+                },
+                {
                     "deviceNativePath": "BAT0",
                     "displayMode": "icon-always",
                     "hideIfIdle": false,
