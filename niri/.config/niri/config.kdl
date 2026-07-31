@@ -146,7 +146,7 @@ output "eDP-1" {
 // See the binds section below for more spawn examples.
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
-spawn-sh-at-startup "qs -c noctalia-shell"
+spawn-sh-at-startup "noctalia"
 // spawn-sh-at-startup "dms run"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:

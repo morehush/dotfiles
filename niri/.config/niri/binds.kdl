@@ -22,31 +22,36 @@ binds {
     Mod+Alt+Y { spawn-sh "ghostty -e yazi"; }
     Mod+Alt+D { spawn-sh "discord"; }
     Mod+Alt+Backslash { spawn-sh "proton-pass"; }
-    Alt+Space hotkey-overlay-title="App Launcher" { spawn-sh "fuzzel --filter-desktop"; }
-    Mod+Alt+M { spawn-sh "~/.local/bin/pprofile"; }
+    // Alt+Space hotkey-overlay-title="App Launcher" { spawn-sh "fuzzel --filter-desktop"; }
 
     Mod+Tab repeat=false { toggle-overview; }
 
-    XF86AudioPlay        allow-when-locked=true { spawn-sh "playerctl play-pause"; }
-    XF86AudioStop        allow-when-locked=true { spawn-sh "playerctl stop"; }
-    XF86AudioPrev        allow-when-locked=true { spawn-sh "playerctl previous"; }
-    XF86AudioNext        allow-when-locked=true { spawn-sh "playerctl next"; }
+    Print { spawn-sh "noctalia msg screenshot"; }
+    Ctrl+Print { spawn-sh "noctalia msg screenshot-region"; }
 
-    // Mod+Alt+M { spawn-sh "qs -c noctalia-shell ipc call powerProfile cycle"; }
-    Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; }
-    Super+Alt+Delete hotkey-overlay-title="Suspend" { spawn-sh "qs -c noctalia-shell ipc call sessionMenu lockAndSuspend"; }
+    XF86AudioPlay        allow-when-locked=true { spawn-sh "noctalia msg media toggle"; }
+    XF86AudioStop        allow-when-locked=true { spawn-sh "noctalia msg media stop"; }
+    XF86AudioPrev        allow-when-locked=true { spawn-sh "noctalia msg media previous"; }
+    XF86AudioNext        allow-when-locked=true { spawn-sh "noctalia msg media next"; }
 
-    Mod+P hotkey-overlay-title="Clipboard Manager" { spawn-sh "qs -c noctalia-shell ipc call launcher clipboard"; }
-    Mod+Alt+I hotkey-overlay-title="Notifications" { spawn-sh "qs -c noctalia-shell ipc call notifications toggleHistory"; }
-    Mod+Alt+J hotkey-overlay-title="Control Center" { spawn-sh "qs -c noctalia-shell ipc call controlCenter toggle"; }
+    Mod+Alt+M { spawn-sh "noctalia msg power-cycle"; }
+    Mod+Alt+L hotkey-overlay-title="Lock the Screen" { spawn-sh "noctalia msg session lock"; }
+    Mod+Alt+Delete hotkey-overlay-title="Power" { spawn-sh "noctalia msg panel-toggle session"; }
 
-    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0"; }
-    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
-    XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
-    XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
+    Alt+Space { spawn-sh "noctalia msg panel-toggle launcher"; }
+    Mod+P hotkey-overlay-title="Clipboard Manager" { spawn-sh "noctalia msg panel-toggle clipboard"; }
+    Mod+Alt+I hotkey-overlay-title="Notifications" { spawn-sh "noctalia msg panel-toggle control-center notifications"; }
+    Mod+Alt+J hotkey-overlay-title="Control Center" { spawn-sh "noctalia msg panel-toggle control-center"; }
+    Mod+Alt+O { spawn-sh "noctalia msg settings-toggle"; }
+    Alt+Tab { spawn-sh "noctalia msg window-switcher"; }
 
-    XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
-    XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
+    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "noctalia msg volume-up"; }
+    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "noctalia msg volume-down"; }
+    XF86AudioMute        allow-when-locked=true { spawn-sh "noctalia msg volume-mute"; }
+    XF86AudioMicMute     allow-when-locked=true { spawn-sh "noctalia msg mic-mute"; }
+
+    XF86MonBrightnessUp { spawn "noctalia msg brightness-up"; }
+    XF86MonBrightnessDown { spawn "noctalia msg brightness-down"; }
 
     // Open/close the Overview: a zoomed-out view of workspaces and windows.
     // You can also move the mouse into the top-left hot corner,
@@ -253,9 +258,9 @@ binds {
     // Mod+Space       { switch-layout "next"; }
     // Mod+Shift+Space { switch-layout "prev"; }
 
-    Print { screenshot; }
-    Ctrl+Print { screenshot-screen; }
-    Alt+Print { screenshot-window; }
+    // Print { screenshot; }
+    // Ctrl+Print { screenshot-screen; }
+    // Alt+Print { screenshot-window; }
 
     // Applications such as remote-desktop clients and software KVM switches may
     // request that niri stops processing the keyboard shortcuts defined here

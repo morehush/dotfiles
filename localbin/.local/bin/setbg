@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-qs -c noctalia-shell ipc call wallpaper set $1 ""
+noctalia msg wallpaper-set $1
 
 # dms ipc call wallpaper set $1
 
