@@ -50,8 +50,8 @@ binds {
     XF86AudioMute        allow-when-locked=true { spawn-sh "noctalia msg volume-mute"; }
     XF86AudioMicMute     allow-when-locked=true { spawn-sh "noctalia msg mic-mute"; }
 
-    XF86MonBrightnessUp { spawn "noctalia msg brightness-up"; }
-    XF86MonBrightnessDown { spawn "noctalia msg brightness-down"; }
+    XF86MonBrightnessUp { spawn-sh "noctalia msg brightness-up"; }
+    XF86MonBrightnessDown { spawn-sh "noctalia msg brightness-down"; }
 
     // Open/close the Overview: a zoomed-out view of workspaces and windows.
     // You can also move the mouse into the top-left hot corner,
