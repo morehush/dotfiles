@@ -1685,3 +1685,536 @@
 2026-07-29T20:58:44.901950Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=1 status="ExitStatus { code: 1, signal: None }"
 2026-07-29T20:58:44.904648Z  INFO herdr::pane: pane session terminated pane=1 pid=186339 signal=Hangup
 2026-07-29T20:58:44.905118Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="server" outcome="completed" pid=186329
+2026-08-07T14:34:29.520472Z  INFO herdr::api::server: api server listening path=/home/morehush/.config/herdr/herdr.sock
+2026-08-07T14:34:29.530511Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=1 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-08-07T14:34:29.531298Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=1 pid=3275521
+2026-08-07T14:34:29.531569Z  INFO herdr::logging: session restore evaluated event="persist.restore" subsystem="persist" outcome="ok" workspaces=1
+2026-08-07T14:34:29.531580Z  INFO herdr::app: using pane scrollback configuration pane_scrollback_limit_bytes=10000000
+2026-08-07T14:34:29.593949Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-07T14:34:29.596605Z  INFO herdr::server::headless: restored session already has workspaces; ignoring startup cwd cwd=/home/morehush
+2026-08-07T14:34:29.596686Z  INFO herdr::server::headless: client protocol socket listening path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-07T14:34:29.596712Z  INFO herdr::server::headless: herdr server started api_socket=/home/morehush/.config/herdr/herdr.sock client_socket=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-07T14:34:29.596874Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="server" outcome="started" pid=3275507
+2026-08-07T14:34:29.865493Z  INFO herdr::server::headless: client connected client_id=2 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-07T14:34:36.582354Z  INFO herdr::server::headless: client detach requested via keybind client_id=2
+2026-08-07T14:34:36.591009Z  INFO herdr::server::headless: client disconnected client_id=2
+2026-08-07T15:04:29.595409Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-07T15:34:29.596559Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-07T16:04:29.598004Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-07T16:34:29.599269Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-07T17:04:29.600707Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-07T17:34:29.601962Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-07T18:04:29.603555Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-07T18:34:29.604082Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-07T18:45:19.788410Z  INFO herdr::server::headless: client connected client_id=4 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-07T18:45:43.194863Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=1 status="ExitStatus { code: 0, signal: None }"
+2026-08-07T18:45:43.204857Z  INFO herdr::pane: pane session terminated pane=1 pid=3275521 signal=Hangup
+2026-08-07T18:45:43.205077Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=2 rows=52 cols=206 scrollback_limit_bytes=10000000
+2026-08-07T18:45:43.207608Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=2 pid=3449447
+2026-08-07T18:45:43.207976Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w35" pane_id=2
+2026-08-07T18:45:43.208021Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w35"
+2026-08-07T18:45:43.208042Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w35" tab_id="w35:t1"
+2026-08-07T18:45:44.769257Z  INFO herdr::server::headless: client detach requested via keybind client_id=4
+2026-08-07T18:45:44.778264Z  INFO herdr::server::headless: client disconnected client_id=4
+2026-08-07T18:45:48.209645Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-07T19:04:29.605071Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-07T19:34:29.606203Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-07T20:04:29.607187Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-07T20:09:19.761566Z  INFO herdr::server::headless: client connected client_id=6 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-07T20:09:40.316864Z  INFO herdr::server::headless: client detach requested via keybind client_id=6
+2026-08-07T20:09:40.333606Z  INFO herdr::server::headless: client disconnected client_id=6
+2026-08-07T20:31:25.000339Z  INFO herdr::server::headless: client connected client_id=8 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-07T20:34:29.608537Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-07T20:34:51.562908Z  INFO herdr::server::headless: client detach requested via keybind client_id=8
+2026-08-07T20:34:51.635147Z  INFO herdr::server::headless: client disconnected client_id=8
+2026-08-07T21:04:29.609847Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-07T21:34:29.611401Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-07T21:35:36.293596Z  INFO herdr::server::headless: client connected client_id=10 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-07T21:35:55.408564Z  INFO herdr::server::headless: client detach requested via keybind client_id=10
+2026-08-07T21:35:55.416860Z  INFO herdr::server::headless: client disconnected client_id=10
+2026-08-07T22:04:29.612914Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-07T22:16:49.402670Z  INFO herdr::server::headless: client connected client_id=12 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-07T22:17:05.015440Z  INFO herdr::server::headless: client detach requested via keybind client_id=12
+2026-08-07T22:17:05.022319Z  INFO herdr::server::headless: client disconnected client_id=12
+2026-08-07T22:34:29.614974Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-07T22:50:39.304794Z  INFO herdr::server::headless: client connected client_id=14 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-07T22:51:55.413750Z  INFO herdr::server::headless: client detach requested via keybind client_id=14
+2026-08-07T22:51:55.422486Z  INFO herdr::server::headless: client disconnected client_id=14
+2026-08-07T22:59:53.093552Z  INFO herdr::server::headless: client connected client_id=16 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-07T23:00:14.860437Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=2 status="ExitStatus { code: 0, signal: None }"
+2026-08-07T23:00:14.866435Z  INFO herdr::pane: pane session terminated pane=2 pid=3449447 signal=Hangup
+2026-08-07T23:00:14.866527Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=3 rows=52 cols=206 scrollback_limit_bytes=10000000
+2026-08-07T23:00:14.867525Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=3 pid=3630105
+2026-08-07T23:00:14.867666Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w36" pane_id=3
+2026-08-07T23:00:14.867673Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w36"
+2026-08-07T23:00:14.867677Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w36" tab_id="w36:t1"
+2026-08-07T23:00:19.870250Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-07T23:00:33.867999Z  INFO herdr::server::headless: client detach requested via keybind client_id=16
+2026-08-07T23:00:33.876027Z  INFO herdr::server::headless: client disconnected client_id=16
+2026-08-07T23:04:29.616818Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-07T23:34:29.618665Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T00:04:29.619347Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T00:34:29.620964Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T01:04:29.622710Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T01:34:29.624120Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T02:04:29.626525Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T02:34:29.627374Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T03:04:29.628818Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T03:34:29.630595Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T04:04:29.631777Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T04:34:29.634418Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T05:04:29.635662Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T05:34:29.636122Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T06:04:29.643933Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T06:34:29.638769Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T07:04:29.640870Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T07:34:29.642756Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T08:04:29.644783Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T08:34:29.647016Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T09:04:29.648584Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T09:34:29.649704Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T10:04:29.651071Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T10:34:29.652805Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T11:04:29.654057Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T11:34:29.655652Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T12:04:29.656422Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T12:23:31.483674Z  INFO herdr::server::headless: client connected client_id=18 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-08T12:25:20.909798Z  INFO herdr::server::headless: client detach requested via keybind client_id=18
+2026-08-08T12:25:20.915002Z  INFO herdr::server::headless: client disconnected client_id=18
+2026-08-08T12:34:29.657718Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T13:04:29.659280Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T13:07:21.523373Z  INFO herdr::server::headless: client connected client_id=20 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-08T13:07:57.703206Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=3 status="ExitStatus { code: 0, signal: None }"
+2026-08-08T13:07:57.715352Z  INFO herdr::pane: pane session terminated pane=3 pid=3630105 signal=Hangup
+2026-08-08T13:07:57.716224Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=4 rows=52 cols=206 scrollback_limit_bytes=10000000
+2026-08-08T13:07:57.718929Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=4 pid=14392
+2026-08-08T13:07:57.719386Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w37" pane_id=4
+2026-08-08T13:07:57.719423Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w37"
+2026-08-08T13:07:57.719441Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w37" tab_id="w37:t1"
+2026-08-08T13:07:59.498968Z  INFO herdr::server::headless: client detach requested via keybind client_id=20
+2026-08-08T13:07:59.508175Z  INFO herdr::server::headless: client disconnected client_id=20
+2026-08-08T13:08:02.722222Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-08T13:34:29.660324Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T14:04:29.661482Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T14:34:29.662491Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T15:04:29.663442Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T15:34:29.664010Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T16:04:29.665159Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T16:34:29.666253Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T17:04:29.667751Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T17:34:29.669040Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T18:04:29.670205Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T18:34:29.671376Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T19:04:29.673184Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T19:34:29.674191Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T20:04:29.675189Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T20:34:29.676748Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T21:04:29.677941Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T21:17:12.065582Z  INFO herdr::server::headless: client connected client_id=22 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-08T21:17:32.036964Z  INFO herdr::server::headless: client detach requested via keybind client_id=22
+2026-08-08T21:17:32.042554Z  INFO herdr::server::headless: client disconnected client_id=22
+2026-08-08T21:34:29.679750Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T22:04:29.680442Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T22:34:29.681132Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T23:04:29.682635Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-08T23:34:29.683526Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-09T00:04:29.684283Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-09T00:19:03.367843Z  INFO herdr::server::headless: client connected client_id=24 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-09T00:19:10.444801Z  INFO herdr::server::headless: client detach requested via keybind client_id=24
+2026-08-09T00:19:10.453393Z  INFO herdr::server::headless: client disconnected client_id=24
+2026-08-09T00:34:29.685416Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-09T00:46:31.581687Z  INFO herdr::server::headless: client connected client_id=26 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-09T00:46:48.899514Z  INFO herdr::server::headless: client detach requested via keybind client_id=26
+2026-08-09T00:46:48.903630Z  INFO herdr::server::headless: client disconnected client_id=26
+2026-08-09T01:04:29.686929Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-09T01:34:29.688863Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-09T02:04:29.690709Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-09T02:34:29.692869Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-09T03:04:29.695386Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-09T03:34:29.697022Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-09T04:04:29.698753Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-09T04:34:29.701175Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-09T05:04:29.702624Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-09T05:34:29.704355Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-09T06:04:29.704916Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-09T06:34:29.706559Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-09T07:04:29.707403Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-09T07:34:29.708721Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-09T08:04:29.710770Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-09T08:34:29.712467Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-09T09:04:29.713983Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-09T09:34:29.716020Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-09T10:04:29.717870Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-09T10:34:29.719481Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-09T11:04:29.720754Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-09T11:34:29.722758Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-09T12:04:29.724944Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-09T12:34:29.726207Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-09T12:43:44.454138Z  INFO herdr::server::headless: client connected client_id=28 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-09T12:44:19.267614Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=4 status="ExitStatus { code: 0, signal: None }"
+2026-08-09T12:44:19.274761Z  INFO herdr::pane: pane session terminated pane=4 pid=14392 signal=Hangup
+2026-08-09T12:44:19.275769Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=5 rows=52 cols=206 scrollback_limit_bytes=10000000
+2026-08-09T12:44:19.278884Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=5 pid=995796
+2026-08-09T12:44:19.279262Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w38" pane_id=5
+2026-08-09T12:44:19.279476Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w38"
+2026-08-09T12:44:19.279644Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w38" tab_id="w38:t1"
+2026-08-09T12:44:21.118307Z  INFO herdr::server::headless: client detach requested via keybind client_id=28
+2026-08-09T12:44:21.134061Z  INFO herdr::server::headless: client disconnected client_id=28
+2026-08-09T12:44:24.295091Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-09T12:44:34.181036Z  INFO herdr::server::headless: server shutdown initiated
+2026-08-09T12:44:34.231264Z  INFO herdr::server::headless: completing server shutdown
+2026-08-09T12:44:34.231818Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-09T12:44:34.231871Z  INFO herdr::server::headless: headless server exiting
+2026-08-09T12:44:34.233256Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=5 status="ExitStatus { code: 1, signal: Some(\"Hangup\") }"
+2026-08-09T12:44:34.238662Z  INFO herdr::pane: pane session terminated pane=5 pid=995796 signal=Hangup
+2026-08-09T12:44:34.239909Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="server" outcome="completed" pid=3275507
+2026-08-10T14:59:00.121608Z  INFO herdr::api::server: api server listening path=/home/morehush/.config/herdr/herdr.sock
+2026-08-10T14:59:00.127818Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=1 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-08-10T14:59:00.130849Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=1 pid=2490338
+2026-08-10T14:59:00.132349Z  INFO herdr::logging: session restore evaluated event="persist.restore" subsystem="persist" outcome="ok" workspaces=1
+2026-08-10T14:59:00.132654Z  INFO herdr::app: using pane scrollback configuration pane_scrollback_limit_bytes=10000000
+2026-08-10T14:59:00.208551Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-10T14:59:00.210518Z  INFO herdr::server::headless: restored session already has workspaces; ignoring startup cwd cwd=/home/morehush
+2026-08-10T14:59:00.210610Z  INFO herdr::server::headless: client protocol socket listening path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-10T14:59:00.210668Z  INFO herdr::server::headless: herdr server started api_socket=/home/morehush/.config/herdr/herdr.sock client_socket=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-10T14:59:00.211949Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="server" outcome="started" pid=2490324
+2026-08-10T14:59:00.229601Z  INFO herdr::server::headless: client connected client_id=2 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-10T15:29:00.210388Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-10T15:57:50.001480Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=1 status="ExitStatus { code: 0, signal: None }"
+2026-08-10T15:57:50.008417Z  INFO herdr::pane: pane session terminated pane=1 pid=2490338 signal=Hangup
+2026-08-10T15:57:50.008614Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=2 rows=52 cols=206 scrollback_limit_bytes=10000000
+2026-08-10T15:57:50.009522Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=2 pid=2549973
+2026-08-10T15:57:50.009643Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w39" pane_id=2
+2026-08-10T15:57:50.009652Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w39"
+2026-08-10T15:57:50.009657Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w39" tab_id="w39:t1"
+2026-08-10T15:57:51.650586Z  INFO herdr::server::headless: client detach requested via keybind client_id=2
+2026-08-10T15:57:51.660948Z  INFO herdr::server::headless: client disconnected client_id=2
+2026-08-10T15:57:55.012622Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-10T15:59:00.211494Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-10T16:29:00.212791Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-10T16:56:03.934347Z  INFO herdr::server::headless: client connected client_id=4 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-10T16:59:00.213467Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-10T17:29:00.214467Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-10T17:59:00.215577Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-10T18:29:00.217185Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-10T18:34:35.826839Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=2 status="ExitStatus { code: 0, signal: None }"
+2026-08-10T18:34:35.841739Z  INFO herdr::pane: pane session terminated pane=2 pid=2549973 signal=Hangup
+2026-08-10T18:34:35.842696Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=3 rows=52 cols=206 scrollback_limit_bytes=10000000
+2026-08-10T18:34:35.845797Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=3 pid=2725426
+2026-08-10T18:34:35.846269Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w3A" pane_id=3
+2026-08-10T18:34:35.846313Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3A"
+2026-08-10T18:34:35.846336Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3A" tab_id="w3A:t1"
+2026-08-10T18:34:37.058136Z  INFO herdr::server::headless: client detach requested via keybind client_id=4
+2026-08-10T18:34:37.072218Z  INFO herdr::server::headless: client disconnected client_id=4
+2026-08-10T18:34:40.868043Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-10T18:59:00.219050Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-10T19:29:00.220871Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-10T19:59:00.222094Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-10T20:29:00.223404Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-10T20:59:00.224298Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-10T21:27:37.670351Z  INFO herdr::server::headless: client connected client_id=6 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-10T21:27:54.365531Z  INFO herdr::server::headless: client detach requested via keybind client_id=6
+2026-08-10T21:27:54.374931Z  INFO herdr::server::headless: client disconnected client_id=6
+2026-08-10T21:29:00.226139Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-10T21:38:07.234398Z  INFO herdr::server::headless: client connected client_id=8 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-10T21:38:21.570315Z  INFO herdr::server::headless: client detach requested via keybind client_id=8
+2026-08-10T21:38:21.575447Z  INFO herdr::server::headless: client disconnected client_id=8
+2026-08-10T21:59:00.228039Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-10T22:29:00.230482Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-10T22:59:00.232493Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-10T23:29:00.234060Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-10T23:59:00.235501Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T00:29:00.236646Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T00:59:00.237654Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T01:29:00.239054Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T01:59:00.240455Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T02:29:00.241397Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T02:59:00.242822Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T03:29:00.243878Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T03:59:00.245661Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T04:29:00.246795Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T04:59:00.247544Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T05:29:00.249223Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T05:59:00.251000Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T06:29:00.253494Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T06:59:00.255108Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T07:29:00.257234Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T07:59:00.268122Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T08:29:00.259385Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T08:59:00.260942Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T09:29:00.261681Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T09:59:00.262591Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T10:08:49.707087Z  INFO herdr::server::headless: client connected client_id=10 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-11T10:09:26.445491Z  INFO herdr::server::headless: client detach requested via keybind client_id=10
+2026-08-11T10:09:26.454259Z  INFO herdr::server::headless: client disconnected client_id=10
+2026-08-11T10:29:00.264155Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T10:59:00.266228Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T11:05:41.318141Z  INFO herdr::server::headless: client connected client_id=12 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-11T11:10:47.078411Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=3 status="ExitStatus { code: 0, signal: None }"
+2026-08-11T11:10:47.082397Z  INFO herdr::pane: pane session terminated pane=3 pid=2725426 signal=Hangup
+2026-08-11T11:10:47.083092Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=4 rows=52 cols=206 scrollback_limit_bytes=10000000
+2026-08-11T11:10:47.085983Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=4 pid=3533824
+2026-08-11T11:10:47.086447Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w3B" pane_id=4
+2026-08-11T11:10:47.086482Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3B"
+2026-08-11T11:10:47.086498Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3B" tab_id="w3B:t1"
+2026-08-11T11:10:48.767125Z  INFO herdr::server::headless: client detach requested via keybind client_id=12
+2026-08-11T11:10:48.776244Z  INFO herdr::server::headless: client disconnected client_id=12
+2026-08-11T11:10:52.096068Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-11T11:29:00.267457Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T11:50:03.800897Z  INFO herdr::server::headless: client connected client_id=14 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-11T11:50:13.623192Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=4 status="ExitStatus { code: 0, signal: None }"
+2026-08-11T11:50:13.627172Z  INFO herdr::pane: pane session terminated pane=4 pid=3533824 signal=Hangup
+2026-08-11T11:50:13.627576Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=5 rows=52 cols=206 scrollback_limit_bytes=10000000
+2026-08-11T11:50:13.629405Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=5 pid=3578988
+2026-08-11T11:50:13.629768Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w3C" pane_id=5
+2026-08-11T11:50:13.629789Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3C"
+2026-08-11T11:50:13.629932Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3C" tab_id="w3C:t1"
+2026-08-11T11:50:15.273836Z  INFO herdr::server::headless: client detach requested via keybind client_id=14
+2026-08-11T11:50:15.283212Z  INFO herdr::server::headless: client disconnected client_id=14
+2026-08-11T11:50:18.631999Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-11T11:59:00.268730Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T12:29:00.270125Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T12:59:00.271435Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T13:29:00.272233Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T13:59:00.273993Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T14:29:00.275347Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T14:59:00.276315Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T15:29:00.277275Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T15:59:00.278985Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T16:03:24.803109Z  INFO herdr::server::headless: client connected client_id=16 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-11T16:20:39.818412Z  INFO herdr::server::headless: client resize client_id=16 cols=210 rows=55 cell_width_px=0 cell_height_px=0
+2026-08-11T16:20:40.312431Z  INFO herdr::server::headless: client resize client_id=16 cols=210 rows=53 cell_width_px=0 cell_height_px=0
+2026-08-11T16:29:00.280419Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T16:40:37.250646Z  INFO herdr::server::headless: client detach requested via keybind client_id=16
+2026-08-11T16:40:37.256194Z  INFO herdr::server::headless: client disconnected client_id=16
+2026-08-11T16:59:00.281724Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T17:29:00.282521Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T17:59:00.283384Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T18:29:00.284478Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T18:59:00.285932Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T19:29:00.288209Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T19:43:09.116659Z  INFO herdr::server::headless: client connected client_id=18 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-11T19:44:00.929297Z  INFO herdr::server::headless: client detach requested via keybind client_id=18
+2026-08-11T19:44:00.938144Z  INFO herdr::server::headless: client disconnected client_id=18
+2026-08-11T19:59:00.290190Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T20:29:00.291703Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T20:59:00.293056Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T21:29:00.295299Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T21:59:00.296306Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T22:29:00.297879Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T22:59:00.299218Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T23:29:00.301033Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-11T23:59:00.302622Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T00:19:47.072615Z  INFO herdr::server::headless: client connected client_id=20 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-12T00:20:04.925462Z  INFO herdr::server::headless: client detach requested via keybind client_id=20
+2026-08-12T00:20:04.935860Z  INFO herdr::server::headless: client disconnected client_id=20
+2026-08-12T00:20:09.717214Z  INFO herdr::server::headless: client connected client_id=22 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-12T00:20:16.728414Z  INFO herdr::server::headless: client detach requested via keybind client_id=22
+2026-08-12T00:20:16.732412Z  INFO herdr::server::headless: client disconnected client_id=22
+2026-08-12T00:29:00.304482Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T00:59:00.306501Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T01:29:00.307560Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T01:59:00.308573Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T02:29:00.310105Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T02:59:00.311303Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T03:29:00.313303Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T03:59:00.315676Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T04:29:00.316469Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T04:59:00.317690Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T05:29:00.318879Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T05:59:00.319976Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T06:29:00.321574Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T06:59:00.322496Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T07:29:00.324054Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T07:59:00.325283Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T08:29:00.327329Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T08:59:00.329062Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T09:29:00.331080Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T09:59:00.332609Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T10:28:34.656127Z  INFO herdr::server::headless: client connected client_id=24 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-12T10:28:48.156328Z  INFO herdr::server::headless: client detach requested via keybind client_id=24
+2026-08-12T10:28:48.165978Z  INFO herdr::server::headless: client disconnected client_id=24
+2026-08-12T10:29:00.333810Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T10:59:00.334397Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T11:29:00.335597Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T11:35:56.978392Z  INFO herdr::server::headless: client connected client_id=26 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-12T11:37:35.189883Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=5 status="ExitStatus { code: 0, signal: None }"
+2026-08-12T11:37:35.204792Z  INFO herdr::pane: pane session terminated pane=5 pid=3578988 signal=Hangup
+2026-08-12T11:37:35.206120Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=6 rows=52 cols=206 scrollback_limit_bytes=10000000
+2026-08-12T11:37:35.209543Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=6 pid=589058
+2026-08-12T11:37:35.210200Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w3D" pane_id=6
+2026-08-12T11:37:35.210460Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3D"
+2026-08-12T11:37:35.210620Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3D" tab_id="w3D:t1"
+2026-08-12T11:37:36.151304Z  INFO herdr::server::headless: client detach requested via keybind client_id=26
+2026-08-12T11:37:36.160592Z  INFO herdr::server::headless: client disconnected client_id=26
+2026-08-12T11:37:40.224196Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-12T11:59:00.336222Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T12:22:10.890679Z  INFO herdr::server::headless: client connected client_id=28 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-12T12:22:34.925681Z  INFO herdr::server::headless: client detach requested via keybind client_id=28
+2026-08-12T12:22:34.931412Z  INFO herdr::server::headless: client disconnected client_id=28
+2026-08-12T12:29:00.337842Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T12:33:13.204053Z  INFO herdr::server::headless: client connected client_id=30 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-12T12:33:30.429583Z  INFO herdr::server::headless: client detach requested via keybind client_id=30
+2026-08-12T12:33:30.435704Z  INFO herdr::server::headless: client disconnected client_id=30
+2026-08-12T12:59:00.340624Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T13:29:00.342369Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T13:59:00.343395Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T14:19:01.909324Z  INFO herdr::server::headless: client connected client_id=32 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-12T14:29:00.344092Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T14:59:00.345481Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T15:29:00.347370Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T15:59:00.349219Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T16:09:48.144082Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=6 status="ExitStatus { code: 0, signal: None }"
+2026-08-12T16:09:48.158645Z  INFO herdr::pane: pane session terminated pane=6 pid=589058 signal=Hangup
+2026-08-12T16:09:48.159252Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=7 rows=52 cols=206 scrollback_limit_bytes=10000000
+2026-08-12T16:09:48.161755Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=7 pid=842819
+2026-08-12T16:09:48.162791Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w3E" pane_id=7
+2026-08-12T16:09:48.163065Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3E"
+2026-08-12T16:09:48.163259Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3E" tab_id="w3E:t1"
+2026-08-12T16:09:49.499297Z  INFO herdr::server::headless: client detach requested via keybind client_id=32
+2026-08-12T16:09:49.505181Z  INFO herdr::server::headless: client disconnected client_id=32
+2026-08-12T16:09:53.182594Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-12T16:29:00.350746Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T16:59:00.351504Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T17:29:00.352417Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T17:59:00.353841Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T18:29:00.354875Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T18:59:00.356404Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T19:29:00.357812Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T19:43:02.083044Z  INFO herdr::server::headless: client connected client_id=34 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-12T19:43:17.846410Z  INFO herdr::server::headless: client detach requested via keybind client_id=34
+2026-08-12T19:43:17.855077Z  INFO herdr::server::headless: client disconnected client_id=34
+2026-08-12T19:59:00.359168Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T20:29:00.361198Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T20:59:00.362599Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T21:29:00.364039Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T21:59:00.365411Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T22:09:18.159678Z  INFO herdr::server::headless: client connected client_id=36 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-12T22:29:00.366334Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T22:32:27.518558Z  INFO herdr::server::headless: client detach requested via keybind client_id=36
+2026-08-12T22:32:27.595587Z  INFO herdr::server::headless: client disconnected client_id=36
+2026-08-12T22:59:00.367155Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T23:29:00.368982Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-12T23:59:00.370746Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T00:29:00.371354Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T00:29:00.455640Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T00:59:00.373023Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T00:59:00.565692Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T01:29:00.374581Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T01:29:00.470304Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T01:59:00.375563Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T01:59:00.472879Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T02:29:00.377136Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T02:29:00.482094Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T02:59:00.378596Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T02:59:00.484971Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T03:29:00.379628Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T03:29:00.461310Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T03:59:00.380705Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T03:59:00.489251Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T04:29:00.381933Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T04:29:00.461142Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T04:59:00.383263Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T04:59:00.476323Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T05:29:00.384566Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T05:29:00.480741Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T05:59:00.385264Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T05:59:00.461917Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T06:29:00.387252Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T06:29:00.539697Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T06:59:00.388757Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T06:59:00.488699Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T07:29:00.389413Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T07:29:00.461893Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T07:59:00.390515Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T07:59:00.479274Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T08:29:00.391834Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T08:29:00.491159Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T08:59:00.392589Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T08:59:00.470718Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T09:29:00.393740Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T09:29:00.473158Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T09:59:00.394825Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T09:59:00.477146Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T10:29:00.396275Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T10:29:00.477085Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T10:59:00.397898Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T10:59:00.508718Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T11:29:00.399347Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T11:29:00.488767Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T11:49:08.177590Z  INFO herdr::server::headless: client connected client_id=38 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-13T11:49:31.241237Z  INFO herdr::server::headless: client detach requested via keybind client_id=38
+2026-08-13T11:49:31.249517Z  INFO herdr::server::headless: client disconnected client_id=38
+2026-08-13T11:59:00.401151Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T11:59:00.480433Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T12:09:54.382538Z  INFO herdr::server::headless: client connected client_id=40 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-13T12:29:00.402575Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T12:29:00.484623Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T12:30:40.505311Z  INFO herdr::server::headless: client detach requested via keybind client_id=40
+2026-08-13T12:30:40.510417Z  INFO herdr::server::headless: client disconnected client_id=40
+2026-08-13T12:59:00.404440Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T12:59:00.464970Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T13:26:49.627424Z  INFO herdr::server::headless: client connected client_id=42 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-13T13:29:00.405585Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T13:29:00.502928Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T13:34:29.976702Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=7 status="ExitStatus { code: 0, signal: None }"
+2026-08-13T13:34:29.992124Z  INFO herdr::pane: pane session terminated pane=7 pid=842819 signal=Hangup
+2026-08-13T13:34:29.992392Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=8 rows=52 cols=206 scrollback_limit_bytes=10000000
+2026-08-13T13:34:29.995334Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=8 pid=1916418
+2026-08-13T13:34:29.995775Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w3F" pane_id=8
+2026-08-13T13:34:29.995813Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3F"
+2026-08-13T13:34:29.996009Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3F" tab_id="w3F:t1"
+2026-08-13T13:34:31.073476Z  INFO herdr::server::headless: client detach requested via keybind client_id=42
+2026-08-13T13:34:31.082111Z  INFO herdr::server::headless: client disconnected client_id=42
+2026-08-13T13:34:35.013970Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-13T13:59:00.406421Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T13:59:00.495674Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T14:29:00.407705Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T14:29:00.486845Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T14:59:00.409159Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T14:59:00.497262Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T15:27:34.033069Z  INFO herdr::server::headless: client connected client_id=44 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-13T15:28:07.004985Z  INFO herdr::server::headless: client detach requested via keybind client_id=44
+2026-08-13T15:28:07.013639Z  INFO herdr::server::headless: client disconnected client_id=44
+2026-08-13T15:29:00.410475Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T15:29:00.493013Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T15:59:00.411628Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T15:59:00.508892Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T16:29:00.412557Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T16:29:00.488977Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T16:59:00.414433Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T16:59:00.495560Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T17:29:00.415535Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T17:29:00.511570Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T17:39:15.992649Z  INFO herdr::server::headless: client connected client_id=46 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-13T17:39:40.486350Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=8 status="ExitStatus { code: 0, signal: None }"
+2026-08-13T17:39:40.499345Z  INFO herdr::pane: pane session terminated pane=8 pid=1916418 signal=Hangup
+2026-08-13T17:39:40.499494Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=9 rows=52 cols=206 scrollback_limit_bytes=10000000
+2026-08-13T17:39:40.502242Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=9 pid=2200266
+2026-08-13T17:39:40.502619Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w3G" pane_id=9
+2026-08-13T17:39:40.502646Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3G"
+2026-08-13T17:39:40.502664Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3G" tab_id="w3G:t1"
+2026-08-13T17:39:45.514186Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-13T17:40:16.252516Z  INFO herdr::server::headless: client detach requested via keybind client_id=46
+2026-08-13T17:40:16.262092Z  INFO herdr::server::headless: client disconnected client_id=46
+2026-08-13T17:59:00.416266Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T17:59:00.498692Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T18:29:00.417640Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T18:29:00.527902Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T18:59:00.418944Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T18:59:00.487136Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T18:59:41.811865Z  INFO herdr::server::headless: client connected client_id=48 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-13T18:59:55.665083Z  INFO herdr::server::headless: client detach requested via keybind client_id=48
+2026-08-13T18:59:55.673815Z  INFO herdr::server::headless: client disconnected client_id=48
+2026-08-13T19:29:00.420118Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T19:29:00.485089Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T19:59:00.421932Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T19:59:00.499967Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T20:29:00.423691Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T20:29:00.512068Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T20:59:00.424994Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T20:59:00.526821Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T21:29:00.425836Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T21:29:00.516106Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T21:59:00.426741Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-13T21:59:00.540937Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"

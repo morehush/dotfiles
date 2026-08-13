@@ -2,11 +2,11 @@
   "version": 3,
   "workspaces": [
     {
-      "id": "w2Y",
+      "id": "w3G",
       "custom_name": null,
       "identity_cwd": "/home/morehush",
       "public_pane_numbers": {
-        "64": 1
+        "9": 1
       },
       "next_public_pane_number": 2,
       "public_tab_numbers": [
@@ -17,16 +17,16 @@
         {
           "custom_name": null,
           "layout": {
-            "Pane": 64
+            "Pane": 9
           },
           "panes": {
-            "64": {
+            "9": {
               "cwd": "/home/morehush"
             }
           },
           "zoomed": false,
-          "focused": 64,
-          "root_pane": 64
+          "focused": 9,
+          "root_pane": 9
         }
       ],
       "active_tab": 0
