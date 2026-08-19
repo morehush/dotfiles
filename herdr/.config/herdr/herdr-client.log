@@ -652,3 +652,163 @@
 2026-08-13T18:59:41.696080Z  INFO herdr::client: connecting to server path=/tmp/herdr-remote-10967-omv-default.sock
 2026-08-13T18:59:41.813188Z  INFO herdr::client: handshake succeeded version=19 encoding=TerminalAnsi
 2026-08-13T18:59:55.667378Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=10978
+2026-08-14T15:10:01.700194Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=21027
+2026-08-14T15:10:01.708333Z  INFO herdr::client: connecting to server path=/tmp/herdr-remote-21016-omv-default.sock
+2026-08-14T15:10:01.883483Z  INFO herdr::client: handshake succeeded version=19 encoding=TerminalAnsi
+2026-08-14T15:10:26.900901Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=21027
+2026-08-14T15:54:31.327173Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=22284
+2026-08-14T15:54:31.327274Z  INFO herdr::client: connecting to server path=/tmp/herdr-remote-22273-omv-default.sock
+2026-08-14T15:54:31.470513Z  INFO herdr::client: handshake succeeded version=19 encoding=TerminalAnsi
+2026-08-14T15:54:51.101996Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=22284
+2026-08-14T16:59:19.437883Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=23579
+2026-08-14T16:59:19.437975Z  INFO herdr::client: connecting to server path=/tmp/herdr-remote-23568-omv-default.sock
+2026-08-14T16:59:19.596115Z  INFO herdr::client: handshake succeeded version=19 encoding=TerminalAnsi
+2026-08-14T16:59:46.621060Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=23579
+2026-08-14T17:12:54.067760Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=25519
+2026-08-14T17:12:54.067853Z  INFO herdr::client: connecting to server path=/tmp/herdr-remote-25508-omv-default.sock
+2026-08-14T17:12:54.432986Z  INFO herdr::client: handshake succeeded version=19 encoding=TerminalAnsi
+2026-08-14T17:13:00.665952Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=25519
+2026-08-14T19:28:04.784527Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=3534
+2026-08-14T19:28:04.792643Z  INFO herdr::client: connecting to server path=/tmp/herdr-remote-3523-omv-default.sock
+2026-08-14T19:28:05.085134Z  INFO herdr::client: handshake succeeded version=19 encoding=TerminalAnsi
+2026-08-14T19:28:17.551746Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=3534
+2026-08-14T19:29:02.234823Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=3649
+2026-08-14T19:29:02.234909Z  INFO herdr::client: connecting to server path=/tmp/herdr-remote-3638-omv-default.sock
+2026-08-14T19:29:02.313151Z  INFO herdr::client: handshake succeeded version=19 encoding=TerminalAnsi
+2026-08-14T19:29:27.552685Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=3649
+2026-08-15T11:58:13.965059Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=7060
+2026-08-15T11:58:13.965149Z  INFO herdr::client: connecting to server path=/tmp/herdr-remote-7049-omv-default.sock
+2026-08-15T11:58:14.299466Z  INFO herdr::client: handshake succeeded version=19 encoding=TerminalAnsi
+2026-08-15T11:58:32.538197Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=7060
+2026-08-16T00:57:36.722676Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=15186
+2026-08-16T00:57:36.722763Z  INFO herdr::client: connecting to server path=/tmp/herdr-remote-15175-omv-default.sock
+2026-08-16T00:57:36.921118Z  INFO herdr::client: handshake succeeded version=19 encoding=TerminalAnsi
+2026-08-16T00:57:54.101976Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=15186
+2026-08-16T12:43:27.994645Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=16959
+2026-08-16T12:43:27.994762Z  INFO herdr::client: connecting to server path=/tmp/herdr-remote-16948-omv-default.sock
+2026-08-16T12:43:28.107965Z  INFO herdr::client: handshake succeeded version=19 encoding=TerminalAnsi
+2026-08-16T12:43:47.888852Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=16959
+2026-08-16T12:55:34.601489Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1307089
+2026-08-16T12:55:34.601524Z  INFO herdr::client: connecting to server path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-16T12:55:34.848668Z  INFO herdr::client: handshake succeeded version=19 encoding=SemanticFrame
+2026-08-16T12:55:56.963019Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1307714
+2026-08-16T12:55:56.963095Z  INFO herdr::client: connecting to server path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-16T12:55:57.144180Z  INFO herdr::client: handshake succeeded version=19 encoding=SemanticFrame
+2026-08-16T12:56:12.544371Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=1307714
+2026-08-16T13:34:26.198798Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=1307089
+2026-08-16T14:21:59.308235Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1408132
+2026-08-16T14:21:59.308319Z  INFO herdr::client: connecting to server path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-16T14:21:59.445541Z  INFO herdr::client: handshake succeeded version=19 encoding=SemanticFrame
+2026-08-16T14:23:08.232601Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=1408132
+2026-08-16T14:43:47.454668Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1433667
+2026-08-16T14:43:47.454697Z  INFO herdr::client: connecting to server path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-16T14:43:47.699913Z  INFO herdr::client: handshake succeeded version=19 encoding=SemanticFrame
+2026-08-16T14:44:06.404067Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=1433667
+2026-08-16T18:34:01.751075Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1676313
+2026-08-16T18:34:01.751111Z  INFO herdr::client: connecting to server path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-16T18:34:01.871750Z  INFO herdr::client: handshake succeeded version=19 encoding=SemanticFrame
+2026-08-16T18:34:16.707952Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=1676313
+2026-08-16T19:09:01.709078Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1706047
+2026-08-16T19:09:01.709163Z  INFO herdr::client: connecting to server path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-16T19:09:01.745234Z  INFO herdr::client: handshake succeeded version=19 encoding=SemanticFrame
+2026-08-16T19:09:16.380026Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=1706047
+2026-08-16T19:14:38.390290Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1712810
+2026-08-16T19:14:38.390378Z  INFO herdr::client: connecting to server path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-16T19:14:38.398042Z  INFO herdr::client: handshake succeeded version=19 encoding=SemanticFrame
+2026-08-16T19:16:21.353219Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=1712810
+2026-08-16T20:25:15.022496Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1790875
+2026-08-16T20:25:15.022586Z  INFO herdr::client: connecting to server path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-16T20:25:15.123461Z  INFO herdr::client: handshake succeeded version=19 encoding=SemanticFrame
+2026-08-16T20:25:21.152837Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=1790875
+2026-08-16T20:27:13.306981Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1793063
+2026-08-16T20:27:13.307071Z  INFO herdr::client: connecting to server path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-16T20:27:13.524756Z  INFO herdr::client: handshake succeeded version=19 encoding=SemanticFrame
+2026-08-16T20:27:56.107378Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=1793063
+2026-08-16T21:07:57.734531Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1826344
+2026-08-16T21:07:57.734620Z  INFO herdr::client: connecting to server path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-16T21:07:57.834344Z  INFO herdr::client: handshake succeeded version=19 encoding=SemanticFrame
+2026-08-16T21:08:05.615921Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=1826344
+2026-08-16T21:08:09.052671Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1828089
+2026-08-16T21:08:09.052741Z  INFO herdr::client: connecting to server path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-16T21:08:09.276632Z  INFO herdr::client: handshake succeeded version=19 encoding=SemanticFrame
+2026-08-16T21:18:11.306199Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=1828089
+2026-08-16T23:23:11.419525Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1944323
+2026-08-16T23:23:11.419608Z  INFO herdr::client: connecting to server path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-16T23:23:11.644506Z  INFO herdr::client: handshake succeeded version=19 encoding=SemanticFrame
+2026-08-16T23:23:27.632940Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=1944323
+2026-08-17T11:33:46.501657Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=2530585
+2026-08-17T11:33:46.501777Z  INFO herdr::client: connecting to server path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-17T11:33:46.557850Z  INFO herdr::client: handshake succeeded version=19 encoding=SemanticFrame
+2026-08-17T12:29:16.420167Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=2530585
+2026-08-17T12:40:45.451809Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=2589925
+2026-08-17T12:40:45.451897Z  INFO herdr::client: connecting to server path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-17T12:40:45.550500Z  INFO herdr::client: handshake succeeded version=19 encoding=SemanticFrame
+2026-08-17T12:45:39.960191Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=2589925
+2026-08-17T14:01:37.755748Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=2677262
+2026-08-17T14:01:37.755797Z  INFO herdr::client: connecting to server path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-17T14:01:37.861946Z  INFO herdr::client: handshake succeeded version=19 encoding=SemanticFrame
+2026-08-17T14:06:20.557458Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=2677262
+2026-08-17T14:56:18.716757Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=2725322
+2026-08-17T14:56:18.716803Z  INFO herdr::client: connecting to server path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-17T14:56:18.924560Z  INFO herdr::client: handshake succeeded version=19 encoding=SemanticFrame
+2026-08-17T14:58:38.499318Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=2725322
+2026-08-17T16:09:46.150411Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=2787629
+2026-08-17T16:09:46.150500Z  INFO herdr::client: connecting to server path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-17T16:09:46.391788Z  INFO herdr::client: handshake succeeded version=19 encoding=SemanticFrame
+2026-08-17T16:13:37.603533Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=2787629
+2026-08-17T16:18:24.228989Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=2797561
+2026-08-17T16:18:24.229034Z  INFO herdr::client: connecting to server path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-17T16:18:24.457307Z  INFO herdr::client: handshake succeeded version=19 encoding=SemanticFrame
+2026-08-17T16:20:41.418230Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=2797561
+2026-08-17T16:32:33.978593Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=2808928
+2026-08-17T16:32:33.978657Z  INFO herdr::client: connecting to server path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-17T16:32:34.048415Z  INFO herdr::client: handshake succeeded version=19 encoding=SemanticFrame
+2026-08-17T16:35:18.133440Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=2808928
+2026-08-17T16:41:56.872889Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=2818676
+2026-08-17T16:41:56.872945Z  INFO herdr::client: connecting to server path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-17T16:41:57.122638Z  INFO herdr::client: handshake succeeded version=19 encoding=SemanticFrame
+2026-08-17T16:45:45.275338Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=2818676
+2026-08-17T19:00:25.313947Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=2936526
+2026-08-17T19:00:25.314104Z  INFO herdr::client: connecting to server path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-17T19:00:25.345042Z  INFO herdr::client: handshake succeeded version=19 encoding=SemanticFrame
+2026-08-17T19:00:52.054626Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=2936526
+2026-08-17T19:17:36.034750Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=2952316
+2026-08-17T19:17:36.034788Z  INFO herdr::client: connecting to server path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-17T19:17:36.138892Z  INFO herdr::client: handshake succeeded version=19 encoding=SemanticFrame
+2026-08-17T19:18:02.094776Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=2952316
+2026-08-17T20:45:13.104669Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=3041732
+2026-08-17T20:45:13.104751Z  INFO herdr::client: connecting to server path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-17T20:45:13.120341Z  INFO herdr::client: handshake succeeded version=19 encoding=SemanticFrame
+2026-08-17T20:53:24.508864Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=3041732
+2026-08-18T10:11:30.861460Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=3667857
+2026-08-18T10:11:30.861551Z  INFO herdr::client: connecting to server path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-18T10:11:30.880073Z  INFO herdr::client: handshake succeeded version=19 encoding=SemanticFrame
+2026-08-18T10:11:49.223877Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=3667857
+2026-08-18T11:15:42.113681Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=3719888
+2026-08-18T11:15:42.113768Z  INFO herdr::client: connecting to server path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-18T11:15:42.298739Z  INFO herdr::client: handshake succeeded version=19 encoding=SemanticFrame
+2026-08-18T11:24:23.133836Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=3719888
+2026-08-18T13:10:01.744923Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=3835659
+2026-08-18T13:10:01.744954Z  INFO herdr::client: connecting to server path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-18T13:10:01.897600Z  INFO herdr::client: handshake succeeded version=19 encoding=SemanticFrame
+2026-08-18T13:10:19.611569Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=3835659
+2026-08-18T17:21:31.940545Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=4077939
+2026-08-18T17:21:31.940753Z  INFO herdr::client: connecting to server path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-18T17:21:32.109684Z  INFO herdr::client: handshake succeeded version=19 encoding=SemanticFrame
+2026-08-18T17:25:34.701364Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=4077939
+2026-08-18T20:17:39.916811Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=45088
+2026-08-18T20:17:39.916892Z  INFO herdr::client: connecting to server path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-18T20:17:40.095995Z  INFO herdr::client: handshake succeeded version=19 encoding=SemanticFrame
+2026-08-18T20:18:25.627301Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=45088
+2026-08-18T21:40:57.883781Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=119682
+2026-08-18T21:40:57.883856Z  INFO herdr::client: connecting to server path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-18T21:40:58.009484Z  INFO herdr::client: handshake succeeded version=19 encoding=SemanticFrame
+2026-08-18T22:29:14.429366Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=119682
+2026-08-18T23:29:49.737108Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=212335
+2026-08-18T23:29:49.737187Z  INFO herdr::client: connecting to server path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-18T23:29:49.916611Z  INFO herdr::client: handshake succeeded version=19 encoding=SemanticFrame
+2026-08-18T23:30:09.753208Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=212335
+2026-08-18T23:36:35.815457Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=219940
+2026-08-18T23:36:35.815540Z  INFO herdr::client: connecting to server path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-18T23:36:35.844634Z  INFO herdr::client: handshake succeeded version=19 encoding=SemanticFrame
+2026-08-18T23:37:24.066331Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=219940

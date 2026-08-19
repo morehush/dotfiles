@@ -2218,3 +2218,771 @@
 2026-08-13T21:29:00.516106Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
 2026-08-13T21:59:00.426741Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
 2026-08-13T21:59:00.540937Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-13T22:15:02.910770Z  INFO herdr::server::headless: server shutdown initiated
+2026-08-13T22:15:02.960989Z  INFO herdr::server::headless: completing server shutdown
+2026-08-13T22:15:02.961690Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-13T22:15:02.961734Z  INFO herdr::server::headless: headless server exiting
+2026-08-13T22:15:02.963953Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=9 status="ExitStatus { code: 1, signal: Some(\"Hangup\") }"
+2026-08-13T22:15:02.969676Z  INFO herdr::pane: pane session terminated pane=9 pid=2200266 signal=Hangup
+2026-08-13T22:15:02.971761Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="server" outcome="completed" pid=2490324
+2026-08-14T15:10:01.773761Z  INFO herdr::api::server: api server listening path=/home/morehush/.config/herdr/herdr.sock
+2026-08-14T15:10:01.777923Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=1 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-08-14T15:10:01.780897Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=1 pid=3276409
+2026-08-14T15:10:01.782442Z  INFO herdr::logging: session restore evaluated event="persist.restore" subsystem="persist" outcome="ok" workspaces=1
+2026-08-14T15:10:01.782705Z  INFO herdr::app: using pane scrollback configuration pane_scrollback_limit_bytes=10000000
+2026-08-14T15:10:01.858070Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-14T15:10:01.859875Z  INFO herdr::server::headless: restored session already has workspaces; ignoring startup cwd cwd=/home/morehush
+2026-08-14T15:10:01.859953Z  INFO herdr::server::headless: client protocol socket listening path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-14T15:10:01.859983Z  INFO herdr::server::headless: herdr server started api_socket=/home/morehush/.config/herdr/herdr.sock client_socket=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-14T15:10:01.861021Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="server" outcome="started" pid=3276395
+2026-08-14T15:10:01.879154Z  INFO herdr::server::headless: client connected client_id=2 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-14T15:10:11.015807Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-14T15:10:25.452221Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=1 status="ExitStatus { code: 0, signal: None }"
+2026-08-14T15:10:25.459226Z  INFO herdr::pane: pane session terminated pane=1 pid=3276409 signal=Hangup
+2026-08-14T15:10:25.459571Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=2 rows=52 cols=206 scrollback_limit_bytes=10000000
+2026-08-14T15:10:25.460668Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=2 pid=3278422
+2026-08-14T15:10:25.460833Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w3H" pane_id=2
+2026-08-14T15:10:25.460843Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3H"
+2026-08-14T15:10:25.460851Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3H" tab_id="w3H:t1"
+2026-08-14T15:10:26.896115Z  INFO herdr::server::headless: client detach requested via keybind client_id=2
+2026-08-14T15:10:26.904341Z  INFO herdr::server::headless: client disconnected client_id=2
+2026-08-14T15:10:30.471353Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-14T15:10:37.554838Z  WARN herdr::logging: update check failed event="update.check.complete" subsystem="update" outcome="error" err="failed to parse update manifest JSON: control character (\\u0000-\\u001F) found while parsing a string at line 469 column 0"
+2026-08-14T15:40:01.859725Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-14T15:40:01.967811Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-14T15:54:31.466604Z  INFO herdr::server::headless: client connected client_id=4 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-14T15:54:51.098089Z  INFO herdr::server::headless: client detach requested via keybind client_id=4
+2026-08-14T15:54:51.107221Z  INFO herdr::server::headless: client disconnected client_id=4
+2026-08-14T16:10:01.860792Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-14T16:10:01.969535Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-14T16:40:01.862565Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-14T16:40:01.980002Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-14T16:59:19.593304Z  INFO herdr::server::headless: client connected client_id=6 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-14T16:59:46.619161Z  INFO herdr::server::headless: client detach requested via keybind client_id=6
+2026-08-14T16:59:46.628388Z  INFO herdr::server::headless: client disconnected client_id=6
+2026-08-14T17:10:01.863237Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-14T17:10:01.969535Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-14T17:12:54.362683Z  INFO herdr::server::headless: client connected client_id=8 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-14T17:13:00.663803Z  INFO herdr::server::headless: client detach requested via keybind client_id=8
+2026-08-14T17:13:00.673387Z  INFO herdr::server::headless: client disconnected client_id=8
+2026-08-14T17:40:01.864963Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-14T17:40:01.954166Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-14T18:10:01.866896Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-14T18:10:01.966196Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-14T18:40:01.868803Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-14T18:40:01.967338Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-14T19:10:01.870581Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-14T19:10:01.999202Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-14T19:28:05.007339Z  INFO herdr::server::headless: client connected client_id=10 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-14T19:28:17.518689Z  INFO herdr::server::headless: client detach requested via keybind client_id=10
+2026-08-14T19:28:17.527036Z  INFO herdr::server::headless: client disconnected client_id=10
+2026-08-14T19:29:02.283699Z  INFO herdr::server::headless: client connected client_id=12 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-14T19:29:27.524910Z  INFO herdr::server::headless: client detach requested via keybind client_id=12
+2026-08-14T19:29:27.533972Z  INFO herdr::server::headless: client disconnected client_id=12
+2026-08-14T19:40:01.871491Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-14T19:40:01.973877Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-14T20:10:01.872752Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-14T20:10:01.956761Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-14T20:40:01.874481Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-14T20:40:01.955992Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-14T21:10:01.875828Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-14T21:10:01.960539Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-14T21:40:01.877698Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-14T21:40:01.993734Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-14T22:10:01.878080Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-14T22:10:01.959683Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-14T22:40:01.880093Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-14T22:40:01.970927Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-14T23:10:01.881242Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-14T23:10:01.982143Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-14T23:40:01.882186Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-14T23:40:01.979999Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T00:10:01.883954Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T00:10:01.975153Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T00:40:01.885351Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T00:40:01.942169Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T01:10:01.886358Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T01:10:01.950760Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T01:40:01.887822Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T01:40:01.965724Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T02:10:01.889062Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T02:10:01.983882Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T02:40:01.890872Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T02:40:02.185456Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T03:10:01.892099Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T03:10:01.948572Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T03:40:01.893436Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T03:40:01.977700Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T04:10:01.894916Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T04:10:01.989135Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T04:40:01.897021Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T04:40:02.005936Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T05:10:01.898590Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T05:10:01.992484Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T05:40:01.900187Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T05:40:02.004759Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T06:10:01.902519Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T06:10:01.966055Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T06:40:01.903372Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T06:40:01.999274Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T07:10:01.904422Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T07:10:02.023955Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T07:40:01.905480Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T07:40:01.988799Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T08:10:01.906402Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T08:10:02.009283Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T08:40:01.907291Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T08:40:01.989316Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T09:10:01.908362Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T09:10:02.011365Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T09:40:01.910131Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T09:40:01.996225Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T10:10:01.911684Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T10:10:02.004959Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T10:40:01.912422Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T10:40:02.017340Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T11:10:01.913514Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T11:10:02.006133Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T11:40:01.914920Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T11:40:02.008212Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T11:58:15.360446Z  INFO herdr::server::headless: client connected client_id=14 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-15T11:58:31.613429Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=2 status="ExitStatus { code: 0, signal: None }"
+2026-08-15T11:58:31.631213Z  INFO herdr::pane: pane session terminated pane=2 pid=3278422 signal=Hangup
+2026-08-15T11:58:31.632624Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=3 rows=52 cols=206 scrollback_limit_bytes=10000000
+2026-08-15T11:58:31.635881Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=3 pid=116500
+2026-08-15T11:58:31.636322Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w3J" pane_id=3
+2026-08-15T11:58:31.636353Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3J"
+2026-08-15T11:58:31.636545Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3J" tab_id="w3J:t1"
+2026-08-15T11:58:33.652073Z  INFO herdr::server::headless: client detach requested via keybind client_id=14
+2026-08-15T11:58:33.661207Z  INFO herdr::server::headless: client disconnected client_id=14
+2026-08-15T11:58:36.651752Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-15T12:10:01.916919Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T12:10:02.011129Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T12:40:01.917942Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T12:40:02.025508Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T13:10:01.919714Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T13:10:02.025393Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T13:40:01.920210Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T13:40:02.018207Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T14:10:01.921623Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T14:10:02.004595Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T14:40:01.922197Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T14:40:02.036765Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T15:10:01.923331Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T15:10:02.012731Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T15:40:01.924312Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T15:40:02.004058Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T16:10:01.925581Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T16:10:02.032692Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T16:40:01.926548Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T16:40:02.019118Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T17:10:01.927774Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T17:10:02.018028Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T17:40:01.929772Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T17:40:02.022817Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T18:10:01.931640Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T18:10:02.016859Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T18:40:01.932606Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T18:40:02.047630Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T19:10:01.934318Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T19:10:02.027723Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T19:40:01.935480Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T19:40:02.052539Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T20:10:01.936796Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T20:10:02.034656Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T20:40:01.938232Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T20:40:02.040898Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T21:10:01.939780Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T21:10:02.037335Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T21:40:01.941225Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T21:40:02.043802Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T22:10:01.942221Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T22:10:02.031855Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T22:40:01.942831Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T22:40:02.049885Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T23:10:01.944459Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T23:10:02.029068Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-15T23:40:01.945271Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-15T23:40:02.036840Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T00:10:01.946196Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T00:10:02.094934Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T00:40:01.948006Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T00:40:02.024443Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T00:57:38.201838Z  INFO herdr::server::headless: client connected client_id=16 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-16T00:57:55.430573Z  INFO herdr::server::headless: client detach requested via keybind client_id=16
+2026-08-16T00:57:55.440032Z  INFO herdr::server::headless: client disconnected client_id=16
+2026-08-16T01:10:01.949915Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T01:10:02.013774Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T01:40:01.951049Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T01:40:02.071463Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T02:10:01.953506Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T02:10:02.046189Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T02:40:01.955275Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T02:40:02.054959Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T03:10:01.956334Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T03:10:02.018306Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T03:40:01.957953Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T03:40:02.151930Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T04:10:01.959417Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T04:10:02.049310Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T04:40:01.960857Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T04:40:02.061826Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T05:10:01.962519Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T05:10:02.050730Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T05:40:01.963709Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T05:40:02.046956Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T06:10:01.964795Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T06:10:02.056450Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T06:40:01.967088Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T06:40:02.052396Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T07:10:01.968868Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T07:10:02.050078Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T07:40:01.970859Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T07:40:02.053438Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T08:10:01.972430Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T08:10:02.104541Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T08:40:01.974276Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T08:40:02.056029Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T09:10:01.975453Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T09:10:02.071650Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T09:40:01.976635Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T09:40:02.058125Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T10:10:01.977838Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T10:10:02.069679Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T10:40:01.979795Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T10:40:02.076104Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T11:10:01.981813Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T11:10:02.073471Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T11:40:01.983189Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T11:40:02.075191Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T12:10:01.984944Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T12:10:02.076962Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T12:40:01.987072Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T12:40:02.084046Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T12:43:30.200244Z  INFO herdr::server::headless: client connected client_id=18 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-16T12:43:49.980794Z  INFO herdr::server::headless: client detach requested via keybind client_id=18
+2026-08-16T12:43:49.989640Z  INFO herdr::server::headless: client disconnected client_id=18
+2026-08-16T12:52:23.844060Z  INFO herdr::server::headless: client connected client_id=20 cols=148 rows=48 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-08-16T12:52:49.126533Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=3 status="ExitStatus { code: 127, signal: None }"
+2026-08-16T12:52:49.127238Z  INFO herdr::pane: pane session terminated pane=3 pid=116500 signal=Hangup
+2026-08-16T12:52:49.127430Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=4 rows=47 cols=144 scrollback_limit_bytes=10000000
+2026-08-16T12:52:49.130125Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=4 pid=1301699
+2026-08-16T12:52:49.130588Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w3K" pane_id=4
+2026-08-16T12:52:49.130620Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3K"
+2026-08-16T12:52:49.130637Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3K" tab_id="w3K:t1"
+2026-08-16T12:52:54.132565Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-16T12:53:48.046303Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=4 status="ExitStatus { code: 0, signal: None }"
+2026-08-16T12:53:48.053246Z  INFO herdr::pane: pane session terminated pane=4 pid=1301699 signal=Hangup
+2026-08-16T12:53:48.053417Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=5 rows=47 cols=144 scrollback_limit_bytes=10000000
+2026-08-16T12:53:48.055802Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=5 pid=1302855
+2026-08-16T12:53:48.056207Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w3M" pane_id=5
+2026-08-16T12:53:48.056247Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3M"
+2026-08-16T12:53:48.056268Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3M" tab_id="w3M:t1"
+2026-08-16T12:53:53.058197Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-16T12:53:55.712519Z  INFO herdr::server::headless: client detach requested via keybind client_id=20
+2026-08-16T12:53:55.717770Z  INFO herdr::server::headless: client disconnected client_id=20
+2026-08-16T12:54:17.921032Z  INFO herdr::server::headless: server shutdown initiated
+2026-08-16T12:54:17.971281Z  INFO herdr::server::headless: completing server shutdown
+2026-08-16T12:54:17.971989Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-16T12:54:17.972032Z  INFO herdr::server::headless: headless server exiting
+2026-08-16T12:54:17.973729Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=5 status="ExitStatus { code: 1, signal: Some(\"Hangup\") }"
+2026-08-16T12:54:17.979150Z  INFO herdr::pane: pane session terminated pane=5 pid=1302855 signal=Hangup
+2026-08-16T12:54:17.980353Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="server" outcome="completed" pid=3276395
+2026-08-16T12:55:34.503356Z  INFO herdr::api::server: api server listening path=/home/morehush/.config/herdr/herdr.sock
+2026-08-16T12:55:34.506862Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=1 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-08-16T12:55:34.508878Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=1 pid=1307104
+2026-08-16T12:55:34.509493Z  INFO herdr::logging: session restore evaluated event="persist.restore" subsystem="persist" outcome="ok" workspaces=1
+2026-08-16T12:55:34.509539Z  INFO herdr::app: using pane scrollback configuration pane_scrollback_limit_bytes=10000000
+2026-08-16T12:55:34.578434Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T12:55:34.579902Z  INFO herdr::server::headless: restored session already has workspaces; ignoring startup cwd cwd=/home/morehush
+2026-08-16T12:55:34.579992Z  INFO herdr::server::headless: client protocol socket listening path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-16T12:55:34.580020Z  INFO herdr::server::headless: herdr server started api_socket=/home/morehush/.config/herdr/herdr.sock client_socket=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-16T12:55:34.580324Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="server" outcome="started" pid=1307090
+2026-08-16T12:55:34.657593Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T12:55:34.848797Z  INFO herdr::server::headless: client connected client_id=2 cols=148 rows=48 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-16T12:55:57.144253Z  INFO herdr::server::headless: client connected client_id=4 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-16T12:56:12.542679Z  INFO herdr::server::headless: client detach requested via keybind client_id=4
+2026-08-16T12:56:12.553579Z  INFO herdr::server::headless: client disconnected client_id=4
+2026-08-16T13:25:34.579982Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T13:25:34.690607Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T13:34:22.894601Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=1 status="ExitStatus { code: 0, signal: None }"
+2026-08-16T13:34:22.900244Z  INFO herdr::pane: pane session terminated pane=1 pid=1307104 signal=Hangup
+2026-08-16T13:34:22.900414Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=2 rows=47 cols=144 scrollback_limit_bytes=10000000
+2026-08-16T13:34:22.903091Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=2 pid=1350686
+2026-08-16T13:34:22.903477Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w3N" pane_id=2
+2026-08-16T13:34:22.903507Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3N"
+2026-08-16T13:34:22.903538Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3N" tab_id="w3N:t1"
+2026-08-16T13:34:26.198203Z  INFO herdr::server::headless: client detach requested via keybind client_id=2
+2026-08-16T13:34:26.200700Z  INFO herdr::server::headless: client disconnected client_id=2
+2026-08-16T13:34:27.905850Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-16T13:55:34.581125Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T13:55:34.662822Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T14:21:59.445638Z  INFO herdr::server::headless: client connected client_id=6 cols=135 rows=48 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-16T14:23:08.232094Z  INFO herdr::server::headless: client detach requested via keybind client_id=6
+2026-08-16T14:23:08.233932Z  INFO herdr::server::headless: client disconnected client_id=6
+2026-08-16T14:25:34.582508Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T14:25:34.713699Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T14:43:42.121903Z  INFO herdr::server::headless: server shutdown initiated
+2026-08-16T14:43:42.172118Z  INFO herdr::server::headless: completing server shutdown
+2026-08-16T14:43:42.172783Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-16T14:43:42.178859Z  INFO herdr::server::headless: headless server exiting
+2026-08-16T14:43:42.179550Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=2 status="ExitStatus { code: 1, signal: Some(\"Hangup\") }"
+2026-08-16T14:43:42.183861Z  INFO herdr::pane: pane session terminated pane=2 pid=1350686 signal=Hangup
+2026-08-16T14:43:42.184624Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="server" outcome="completed" pid=1307090
+2026-08-16T14:43:47.356567Z  INFO herdr::api::server: api server listening path=/home/morehush/.config/herdr/herdr.sock
+2026-08-16T14:43:47.363372Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=1 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-08-16T14:43:47.364011Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=1 pid=1433682
+2026-08-16T14:43:47.364252Z  INFO herdr::logging: session restore evaluated event="persist.restore" subsystem="persist" outcome="ok" workspaces=1
+2026-08-16T14:43:47.364264Z  INFO herdr::app: using pane scrollback configuration pane_scrollback_limit_bytes=10000000
+2026-08-16T14:43:47.428617Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T14:43:47.429848Z  INFO herdr::server::headless: restored session already has workspaces; ignoring startup cwd cwd=/home/morehush
+2026-08-16T14:43:47.429938Z  INFO herdr::server::headless: client protocol socket listening path=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-16T14:43:47.429967Z  INFO herdr::server::headless: herdr server started api_socket=/home/morehush/.config/herdr/herdr.sock client_socket=/home/morehush/.config/herdr/herdr-client.sock
+2026-08-16T14:43:47.430208Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="server" outcome="started" pid=1433668
+2026-08-16T14:43:47.479899Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T14:43:47.699961Z  INFO herdr::server::headless: client connected client_id=2 cols=157 rows=47 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-16T14:44:06.402814Z  INFO herdr::server::headless: client detach requested via keybind client_id=2
+2026-08-16T14:44:06.408887Z  INFO herdr::server::headless: client disconnected client_id=2
+2026-08-16T15:13:47.430676Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T15:13:47.545551Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T15:43:47.431901Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T15:43:47.518291Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T16:13:47.433756Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T16:13:47.491514Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T16:43:47.436106Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T16:43:47.530185Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T17:13:47.437383Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T17:13:47.532290Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T17:43:47.439000Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T17:43:47.526291Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T18:13:47.440909Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T18:13:47.531277Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T18:34:01.871873Z  INFO herdr::server::headless: client connected client_id=4 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-16T18:34:14.888043Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=1 status="ExitStatus { code: 0, signal: None }"
+2026-08-16T18:34:14.892777Z  INFO herdr::pane: pane session terminated pane=1 pid=1433682 signal=Hangup
+2026-08-16T18:34:14.893133Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=2 rows=52 cols=206 scrollback_limit_bytes=10000000
+2026-08-16T18:34:14.894008Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=2 pid=1678255
+2026-08-16T18:34:14.894248Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w3P" pane_id=2
+2026-08-16T18:34:14.894256Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3P"
+2026-08-16T18:34:14.894261Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3P" tab_id="w3P:t1"
+2026-08-16T18:34:16.706756Z  INFO herdr::server::headless: client detach requested via keybind client_id=4
+2026-08-16T18:34:16.712944Z  INFO herdr::server::headless: client disconnected client_id=4
+2026-08-16T18:34:19.896547Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-16T18:43:47.442536Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T18:43:47.528451Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T19:09:01.745367Z  INFO herdr::server::headless: client connected client_id=6 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-16T19:09:16.378343Z  INFO herdr::server::headless: client detach requested via keybind client_id=6
+2026-08-16T19:09:16.383899Z  INFO herdr::server::headless: client disconnected client_id=6
+2026-08-16T19:13:47.443467Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T19:13:47.530413Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T19:14:38.398182Z  INFO herdr::server::headless: client connected client_id=8 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-16T19:15:20.999840Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=3 rows=52 cols=206 scrollback_limit_bytes=10000000
+2026-08-16T19:15:21.002690Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=3 pid=1713626
+2026-08-16T19:15:21.003119Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3P" tab_id="w3P:t1"
+2026-08-16T19:15:26.019346Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-16T19:15:40.884980Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3P" tab_id="w3P:t1"
+2026-08-16T19:15:41.734465Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3P" tab_id="w3P:t1"
+2026-08-16T19:15:42.097547Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3P" tab_id="w3P:t1"
+2026-08-16T19:15:42.499923Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3P" tab_id="w3P:t1"
+2026-08-16T19:15:42.903360Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3P" tab_id="w3P:t1"
+2026-08-16T19:15:47.906307Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-16T19:16:12.201529Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=2 status="ExitStatus { code: 0, signal: None }"
+2026-08-16T19:16:12.212898Z  INFO herdr::pane: pane session terminated pane=2 pid=1678255 signal=Hangup
+2026-08-16T19:16:17.216150Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-16T19:16:19.085189Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=3 status="ExitStatus { code: 0, signal: None }"
+2026-08-16T19:16:19.095831Z  INFO herdr::pane: pane session terminated pane=3 pid=1713626 signal=Hangup
+2026-08-16T19:16:19.096253Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=4 rows=52 cols=206 scrollback_limit_bytes=10000000
+2026-08-16T19:16:19.098862Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=4 pid=1714517
+2026-08-16T19:16:19.099265Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w3Q" pane_id=4
+2026-08-16T19:16:19.099298Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3Q"
+2026-08-16T19:16:19.099321Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3Q" tab_id="w3Q:t1"
+2026-08-16T19:16:21.352122Z  INFO herdr::server::headless: client detach requested via keybind client_id=8
+2026-08-16T19:16:21.358745Z  INFO herdr::server::headless: client disconnected client_id=8
+2026-08-16T19:16:24.102349Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-16T19:43:47.444702Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T19:43:47.502777Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T20:13:47.446874Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T20:13:47.544781Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T20:25:15.123458Z  INFO herdr::server::headless: client connected client_id=10 cols=46 rows=22 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-16T20:25:21.152227Z  INFO herdr::server::headless: client detach requested via keybind client_id=10
+2026-08-16T20:25:21.153984Z  INFO herdr::server::headless: client disconnected client_id=10
+2026-08-16T20:27:13.524861Z  INFO herdr::server::headless: client connected client_id=12 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-16T20:27:56.105648Z  INFO herdr::server::headless: client detach requested via keybind client_id=12
+2026-08-16T20:27:56.114303Z  INFO herdr::server::headless: client disconnected client_id=12
+2026-08-16T20:43:47.448731Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T20:43:47.548949Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T21:07:57.834480Z  INFO herdr::server::headless: client connected client_id=14 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-16T21:08:04.018510Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=4 status="ExitStatus { code: 0, signal: None }"
+2026-08-16T21:08:04.023270Z  INFO herdr::pane: pane session terminated pane=4 pid=1714517 signal=Hangup
+2026-08-16T21:08:04.023361Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=5 rows=52 cols=206 scrollback_limit_bytes=10000000
+2026-08-16T21:08:04.024861Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=5 pid=1828008
+2026-08-16T21:08:04.025076Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w3R" pane_id=5
+2026-08-16T21:08:04.025094Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3R"
+2026-08-16T21:08:04.025103Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3R" tab_id="w3R:t1"
+2026-08-16T21:08:05.614141Z  INFO herdr::server::headless: client detach requested via keybind client_id=14
+2026-08-16T21:08:05.622584Z  INFO herdr::server::headless: client disconnected client_id=14
+2026-08-16T21:08:09.026350Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-16T21:08:09.276660Z  INFO herdr::server::headless: client connected client_id=16 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-16T21:13:47.450250Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T21:13:47.544878Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T21:18:10.376292Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=5 status="ExitStatus { code: 0, signal: None }"
+2026-08-16T21:18:10.386293Z  INFO herdr::pane: pane session terminated pane=5 pid=1828008 signal=Hangup
+2026-08-16T21:18:10.386912Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=6 rows=52 cols=206 scrollback_limit_bytes=10000000
+2026-08-16T21:18:10.389519Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=6 pid=1836180
+2026-08-16T21:18:10.389889Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w3S" pane_id=6
+2026-08-16T21:18:10.389933Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3S"
+2026-08-16T21:18:10.389948Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3S" tab_id="w3S:t1"
+2026-08-16T21:18:11.304608Z  INFO herdr::server::headless: client detach requested via keybind client_id=16
+2026-08-16T21:18:11.313316Z  INFO herdr::server::headless: client disconnected client_id=16
+2026-08-16T21:18:15.391745Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-16T21:43:47.450911Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T21:43:47.533926Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T22:13:47.452214Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T22:13:47.525331Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T22:43:47.453461Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T22:43:47.518246Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T23:13:47.454928Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T23:13:47.553347Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-16T23:23:11.644689Z  INFO herdr::server::headless: client connected client_id=18 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-16T23:23:27.631690Z  INFO herdr::server::headless: client detach requested via keybind client_id=18
+2026-08-16T23:23:27.636912Z  INFO herdr::server::headless: client disconnected client_id=18
+2026-08-16T23:43:47.456438Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-16T23:43:47.561002Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T00:13:47.457509Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T00:13:47.674748Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T00:43:47.467692Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T00:43:47.561625Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T01:13:47.467059Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T01:13:47.552087Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T01:43:47.468412Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T01:43:47.531506Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T02:13:47.470560Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T02:13:47.560268Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T02:43:47.472565Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T02:43:47.592955Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T03:13:47.473148Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T03:13:47.572199Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T03:43:47.474511Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T03:43:47.570920Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T04:13:47.476606Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T04:13:47.585400Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T04:43:47.478109Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T04:43:47.569650Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T05:13:47.479609Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T05:13:47.558703Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T05:43:47.481489Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T05:43:47.613157Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T06:13:47.482446Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T06:13:47.571509Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T06:43:47.483034Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T06:43:47.565406Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T07:13:47.484385Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T07:13:47.566203Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T07:43:47.485447Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T07:43:47.574106Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T08:13:47.486191Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T08:13:47.579465Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T08:43:47.486856Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T08:43:47.582176Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T09:13:47.488626Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T09:13:47.570973Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T09:43:47.490375Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T09:43:47.606542Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T10:13:47.491482Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T10:13:47.593917Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T10:43:47.493134Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T10:43:47.568806Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T11:13:47.494837Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T11:13:47.577557Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T11:33:46.557979Z  INFO herdr::server::headless: client connected client_id=20 cols=104 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-17T11:43:47.495761Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T11:43:47.606473Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T12:13:47.497181Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T12:13:47.629942Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T12:29:16.413020Z  INFO herdr::server::headless: client detach requested via keybind client_id=20
+2026-08-17T12:29:16.421216Z  INFO herdr::server::headless: client disconnected client_id=20
+2026-08-17T12:40:45.550601Z  INFO herdr::server::headless: client connected client_id=22 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-17T12:43:47.498617Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T12:43:47.588382Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T12:45:38.238072Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=6 status="ExitStatus { code: 0, signal: None }"
+2026-08-17T12:45:38.242349Z  INFO herdr::pane: pane session terminated pane=6 pid=1836180 signal=Hangup
+2026-08-17T12:45:38.242574Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=7 rows=52 cols=206 scrollback_limit_bytes=10000000
+2026-08-17T12:45:38.245421Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=7 pid=2595786
+2026-08-17T12:45:38.245815Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w3T" pane_id=7
+2026-08-17T12:45:38.245844Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3T"
+2026-08-17T12:45:38.245860Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3T" tab_id="w3T:t1"
+2026-08-17T12:45:39.959528Z  INFO herdr::server::headless: client detach requested via keybind client_id=22
+2026-08-17T12:45:39.962444Z  INFO herdr::server::headless: client disconnected client_id=22
+2026-08-17T12:45:43.255210Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-17T13:13:47.499899Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T13:13:47.590483Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T13:43:47.501657Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T13:43:47.620483Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T14:01:37.862091Z  INFO herdr::server::headless: client connected client_id=24 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-17T14:06:20.555784Z  INFO herdr::server::headless: client detach requested via keybind client_id=24
+2026-08-17T14:06:20.563634Z  INFO herdr::server::headless: client disconnected client_id=24
+2026-08-17T14:13:47.503694Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T14:13:47.610497Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T14:43:47.505349Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T14:43:47.592121Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T14:56:18.924625Z  INFO herdr::server::headless: client connected client_id=26 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-17T14:58:38.491235Z  INFO herdr::server::headless: client detach requested via keybind client_id=26
+2026-08-17T14:58:38.500253Z  INFO herdr::server::headless: client disconnected client_id=26
+2026-08-17T15:13:47.506527Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T15:13:47.591909Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T15:43:47.508237Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T15:43:47.597608Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T16:09:46.391909Z  INFO herdr::server::headless: client connected client_id=28 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-17T16:13:37.601725Z  INFO herdr::server::headless: client detach requested via keybind client_id=28
+2026-08-17T16:13:37.611464Z  INFO herdr::server::headless: client disconnected client_id=28
+2026-08-17T16:13:47.509267Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T16:13:47.601034Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T16:18:24.457375Z  INFO herdr::server::headless: client connected client_id=30 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-17T16:18:52.831839Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=8 rows=52 cols=206 scrollback_limit_bytes=10000000
+2026-08-17T16:18:52.835287Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=8 pid=2797945
+2026-08-17T16:18:52.835991Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3T" tab_id="w3T:t1"
+2026-08-17T16:18:57.839795Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-17T16:19:56.760657Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3T" tab_id="w3T:t1"
+2026-08-17T16:20:01.765527Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-17T16:20:11.434824Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3T" tab_id="w3T:t1"
+2026-08-17T16:20:16.437650Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-17T16:20:25.606678Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=8 status="ExitStatus { code: 0, signal: None }"
+2026-08-17T16:20:25.616846Z  INFO herdr::pane: pane session terminated pane=8 pid=2797945 signal=Hangup
+2026-08-17T16:20:30.622266Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-17T16:20:41.415831Z  INFO herdr::server::headless: client detach requested via keybind client_id=30
+2026-08-17T16:20:41.425863Z  INFO herdr::server::headless: client disconnected client_id=30
+2026-08-17T16:32:34.048538Z  INFO herdr::server::headless: client connected client_id=32 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-17T16:35:18.131766Z  INFO herdr::server::headless: client detach requested via keybind client_id=32
+2026-08-17T16:35:18.140568Z  INFO herdr::server::headless: client disconnected client_id=32
+2026-08-17T16:41:57.122688Z  INFO herdr::server::headless: client connected client_id=34 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-17T16:43:47.510336Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T16:43:47.735235Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T16:45:44.187506Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=7 status="ExitStatus { code: 0, signal: None }"
+2026-08-17T16:45:44.192420Z  INFO herdr::pane: pane session terminated pane=7 pid=2595786 signal=Hangup
+2026-08-17T16:45:44.192784Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=9 rows=52 cols=206 scrollback_limit_bytes=10000000
+2026-08-17T16:45:44.193897Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=9 pid=2824102
+2026-08-17T16:45:44.194095Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w3V" pane_id=9
+2026-08-17T16:45:44.194113Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3V"
+2026-08-17T16:45:44.194121Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3V" tab_id="w3V:t1"
+2026-08-17T16:45:45.274661Z  INFO herdr::server::headless: client detach requested via keybind client_id=34
+2026-08-17T16:45:45.277779Z  INFO herdr::server::headless: client disconnected client_id=34
+2026-08-17T16:45:49.195798Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-17T17:13:47.511861Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T17:13:47.607947Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T17:43:47.513231Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T17:43:47.598579Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T18:13:47.514583Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T18:13:47.605973Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T18:43:47.516454Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T18:43:47.604536Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T19:00:25.345135Z  INFO herdr::server::headless: client connected client_id=36 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-17T19:00:52.054123Z  INFO herdr::server::headless: client detach requested via keybind client_id=36
+2026-08-17T19:00:52.056680Z  INFO herdr::server::headless: client disconnected client_id=36
+2026-08-17T19:13:47.517256Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T19:13:47.613986Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T19:17:36.138933Z  INFO herdr::server::headless: client connected client_id=38 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-17T19:17:59.649236Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=9 status="ExitStatus { code: 0, signal: None }"
+2026-08-17T19:17:59.653813Z  INFO herdr::pane: pane session terminated pane=9 pid=2824102 signal=Hangup
+2026-08-17T19:17:59.653916Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=10 rows=52 cols=206 scrollback_limit_bytes=10000000
+2026-08-17T19:17:59.655001Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=10 pid=2952773
+2026-08-17T19:17:59.655197Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w3W" pane_id=10
+2026-08-17T19:17:59.655206Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3W"
+2026-08-17T19:17:59.655213Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3W" tab_id="w3W:t1"
+2026-08-17T19:18:02.092411Z  INFO herdr::server::headless: client detach requested via keybind client_id=38
+2026-08-17T19:18:02.101993Z  INFO herdr::server::headless: client disconnected client_id=38
+2026-08-17T19:18:04.658766Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-17T19:43:47.518493Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T19:43:47.600306Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T20:13:47.520357Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T20:13:47.644477Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T20:43:47.521539Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T20:43:47.632420Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T20:45:13.120475Z  INFO herdr::server::headless: client connected client_id=40 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-17T20:53:24.507193Z  INFO herdr::server::headless: client detach requested via keybind client_id=40
+2026-08-17T20:53:24.515921Z  INFO herdr::server::headless: client disconnected client_id=40
+2026-08-17T21:13:47.522054Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T21:13:47.641047Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T21:43:47.522910Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T21:43:47.629715Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T22:13:47.524001Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T22:13:47.618317Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T22:43:47.525933Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T22:43:47.725576Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T23:13:47.527615Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T23:13:47.641830Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-17T23:43:47.530147Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-17T23:43:47.639549Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T00:13:47.531064Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T00:13:47.634121Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T00:43:47.532207Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T00:43:47.764215Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T01:13:47.533967Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T01:13:47.633840Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T01:43:47.535138Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T01:43:47.643916Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T02:13:47.536134Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T02:13:47.615103Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T02:43:47.537610Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T02:43:47.615732Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T03:13:47.539325Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T03:13:47.623217Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T03:43:47.540848Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T03:43:47.755450Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T04:13:47.542984Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T04:13:47.630573Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T04:43:47.544119Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T04:43:47.643776Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T05:13:47.545090Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T05:13:47.636755Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T05:43:47.545997Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T05:43:47.627960Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T06:13:47.547530Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T06:13:47.646731Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T06:43:47.548737Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T06:43:47.671019Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T07:13:47.550087Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T07:13:47.638290Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T07:43:47.551179Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T07:43:47.626789Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T08:13:47.552024Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T08:13:47.636730Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T08:43:47.553844Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T08:43:47.662457Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T09:13:47.555317Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T09:13:47.651884Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T09:43:47.557195Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T09:43:47.654690Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T10:11:30.880173Z  INFO herdr::server::headless: client connected client_id=42 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-18T10:11:49.222115Z  INFO herdr::server::headless: client detach requested via keybind client_id=42
+2026-08-18T10:11:49.231416Z  INFO herdr::server::headless: client disconnected client_id=42
+2026-08-18T10:13:47.558453Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T10:13:47.639445Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T10:43:47.558966Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T10:43:47.646722Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T11:13:47.560225Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T11:13:47.669555Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T11:15:42.298878Z  INFO herdr::server::headless: client connected client_id=44 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-18T11:24:20.711840Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=10 status="ExitStatus { code: 0, signal: None }"
+2026-08-18T11:24:20.718618Z  INFO herdr::pane: pane session terminated pane=10 pid=2952773 signal=Hangup
+2026-08-18T11:24:20.718789Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=11 rows=52 cols=206 scrollback_limit_bytes=10000000
+2026-08-18T11:24:20.721585Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=11 pid=3728965
+2026-08-18T11:24:20.722091Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w3X" pane_id=11
+2026-08-18T11:24:20.722128Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3X"
+2026-08-18T11:24:20.722143Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3X" tab_id="w3X:t1"
+2026-08-18T11:24:23.132152Z  INFO herdr::server::headless: client detach requested via keybind client_id=44
+2026-08-18T11:24:23.139210Z  INFO herdr::server::headless: client disconnected client_id=44
+2026-08-18T11:24:25.732232Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/morehush/.config/herdr/session.json workspaces=1
+2026-08-18T11:43:47.561600Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T11:43:47.692265Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T12:13:47.562999Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T12:13:47.658786Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T12:43:47.564595Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T12:43:47.670719Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T13:10:01.897648Z  INFO herdr::server::headless: client connected client_id=46 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-18T13:10:19.610823Z  INFO herdr::server::headless: client detach requested via keybind client_id=46
+2026-08-18T13:10:19.613727Z  INFO herdr::server::headless: client disconnected client_id=46
+2026-08-18T13:13:47.565479Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T13:13:47.655494Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T13:43:47.566684Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T13:43:47.673832Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T14:13:47.569156Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T14:13:47.657829Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T14:43:47.570818Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T14:43:47.725375Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T15:13:47.572834Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T15:13:47.641089Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T15:43:47.574791Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T15:43:47.676380Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T16:13:47.576430Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T16:13:47.680228Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T16:43:47.576933Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T16:43:47.659027Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T17:13:47.579142Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T17:13:47.639237Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T17:21:32.109823Z  INFO herdr::server::headless: client connected client_id=48 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-18T17:25:34.692940Z  INFO herdr::server::headless: client detach requested via keybind client_id=48
+2026-08-18T17:25:34.702179Z  INFO herdr::server::headless: client disconnected client_id=48
+2026-08-18T17:43:47.581067Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T17:43:47.682711Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T18:13:47.582396Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T18:13:47.665861Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T18:43:47.584336Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T18:43:47.642255Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T19:13:47.585559Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T19:13:47.640184Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T19:43:47.586957Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T19:43:47.696353Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T20:13:47.588690Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T20:13:47.685162Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T20:17:40.096113Z  INFO herdr::server::headless: client connected client_id=50 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-18T20:18:25.625616Z  INFO herdr::server::headless: client detach requested via keybind client_id=50
+2026-08-18T20:18:25.631477Z  INFO herdr::server::headless: client disconnected client_id=50
+2026-08-18T20:43:47.591086Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T20:43:47.668230Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T21:13:47.593189Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T21:13:47.676228Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T21:40:58.009568Z  INFO herdr::server::headless: client connected client_id=52 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-18T21:43:47.593840Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T21:43:47.696468Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T22:13:47.596137Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T22:13:47.704332Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T22:29:14.427563Z  INFO herdr::server::headless: client detach requested via keybind client_id=52
+2026-08-18T22:29:14.437271Z  INFO herdr::server::headless: client disconnected client_id=52
+2026-08-18T22:43:47.597379Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T22:43:47.691091Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T23:13:47.598357Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T23:13:47.686575Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-18T23:29:49.916738Z  INFO herdr::server::headless: client connected client_id=54 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-18T23:30:09.751164Z  INFO herdr::server::headless: client detach requested via keybind client_id=54
+2026-08-18T23:30:09.760525Z  INFO herdr::server::headless: client disconnected client_id=54
+2026-08-18T23:36:35.844763Z  INFO herdr::server::headless: client connected client_id=56 cols=210 rows=53 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-08-18T23:37:24.065429Z  INFO herdr::server::headless: client detach requested via keybind client_id=56
+2026-08-18T23:37:24.070302Z  INFO herdr::server::headless: client disconnected client_id=56
+2026-08-18T23:43:47.599715Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-18T23:43:47.709702Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-19T00:13:47.608266Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-19T00:13:47.714623Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-19T00:43:47.602840Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-19T00:43:47.690329Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-19T01:13:47.604674Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-19T01:13:47.711764Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-19T01:43:47.606164Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-19T01:43:47.691870Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-19T02:13:47.607605Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-19T02:13:47.698105Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-19T02:43:47.609731Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-19T02:43:47.686982Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-19T03:13:47.611471Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-19T03:13:47.700287Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-19T03:43:47.612707Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-19T03:43:47.710523Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-19T04:13:47.614665Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-19T04:13:47.668290Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-19T04:43:47.616391Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-19T04:43:47.693947Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-19T05:13:47.618247Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-19T05:13:47.783394Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-19T05:43:47.619968Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-19T05:43:47.731052Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-19T06:13:47.621300Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-19T06:13:47.755504Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-19T06:43:47.622950Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-19T06:43:47.692741Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-19T07:13:47.624117Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-19T07:13:47.701220Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-19T07:43:47.625081Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-19T07:43:47.705093Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-19T08:13:47.626479Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-19T08:13:47.711978Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-19T08:43:47.628136Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-19T08:43:47.727231Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-19T09:13:47.629367Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-19T09:13:47.708838Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-19T09:43:47.630691Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-19T09:43:47.723161Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-19T10:13:47.632913Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-19T10:13:47.742491Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-19T10:43:47.634044Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-19T10:43:47.719310Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
+2026-08-19T11:13:47.635410Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-19T11:13:47.717732Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="qwen"
