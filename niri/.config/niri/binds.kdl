@@ -21,7 +21,7 @@ binds {
     Mod+Alt+N { spawn-sh "brave --incognito"; }
     Mod+Alt+Y { spawn-sh "ghostty -e yazi"; }
     Mod+Alt+D { spawn-sh "discord"; }
-    Mod+Alt+Backslash { spawn-sh "proton-pass"; }
+    Mod+Alt+Backslash { spawn-sh "1password"; }
     // Alt+Space hotkey-overlay-title="App Launcher" { spawn-sh "fuzzel --filter-desktop"; }
 
     Mod+Tab repeat=false { toggle-overview; }
