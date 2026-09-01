@@ -67,5 +67,9 @@ else
     bind '$' __history_previous_command_arguments
 end
 
+if status is-interactive
+    atuin init fish | source
+end
+
 fzf --fish | source
 zoxide init fish --cmd cd | source
