@@ -1,6 +1,5 @@
 #!/bin/bash
 
-syncdir=$HOME/ssd/Sync/dockersrv
-dockdir=$HOME/docker
+syncdir=$HOME/Sync/dockersrv
 
-rsync -turPh --exclude '*.git' $syncdir/ $dockdir/
+rsync -turPh --exclude '*.git' $syncdir/ omv:~/docker/
