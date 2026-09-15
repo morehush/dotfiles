@@ -230,3 +230,4 @@ alias ytf='yt-dlp --ignore-config --downloader aria2c -N 4 -a files'
 alias dcp='docker compose pull'
 alias dcu='docker compose up -d'
 alias dcd='docker compose down'
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"

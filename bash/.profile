@@ -8,9 +8,6 @@
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
 
-# Has alacritty run under xwayland
-#export WINIT_UNIX_BACKEND=x11
-
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
   # include .bashrc if it exists
@@ -18,4 +15,3 @@ if [ -n "$BASH_VERSION" ]; then
     . "$HOME/.bashrc"
   fi
 fi
-. "$HOME/.cargo/env"
