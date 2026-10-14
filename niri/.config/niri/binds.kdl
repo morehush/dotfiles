@@ -19,9 +19,9 @@ binds {
     Mod+Alt+F hotkey-overlay-title="File Browswer" { spawn "nautilus"; }
     Mod+Alt+B { spawn "brave"; }
     Mod+Alt+N { spawn-sh "brave --incognito"; }
-    Mod+Alt+Y { spawn-sh "ghostty -e yazi"; }
+    Mod+Alt+Y { spawn-sh "ghostty -e spf"; }
     Mod+Alt+D { spawn-sh "discord"; }
-    // Mod+Alt+Backslash { spawn-sh "1password"; }
+    Mod+Alt+Backslash { spawn-sh "1password"; }
     // Alt+Space hotkey-overlay-title="App Launcher" { spawn-sh "fuzzel --filter-desktop"; }
 
     Mod+Tab repeat=false { toggle-overview; }
