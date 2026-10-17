@@ -194,6 +194,7 @@ alias uj='journalctl --all --follow --user-unit'
 alias jctl="journalctl -p 3 -xb"
 
 alias update='sudo apt update && sudo apt upgrade'
+alias brup='brew upgrade --greedy'
 alias df='df -h'
 alias top=htop
 alias tarnow='tar -acf '
